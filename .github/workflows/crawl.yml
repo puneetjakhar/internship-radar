@@ -84,8 +84,8 @@ jobs:
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SENDER_EMAIL: puneetjakhar1996@gmail.com
-          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/
 
       - name: Send daily 24h summary (12:00 UTC = 14:00 CEST)
@@ -96,8 +96,8 @@ jobs:
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          SENDER_EMAIL: puneetjakhar1996@gmail.com
-          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/
 
       - name: Rebuild dashboard with AI scores
@@ -126,8 +126,8 @@ jobs:
         continue-on-error: true
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          SENDER_EMAIL: puneetjakhar1996@gmail.com
-          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/linkedin.html
 
       - name: Send daily v2 summary (12:00 UTC = 14:00 CEST)
@@ -138,8 +138,8 @@ jobs:
         continue-on-error: true
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          SENDER_EMAIL: puneetjakhar1996@gmail.com
-          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/linkedin.html
 
       - name: Strip PII from data files before commit
