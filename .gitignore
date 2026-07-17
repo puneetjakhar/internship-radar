@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+CVs/
+crawl_cache.json
+description_cache.json
+*.log

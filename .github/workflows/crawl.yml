@@ -1,0 +1,170 @@
+name: Hourly Internship Crawl + Notify
+
+# Runs hourly during Amsterdam waking hours (08:00–23:00 local, 16 runs/day),
+# silent overnight to save Actions minutes. The 12:00 UTC run also sends the
+# daily 24h summary.
+#
+# Cron is UTC and does NOT shift with DST — this schedule targets CEST
+# (summer, UTC+2). In winter (CET, UTC+1) the window becomes 07:00–22:00
+# Amsterdam local. Retune the range if that drift matters.
+#
+# Required GitHub Secrets:
+#   GMAIL_APP_PASSWORD  — App password for puneetjakhar1996@gmail.com
+#   GH_PAT              — Personal Access Token with repo scope (used only for the
+#                         cross-repo Pages deploy step; checkout uses github.token)
+
+on:
+  schedule:
+    - cron: '0 6-21 * * *'   # 06:00–21:00 UTC = 08:00–23:00 CEST — hourly email
+    - cron: '0 12 * * *'     # 12:00 UTC = 14:00 CEST — daily 24h summary
+  workflow_dispatch:
+    inputs:
+      daily:
+        description: 'Send daily report'
+        required: false
+        default: 'false'
+
+jobs:
+  crawl-and-notify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ github.token }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium
+
+      - name: Install dependencies
+        run: pip install -q requests beautifulsoup4 python-jobspy pandas lxml playwright anthropic
+
+      - name: Install Playwright browsers (only if not cached)
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: playwright install chromium --with-deps
+
+      - name: Install Playwright system deps (always needed)
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: playwright install-deps chromium
+
+      - name: Run portal + LinkedIn crawl in parallel
+        run: |
+          python crawl_internships.py --force &
+          PORTAL_PID=$!
+          python crawl_linkedin.py --force &
+          LINKEDIN_PID=$!
+          wait $PORTAL_PID
+          PORTAL_EXIT=$?
+          wait $LINKEDIN_PID
+          exit $PORTAL_EXIT
+        continue-on-error: true
+
+      - name: Send hourly new-internships email
+        if: "!(github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')"
+        run: python notify.py
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SENDER_EMAIL: puneetjakhar1996@gmail.com
+          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/
+
+      - name: Send daily 24h summary (12:00 UTC = 14:00 CEST)
+        if: >
+          github.event.schedule == '0 12 * * *' ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')
+        run: python notify.py --daily
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SENDER_EMAIL: puneetjakhar1996@gmail.com
+          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/
+
+      - name: Rebuild dashboard with AI scores
+        run: python build_dashboard.py
+
+      - name: Run LinkedIn v2 scrape + enrichment
+        run: python crawl_linkedin_v2.py --force
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        continue-on-error: true
+
+      - name: Score LinkedIn v2 jobs with Claude Opus
+        run: python score_linkedin.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        continue-on-error: true
+
+      - name: Build LinkedIn v2 dashboard
+        run: python build_linkedin_dashboard.py
+        continue-on-error: true
+
+      - name: Send hourly v2 email
+        if: "!(github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')"
+        run: python notify_v2.py
+        continue-on-error: true
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SENDER_EMAIL: puneetjakhar1996@gmail.com
+          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/linkedin.html
+
+      - name: Send daily v2 summary (12:00 UTC = 14:00 CEST)
+        if: >
+          github.event.schedule == '0 12 * * *' ||
+          (github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')
+        run: python notify_v2.py --daily
+        continue-on-error: true
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SENDER_EMAIL: puneetjakhar1996@gmail.com
+          NOTIFY_EMAIL: vanshikarana.1000@gmail.com
+          DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/linkedin.html
+
+      - name: Strip PII from data files before commit
+        run: python strip_pii.py
+
+      - name: Commit updated data back to repo
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git add crawled_internships.json linkedin_jobs.json linkedin_v2_jobs.json linkedin_v2_scores.json job-search.html linkedin.html seen_jobs.json score_cache.json autoapply.html || true
+          git diff --staged --quiet || git commit -m "chore: internship data $(date -u +%Y-%m-%dT%H:%M)Z"
+          git pull --no-rebase -X ours --no-edit origin main
+          git push
+
+      - name: Deploy dashboard to public GitHub Pages repo
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git clone --depth 1 https://x-access-token:${GH_PAT}@github.com/puneetjakhar/vanshika-nl-jobs-dashboard.git _dashboard
+          cp job-search.html _dashboard/index.html
+          cp autoapply.html _dashboard/autoapply.html
+          cp linkedin.html   _dashboard/linkedin.html
+          cd _dashboard
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git add index.html autoapply.html linkedin.html
+          git diff --staged --quiet || git commit -m "Update dashboard $(date -u +%Y-%m-%dT%H:%M)Z"
+          git push

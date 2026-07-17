@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanshika — NL Intern Apply Assistant</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #242736; --border: #2e3348;
+      --accent: #a855f7; --accent2: #7c3aed; --green: #22c55e; --yellow: #f59e0b;
+      --red: #ef4444; --text: #e2e8f0; --text-muted: #8892a4; --radius: 10px;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+
+    header { background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 14px 20px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    header h1 { font-size: 17px; font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), #ec4899);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .back-btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+      padding: 6px 12px; border-radius: 8px; cursor: pointer; font-size: 13px;
+      text-decoration: none; white-space: nowrap; }
+    .back-btn:hover { border-color: var(--accent); }
+    .hdr-right { margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+
+    .main-layout { display: flex; flex: 1; min-height: 0; }
+
+    /* LEFT PANEL */
+    .left-panel { width: 340px; min-width: 280px; border-right: 1px solid var(--border);
+      padding: 20px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; }
+    .panel-title { font-size: 13px; font-weight: 600; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+
+    .job-info-box { background: var(--surface2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px; }
+    .job-info-company { font-size: 11px; color: var(--accent); font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+    .job-info-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .job-info-meta { font-size: 12px; color: var(--text-muted); }
+
+    .jd-area { width: 100%; background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); border-radius: var(--radius); padding: 10px 12px;
+      font-size: 13px; resize: vertical; min-height: 140px; outline: none; font-family: inherit; }
+    .jd-area:focus { border-color: var(--accent); }
+
+    .url-row { display: flex; gap: 8px; }
+    .url-input { flex: 1; background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); border-radius: var(--radius); padding: 8px 12px; font-size: 13px; outline: none; }
+    .url-input:focus { border-color: var(--accent); }
+
+    .btn { padding: 8px 16px; border-radius: 8px; border: none; cursor: pointer;
+      font-size: 13px; font-weight: 600; transition: all 0.15s; white-space: nowrap; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-secondary { background: var(--surface2); border: 1px solid var(--border); color: var(--text); }
+    .btn-secondary:hover { border-color: var(--accent); }
+
+    .cv-status { font-size: 12px; color: var(--text-muted); }
+    .cv-pill { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px;
+      font-weight: 600; margin: 2px; }
+
+    /* RIGHT PANEL */
+    .right-panel { flex: 1; display: flex; flex-direction: column; min-width: 0; overflow-y: auto; }
+
+    .tab-bar { display: flex; gap: 4px; padding: 12px 20px 0; border-bottom: 1px solid var(--border); background: var(--surface); }
+    .tab-btn { padding: 8px 16px; border-radius: 8px 8px 0 0; border: 1px solid transparent;
+      cursor: pointer; font-size: 13px; font-weight: 500; color: var(--text-muted); background: none;
+      transition: all 0.15s; display: flex; align-items: center; gap: 6px; }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active { background: var(--surface2); border-color: var(--border); border-bottom-color: var(--surface2);
+      color: var(--text); }
+    .tab-status { font-size: 10px; padding: 1px 5px; border-radius: 8px; }
+    .tab-status.loading { background: rgba(245,158,11,0.2); color: var(--yellow); }
+    .tab-status.done { background: rgba(34,197,94,0.2); color: var(--green); }
+    .tab-status.error { background: rgba(239,68,68,0.2); color: var(--red); }
+    .tab-status.cached { background: rgba(168,85,247,0.2); color: var(--accent); }
+
+    .tab-content { display: none; flex: 1; padding: 20px; }
+    .tab-content.active { display: block; }
+
+    .generate-btn { width: 100%; padding: 12px; border-radius: var(--radius); border: none;
+      cursor: pointer; font-size: 14px; font-weight: 700; color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 4px 20px rgba(168,85,247,0.3); transition: all 0.2s; margin-top: 8px; }
+    .generate-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(168,85,247,0.4); }
+    .generate-btn:disabled { opacity: 0.5; transform: none; cursor: not-allowed; }
+
+    .output-area { background: var(--surface2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; min-height: 200px;
+      font-size: 14px; line-height: 1.7; white-space: pre-wrap; color: var(--text); }
+    .output-area.idle { display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); font-size: 13px; font-style: italic; min-height: 160px; }
+
+    .loading-block { display: flex; flex-direction: column; align-items: center; gap: 12px;
+      padding: 40px 20px; color: var(--text-muted); }
+    .spinner { width: 32px; height: 32px; border: 3px solid var(--border);
+      border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error-block { background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.3);
+      border-radius: var(--radius); padding: 16px; color: var(--red); font-size: 13px; }
+    .retry-btn { margin-top: 10px; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--red);
+      background: none; color: var(--red); cursor: pointer; font-size: 12px; }
+    .retry-btn:hover { background: rgba(239,68,68,0.1); }
+
+    .cover-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+    .action-btn { padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--surface2); color: var(--text); cursor: pointer; font-size: 13px;
+      transition: all 0.15s; }
+    .action-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .action-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .action-btn.primary:hover { opacity: 0.88; }
+
+    .cover-edit-area { width: 100%; background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); border-radius: var(--radius); padding: 16px; font-size: 14px;
+      line-height: 1.7; resize: vertical; min-height: 300px; outline: none; font-family: inherit; }
+    .cover-edit-area:focus { border-color: var(--accent); }
+
+    .rec-card { background: var(--surface2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px; margin-bottom: 14px; }
+    .rec-cv-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+    .rec-reason { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+    .cv-change-list { list-style: disc; padding-left: 20px; }
+    .cv-change-list li { font-size: 13px; margin-bottom: 6px; line-height: 1.5; }
+
+    .qa-block { margin-bottom: 20px; }
+    .qa-question { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .qa-answer { font-size: 13px; color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; }
+
+    .email-idle { border: 1px dashed var(--border); border-radius: var(--radius);
+      padding: 24px; text-align: center; color: var(--text-muted); font-size: 13px; }
+    .email-input-row { display: flex; gap: 8px; margin-bottom: 14px; align-items: center; }
+    .email-input { flex: 1; background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      border-radius: var(--radius); padding: 9px 12px; font-size: 14px; outline: none; }
+    .email-input:focus { border-color: var(--accent); }
+    .email-draft-card { background: var(--surface2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; font-size: 14px; line-height: 1.7;
+      white-space: pre-wrap; color: var(--text); }
+    .email-subject { font-size: 13px; color: var(--text-muted); margin-bottom: 14px;
+      padding-bottom: 12px; border-bottom: 1px solid var(--border); font-weight: 600; }
+
+    .ready-state { text-align: center; padding: 40px 20px; color: var(--text-muted); }
+    .ready-state h3 { font-size: 16px; color: var(--text); margin-bottom: 8px; }
+    .ready-state p { font-size: 13px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vanshika — NL Intern Apply Assistant</h1>
+  <a class="back-btn" href="job-search.html">← Dashboard</a>
+  <div class="hdr-right">
+    <button class="back-btn" id="api-key-btn" onclick="promptApiKey()" style="margin-left:0">🔑 API Key</button>
+    <button class="back-btn" id="resume-btn" onclick="loadResumePDFs()">📄 Load CVs</button>
+  </div>
+</header>
+
+<div class="main-layout">
+  <!-- LEFT PANEL -->
+  <div class="left-panel">
+    <div>
+      <div class="panel-title">Current Role</div>
+      <div class="job-info-box" id="job-info-box">
+        <div style="font-size:13px;color:var(--text-muted);font-style:italic">No role loaded — paste a JD or use the dashboard to select one.</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel-title">Job Description</div>
+      <textarea class="jd-area" id="jd-input" placeholder="Paste the full job description here… or fetch it from a URL below." oninput="onJdChange()"></textarea>
+    </div>
+
+    <div>
+      <div class="panel-title">Fetch from URL</div>
+      <div class="url-row">
+        <input type="text" class="url-input" id="url-input" placeholder="https://careers.company.com/..." />
+        <button class="btn btn-secondary" onclick="fetchJD()">Fetch</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel-title" style="margin-bottom:8px">CVs Loaded</div>
+      <div class="cv-status" id="cv-status">No CVs loaded. Click 📄 Load CVs to select your PDF files.</div>
+    </div>
+
+    <button class="generate-btn" id="generate-btn" onclick="generateAll()" disabled>✨ Generate All</button>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel">
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchTab('cover')" id="tab-cover">Cover Letter <span class="tab-status" id="ts-cover"></span></button>
+      <button class="tab-btn" onclick="switchTab('resume')" id="tab-resume">CV Advice <span class="tab-status" id="ts-resume"></span></button>
+      <button class="tab-btn" onclick="switchTab('qa')" id="tab-qa">Q&amp;A <span class="tab-status" id="ts-qa"></span></button>
+      <button class="tab-btn" onclick="switchTab('email')" id="tab-email">Recruiter Email <span class="tab-status" id="ts-email"></span></button>
+    </div>
+
+    <div class="tab-content active" id="content-cover">
+      <div id="cover-area" class="output-area idle">Generate a cover letter by clicking ✨ Generate All.</div>
+    </div>
+    <div class="tab-content" id="content-resume">
+      <div id="resume-area" class="output-area idle">CV recommendations will appear here after generation.</div>
+    </div>
+    <div class="tab-content" id="content-qa">
+      <div id="qa-area" class="output-area idle">Application Q&amp;A answers will appear here after generation.</div>
+    </div>
+    <div class="tab-content" id="content-email">
+      <div class="email-input-row">
+        <input type="email" class="email-input" id="recruiter-email-input" placeholder="recruiter@company.com" />
+        <button class="btn btn-primary" onclick="draftRecruiterEmail()">Draft Email</button>
+      </div>
+      <div id="email-draft-area" class="email-idle">Enter the recruiter's email and click Draft Email.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Profile ────────────────────────────────────────────────────────────────────
+function shortProfile() {
+  return `=== CANDIDATE PROFILE: VANSHIKA RANA ===
+MBA Student | Rotterdam School of Management, Erasmus University | Rotterdam, Netherlands
+Currently in Netherlands on student visa — eligible to work during studies and internship. NL work authorisation confirmed.
+IIT Bombay graduate (B.Tech, Engineering Physics, 2019) | ONGC engineer (2019-2024) | Now MBA at RSM (2024-2026).
+Do NOT mention visa or work authorisation in cover letters — she already has it. Do NOT mention salary expectations.
+
+=== ACADEMIC BACKGROUND ===
+1. Rotterdam School of Management (RSM), Erasmus University — MBA, Rotterdam, NL (2024–2026)
+   - Specialisation: Strategy & Leadership
+   - RSM Business Games 2025: Winner (out of 200+ teams from leading European b-schools)
+   - Markstrat Business Simulation: 1st place (competitive simulation covering pricing, product strategy, market positioning)
+   - President, RSM Product Club (100+ members; ran workshops, company visits, PM case prep sessions)
+
+2. IIT Bombay — B.Tech, Engineering Physics (2015–2019)
+   - Academic excellence; IIT Bombay is India's most prestigious tech institution (comparable to MIT/ETH for selectivity)
+   - Strong analytical, quantitative, and problem-solving foundation
+
+=== WORK EXPERIENCE ===
+Oil and Natural Gas Corporation (ONGC) — Deputy Manager, Production Operations (2019–2024, 5 years)
+   - Led production operations and strategy for large-scale energy assets in India
+   - Cross-functional project leadership: coordinated engineering, finance, and regulatory teams
+   - Process improvement initiatives; optimised production efficiency across multiple assets
+   - Experience with structured problem solving, operational excellence, and stakeholder management at scale
+   - Deep energy sector knowledge: upstream oil & gas, asset lifecycle, energy transition context
+
+=== WHY SHE IS A STRONG CANDIDATE ===
+- Unusual combination: IIT Bombay (hard science/engineering) + ONGC (5 yrs ops leadership) + RSM MBA (strategy/leadership)
+- Business Games winner proves she can operate under pressure in cross-functional competitive settings
+- Markstrat 1st place shows quantitative strategy execution, not just conceptual understanding
+- Product Club President = she drove community building and structured learning — leadership beyond academics
+- Energy background (ONGC) is a direct differentiator for energy/sustainability roles (Shell, Eneco, Vattenfall, Alliander, SBM)
+- RSM Rotterdam location means zero relocation needed for NL internships
+- Strong English; working towards Dutch (A1 level currently)
+
+=== CV VARIANTS ===
+CV_Uber    -> Operations / general strategy / cross-functional roles / energy / consulting (emphasises ONGC ops leadership)
+CV_Product -> Product management / product strategy / product operations / PM intern roles (emphasises RSM Product Club, Markstrat, analytical skills)`;
+}
+
+// ── CV Management ──────────────────────────────────────────────────────────────
+const RESUME_NAMES = ['CV_Uber', 'CV_Product'];
+const RESUME_CACHE_KEY = 'vanshika_resume_texts_v1';
+const COLOR_MAP = { CV_Uber: '#5b7fff', CV_Product: '#a855f7' };
+
+function getResumeCacheAll() {
+  try { return JSON.parse(localStorage.getItem(RESUME_CACHE_KEY) || '{}'); } catch { return {}; }
+}
+function getResumeText(name) {
+  const c = getResumeCacheAll();
+  return c[name] || null;
+}
+function getLoadedCount() {
+  const c = getResumeCacheAll();
+  return RESUME_NAMES.filter(n => c[n]).length;
+}
+
+async function extractPdfText(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+      try {
+        const arr = new Uint8Array(e.target.result);
+        let text = '';
+        // Try pdf.js if available
+        if (window.pdfjsLib) {
+          const pdf = await pdfjsLib.getDocument({ data: arr }).promise;
+          for (let i = 1; i <= pdf.numPages; i++) {
+            const page = await pdf.getPage(i);
+            const content = await page.getTextContent();
+            text += content.items.map(it => it.str).join(' ') + '\n';
+          }
+          resolve(text);
+        } else {
+          // Fallback: decode as text
+          const decoded = new TextDecoder('utf-8', { fatal: false }).decode(arr);
+          const matches = decoded.match(/BT[\s\S]*?ET/g) || [];
+          text = matches.join(' ').replace(/[^\x20-\x7E\n]/g, ' ');
+          resolve(text || decoded.slice(0, 8000));
+        }
+      } catch(err) { reject(err); }
+    };
+    reader.onerror = reject;
+    reader.readAsArrayBuffer(file);
+  });
+}
+
+async function loadResumePDFs() {
+  const input = document.createElement('input');
+  input.type = 'file'; input.accept = '.pdf'; input.multiple = true;
+  input.onchange = async () => {
+    if (!input.files.length) return;
+    const cache = getResumeCacheAll();
+    for (const file of input.files) {
+      const rawName = file.name.replace(/\.pdf$/i, '');
+      // Strip VanshikaRana_CV_ prefix → CV_Uber, CV_Product
+      const name = rawName.replace(/^VanshikaRana_/i, '');
+      if (!RESUME_NAMES.includes(name)) {
+        console.warn('Unknown CV file:', rawName, '→', name);
+        continue;
+      }
+      try {
+        const text = await extractPdfText(file);
+        cache[name] = text;
+      } catch(e) { console.error('PDF extract error:', e); }
+    }
+    localStorage.setItem(RESUME_CACHE_KEY, JSON.stringify(cache));
+    updateResumeBtn();
+  };
+  input.click();
+}
+
+function updateResumeBtn() {
+  const n = getLoadedCount();
+  document.getElementById('resume-btn').textContent = n > 0 ? `📄 CVs (${n}/${RESUME_NAMES.length})` : '📄 Load CVs';
+  const cache = getResumeCacheAll();
+  const cvStatus = document.getElementById('cv-status');
+  if (n === 0) {
+    cvStatus.innerHTML = 'No CVs loaded. Click 📄 Load CVs to select your PDF files.';
+  } else {
+    const pills = RESUME_NAMES.map(n2 => {
+      const loaded = !!cache[n2];
+      const col = COLOR_MAP[n2] || '#888';
+      return `<span class="cv-pill" style="background:${col}22;color:${col};border:1px solid ${col}44">${n2}${loaded?' ✓':' ✗'}</span>`;
+    }).join(' ');
+    cvStatus.innerHTML = `${pills}`;
+  }
+}
+
+function getResumeContext(recommendedResume) {
+  const text = getResumeText(recommendedResume);
+  if (!text) return '';
+  return `\n\n=== ${recommendedResume} (FULL CV TEXT) ===\n${text.slice(0, 6000)}`;
+}
+
+// ── API Key ────────────────────────────────────────────────────────────────────
+function promptApiKey() {
+  const existing = localStorage.getItem('vanshika_claude_api_key') || '';
+  const k = prompt('Enter your Claude API key (sk-ant-...):', existing);
+  if (k === null) return;
+  if (!k.trim()) { localStorage.removeItem('vanshika_claude_api_key'); document.getElementById('api-key-btn').textContent = '🔑 API Key'; return; }
+  localStorage.setItem('vanshika_claude_api_key', k.trim());
+  document.getElementById('api-key-btn').textContent = '🔑 API Key ✓';
+  checkReady();
+}
+
+function updateApiKeyBtn() {
+  const k = localStorage.getItem('vanshika_claude_api_key');
+  if (k) document.getElementById('api-key-btn').textContent = '🔑 API Key ✓';
+}
+
+// ── Job loading ────────────────────────────────────────────────────────────────
+function esc(s) {
+  if (!s) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function loadJob(jobJson) {
+  try {
+    window._job = typeof jobJson === 'string' ? JSON.parse(jobJson) : jobJson;
+    const j = window._job;
+    const box = document.getElementById('job-info-box');
+    box.innerHTML = `
+      <div class="job-info-company">${esc(j.company)}</div>
+      <div class="job-info-title">${esc(j.job_title)}</div>
+      <div class="job-info-meta">${esc(j.location || '')}${j.date_posted ? ' · ' + j.date_posted : ''}</div>`;
+    if (j.description) {
+      document.getElementById('jd-input').value = j.description;
+    }
+    // Try to restore saved recruiter email
+    try {
+      const saved = localStorage.getItem('vanshika_rec_' + j.company + '_' + j.job_title);
+      if (saved) document.getElementById('recruiter-email-input').value = saved;
+      else document.getElementById('recruiter-email-input').value = j.recruiter_email || '';
+    } catch {}
+    checkReady();
+  } catch(e) { console.error('loadJob error:', e); }
+}
+
+function onJdChange() { checkReady(); }
+
+function checkReady() {
+  const hasKey = !!localStorage.getItem('vanshika_claude_api_key');
+  const hasJd = !!(document.getElementById('jd-input').value.trim() || (window._job && window._job.job_url));
+  document.getElementById('generate-btn').disabled = !(hasKey && hasJd);
+}
+
+// ── Claude API ─────────────────────────────────────────────────────────────────
+async function callClaude(system, user) {
+  const apiKey = localStorage.getItem('vanshika_claude_api_key');
+  if (!apiKey) throw new Error('No API key set. Click the 🔑 API Key button.');
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-api-key': apiKey,
+      'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+    body: JSON.stringify({ model: 'claude-opus-4-7', max_tokens: 2048,
+      system, messages: [{ role: 'user', content: user }] })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error?.message || `API error ${res.status}`);
+  }
+  const data = await res.json();
+  return data.content?.[0]?.text || '';
+}
+
+// ── Cache helpers ──────────────────────────────────────────────────────────────
+function _jdHash() {
+  const jd = (document.getElementById('jd-input').value || '').slice(0, 200);
+  const j = window._job || {};
+  return btoa(encodeURIComponent((j.company || '') + (j.job_title || '') + jd)).slice(0, 32);
+}
+function _cacheKey(section) { return `vanshika_aa_${section}_${_jdHash()}`; }
+function loadCached(section) { try { return localStorage.getItem(_cacheKey(section)) || null; } catch { return null; } }
+function saveCache(section, text) { try { localStorage.setItem(_cacheKey(section), text); } catch {} }
+
+// ── Tab management ─────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  ['cover','resume','qa','email'].forEach(t => {
+    document.getElementById('tab-' + t).classList.toggle('active', t === tab);
+    document.getElementById('content-' + t).classList.toggle('active', t === tab);
+  });
+}
+
+function setTabStatus(tab, status) {
+  const el = document.getElementById('ts-' + tab);
+  el.className = 'tab-status' + (status ? ' ' + status : '');
+  el.textContent = { loading: '…', done: '✓', error: '!', cached: '★' }[status] || '';
+}
+
+// ── Job context ────────────────────────────────────────────────────────────────
+function getJobCtx() {
+  const j = window._job || {};
+  const jd = (document.getElementById('jd-input').value || '').trim();
+  const base = `Company: ${j.company || 'Unknown'}\nRole: ${j.job_title || 'Unknown'}\nLocation: ${j.location || 'Netherlands'}`;
+  return jd ? base + `\n\nFULL JOB DESCRIPTION:\n${jd}` : base + (j.notes ? `\nNotes: ${j.notes}` : '');
+}
+
+// ── Generate all ───────────────────────────────────────────────────────────────
+async function generateAll() {
+  const btn = document.getElementById('generate-btn');
+  btn.disabled = true; btn.textContent = '⏳ Generating…';
+  try {
+    await Promise.all([generateCover(), generateResume(), generateQA()]);
+  } finally {
+    btn.disabled = false; btn.textContent = '✨ Generate All';
+    checkReady();
+  }
+}
+
+// ── Cover Letter ───────────────────────────────────────────────────────────────
+async function generateCover() {
+  const cached = loadCached('cover');
+  if (cached) { renderCover(cached, true); return; }
+  document.getElementById('cover-area').innerHTML = '<div class="loading-block"><div class="spinner"></div><div>Writing cover letter…</div></div>';
+  setTabStatus('cover', 'loading');
+  const j = window._job || {};
+  const profile = shortProfile();
+  const jdCtx = getJobCtx();
+  try {
+    const rec = window._recommendedCV || 'CV_Uber';
+    const cvCtx = getResumeContext(rec);
+    const text = await callClaude(
+      'You are an expert cover letter writer for MBA internship applications in the Netherlands. Write in a professional, warm, and confident tone. Never use em-dashes (—). Never use filler phrases like "I am passionate about", "I am reaching out to express my interest", "I hope this finds you well". Be specific, not generic.',
+      `Write a cover letter for Vanshika Rana applying for the ${j.job_title || 'internship'} role at ${j.company || 'this company'}.
+
+JOB CONTEXT:
+${jdCtx}
+
+CANDIDATE PROFILE:
+${profile}${cvCtx}
+
+INSTRUCTIONS:
+- Length: 3 short paragraphs, 250-300 words total
+- Paragraph 1: Who she is (IIT Bombay + ONGC + RSM MBA) and why this specific role excites her (reference something concrete from the JD)
+- Paragraph 2: Her strongest relevant achievement — pick ONE of: ONGC ops leadership, RSM Business Games win, Markstrat 1st place, or Product Club president — whichever matches the role best. Give one concrete detail.
+- Paragraph 3: Why this company specifically (something real about their strategy, mission, or market position — not generic praise). Close with enthusiasm for next steps.
+- Do NOT mention visa or work permit — she already has it
+- Do NOT mention salary
+- Sign off: "Warm regards,\nVanshika Rana"
+- No bullet points — flowing prose only
+- Format: Start with "Dear Hiring Manager," (or role-specific salutation if clear from JD)`
+    );
+    saveCache('cover', text);
+    renderCover(text);
+  } catch(err) {
+    document.getElementById('cover-area').innerHTML = `<div class="error-block"><strong>Error:</strong> ${esc(err.message)}<br><button class="retry-btn" onclick="generateCover()">Retry</button></div>`;
+    setTabStatus('cover', 'error');
+  }
+}
+
+function renderCover(text, fromCache = false) {
+  window._coverText = text;
+  document.getElementById('cover-area').innerHTML = `
+    <div class="output-area">${esc(text)}</div>
+    <div class="cover-actions">
+      <button class="action-btn primary" onclick="copyCover()">Copy</button>
+      <button class="action-btn" onclick="editCover()">Edit</button>
+      <button class="action-btn" onclick="clearCache('cover');generateCover()" style="margin-left:auto">↺ Refresh</button>
+      ${fromCache ? '<span style="font-size:11px;color:var(--text-muted)">★ Cached</span>' : ''}
+    </div>`;
+  setTabStatus('cover', fromCache ? 'cached' : 'done');
+}
+
+function copyCover() {
+  navigator.clipboard.writeText(window._coverText || '').then(() => {
+    const btn = event.target; btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+
+function editCover() {
+  document.getElementById('cover-area').innerHTML = `
+    <textarea class="cover-edit-area" id="cover-edit-ta" spellcheck="true"></textarea>
+    <div class="cover-actions">
+      <button class="action-btn primary" onclick="saveCoverEdit()">Save</button>
+      <button class="action-btn" onclick="renderCover(window._coverText)">Cancel</button>
+    </div>`;
+  document.getElementById('cover-edit-ta').value = window._coverText || '';
+  document.getElementById('cover-edit-ta').focus();
+}
+
+function saveCoverEdit() {
+  const t = document.getElementById('cover-edit-ta').value;
+  saveCache('cover', t);
+  renderCover(t);
+}
+
+// ── CV Advice ──────────────────────────────────────────────────────────────────
+async function generateResume() {
+  const cached = loadCached('resume');
+  if (cached) { renderResume(cached, true); return; }
+  document.getElementById('resume-area').innerHTML = '<div class="loading-block"><div class="spinner"></div><div>Analysing CV fit…</div></div>';
+  setTabStatus('resume', 'loading');
+  const profile = shortProfile();
+  const jdCtx = getJobCtx();
+  const j = window._job || {};
+  try {
+    const raw = await callClaude(
+      'You are an expert career advisor for MBA students applying for internships in the Netherlands. Give concrete, actionable advice.',
+      `Analyse which CV is best for Vanshika Rana to use for this role, and suggest targeted edits.
+
+JOB:
+${jdCtx}
+
+CANDIDATE:
+${profile}
+
+CV VARIANTS:
+- CV_Uber: Operations / general strategy / cross-functional / energy / consulting emphasis
+- CV_Product: Product management / product strategy / PM intern roles
+
+LOADED CV TEXTS:
+${RESUME_NAMES.map(n => { const t = getResumeText(n); return t ? `--- ${n} ---\n${t.slice(0,2000)}` : `--- ${n} --- (not loaded)`; }).join('\n\n')}
+
+OUTPUT FORMAT (JSON):
+{
+  "recommended_cv": "CV_Uber or CV_Product",
+  "reason": "2-3 sentence explanation of why this CV fits better",
+  "suggested_edits": [
+    "Specific bullet edit or addition tailored to this role (3-5 items)"
+  ]
+}`
+    );
+    saveCache('resume', raw);
+    renderResume(raw);
+  } catch(err) {
+    document.getElementById('resume-area').innerHTML = `<div class="error-block"><strong>Error:</strong> ${esc(err.message)}<br><button class="retry-btn" onclick="generateResume()">Retry</button></div>`;
+    setTabStatus('resume', 'error');
+  }
+}
+
+function renderResume(raw, fromCache = false) {
+  window._resumeRaw = raw;
+  let parsed = null;
+  try {
+    const match = raw.match(/\{[\s\S]*\}/);
+    if (match) parsed = JSON.parse(match[0]);
+  } catch {}
+
+  let html = '';
+  if (parsed) {
+    window._recommendedCV = parsed.recommended_cv;
+    const col = COLOR_MAP[parsed.recommended_cv] || '#888';
+    html = `<div class="rec-card">
+      <div class="rec-cv-name" style="color:${col}">${esc(parsed.recommended_cv)}</div>
+      <div class="rec-reason">${esc(parsed.reason)}</div>
+    </div>
+    <div style="font-size:13px;font-weight:600;margin-bottom:10px;color:var(--text-muted)">SUGGESTED EDITS</div>
+    <ul class="cv-change-list">${(parsed.suggested_edits||[]).map(e=>`<li>${esc(e)}</li>`).join('')}</ul>`;
+  } else {
+    html = `<div class="output-area">${esc(raw)}</div>`;
+  }
+
+  document.getElementById('resume-area').innerHTML = html +
+    `<div class="cover-actions" style="margin-top:14px">
+      <button class="action-btn" onclick="clearCache('resume');generateResume()" style="margin-left:auto">↺ Refresh</button>
+      ${fromCache ? '<span style="font-size:11px;color:var(--text-muted)">★ Cached</span>' : ''}
+    </div>`;
+  setTabStatus('resume', fromCache ? 'cached' : 'done');
+}
+
+// ── Q&A ────────────────────────────────────────────────────────────────────────
+async function generateQA() {
+  const cached = loadCached('qa');
+  if (cached) { renderQA(cached, true); return; }
+  document.getElementById('qa-area').innerHTML = '<div class="loading-block"><div class="spinner"></div><div>Writing Q&A answers…</div></div>';
+  setTabStatus('qa', 'loading');
+  const profile = shortProfile();
+  const jdCtx = getJobCtx();
+  const j = window._job || {};
+  try {
+    const text = await callClaude(
+      'You are an expert at answering MBA internship application questions. Write concise, specific, authentic answers for Vanshika Rana. Never use em-dashes.',
+      `Extract application questions from this job description and write ideal answers for Vanshika.
+
+JOB:
+${jdCtx}
+
+CANDIDATE:
+${profile}
+
+INSTRUCTIONS:
+1. If the JD contains explicit application questions (motivation, strengths, experience), answer each one with a short paragraph (100-150 words each).
+2. If no explicit questions are found, write answers to these standard MBA internship questions:
+   - Why do you want to intern at ${j.company || 'this company'}?
+   - Why are you interested in ${(j.job_title || 'this role').replace(/intern/i,'').trim()}?
+   - What is your biggest achievement and what did you learn from it?
+   - Where do you see yourself in 5 years?
+   - Why the Netherlands / why RSM?
+3. For NL work authorisation: answer is "I am currently enrolled at RSM Rotterdam and have full authorisation to work in the Netherlands during my studies and internships."
+4. Format: Q: [question]\nA: [answer]\n\n for each pair.`
+    );
+    saveCache('qa', text);
+    renderQA(text);
+  } catch(err) {
+    document.getElementById('qa-area').innerHTML = `<div class="error-block"><strong>Error:</strong> ${esc(err.message)}<br><button class="retry-btn" onclick="generateQA()">Retry</button></div>`;
+    setTabStatus('qa', 'error');
+  }
+}
+
+function renderQA(text, fromCache = false) {
+  window._qaText = text;
+  const blocks = text.split(/\n{2,}/);
+  let html = blocks.map(block => {
+    const qMatch = block.match(/^Q:\s*(.+)/m);
+    const aMatch = block.match(/^A:\s*([\s\S]+)/m);
+    if (qMatch && aMatch) {
+      return `<div class="qa-block">
+        <div class="qa-question">Q: ${esc(qMatch[1].trim())}</div>
+        <div class="qa-answer">${esc(aMatch[1].trim())}</div>
+      </div>`;
+    }
+    return block.trim() ? `<div class="qa-block"><div class="qa-answer">${esc(block)}</div></div>` : '';
+  }).filter(Boolean).join('');
+
+  document.getElementById('qa-area').innerHTML = html +
+    `<div class="cover-actions" style="margin-top:14px">
+      <button class="action-btn primary" onclick="copyQA()">Copy All</button>
+      <button class="action-btn" onclick="clearCache('qa');generateQA()" style="margin-left:auto">↺ Refresh</button>
+      ${fromCache ? '<span style="font-size:11px;color:var(--text-muted)">★ Cached</span>' : ''}
+    </div>`;
+  setTabStatus('qa', fromCache ? 'cached' : 'done');
+}
+
+function copyQA() {
+  navigator.clipboard.writeText(window._qaText || '').then(() => {
+    const btn = event.target; btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy All', 2000);
+  });
+}
+
+// ── Recruiter Email ────────────────────────────────────────────────────────────
+async function draftRecruiterEmail() {
+  const emailVal = document.getElementById('recruiter-email-input').value.trim();
+  if (!emailVal) {
+    document.getElementById('email-draft-area').innerHTML =
+      '<div class="email-idle" style="border-color:var(--red);color:var(--red)">Please enter the recruiter's email address first.</div>';
+    document.getElementById('recruiter-email-input').focus();
+    return;
+  }
+  const j = window._job || {};
+  try { localStorage.setItem('vanshika_rec_' + j.company + '_' + j.job_title, emailVal); } catch {}
+  document.getElementById('email-draft-area').innerHTML =
+    '<div class="loading-block"><div class="spinner"></div><div>Drafting recruiter email…</div></div>';
+  setTabStatus('email', 'loading');
+  const profile = shortProfile();
+  const jdCtx = getJobCtx();
+  const rec = window._recommendedCV || 'CV_Uber';
+  const cvCtx = getResumeContext(rec);
+  try {
+    const text = await callClaude(
+      'You are an expert at professional outreach emails for MBA internship applications. Write naturally and concisely. Never use em-dashes. Never use filler openers.',
+      `Draft a cold outreach email from Vanshika Rana to a recruiter/hiring manager at ${j.company || 'this company'} for the ${j.job_title || 'internship'} role.
+
+JOB:
+${jdCtx}
+
+CANDIDATE:
+${profile}${cvCtx}
+
+STRUCTURE (3 short paragraphs, 100-130 words total in body):
+Paragraph 1 (2 sentences): Who she is (IIT Bombay + ONGC + RSM MBA) and the specific role she is applying for.
+Paragraph 2 (2 sentences): One specific, concrete achievement with a number or result (Business Games win, Markstrat 1st, or ONGC milestone — whichever fits best). One sentence on why ${j.company || 'this company'} specifically (something real, not generic).
+Paragraph 3 (2 sentences): She is based in Rotterdam and available immediately for the internship (no relocation needed). Close: CV attached, happy to chat.
+
+FORMAT:
+- First line: Subject: [concise subject line]
+- Blank line after subject before body
+- Blank line between paragraphs
+- Sign off: "Best regards," then blank line then "Vanshika Rana" then "linkedin.com/in/vanshika-rana-rsm/" (no email in sign-off)
+- Do NOT mention visa / work permit / salary`
+    );
+    renderEmailDraft(text, emailVal);
+  } catch(err) {
+    document.getElementById('email-draft-area').innerHTML =
+      `<div class="error-block"><strong>Error:</strong> ${esc(err.message)}<br><button class="retry-btn" onclick="draftRecruiterEmail()">Retry</button></div>`;
+    setTabStatus('email', 'error');
+  }
+}
+
+function renderEmailDraft(text, toEmail) {
+  text = text.replace(/—/g, ',').replace(/–/g, '-');
+  window._emailDraftText = text;
+  window._emailDraftTo = toEmail;
+  const lines = text.split('\n');
+  const subIdx = lines.findIndex(l => /^subject:/i.test(l.trim()));
+  const subject = subIdx !== -1 ? lines[subIdx].replace(/^subject:\s*/i,'').trim() : '';
+  const body = subIdx !== -1 ? lines.slice(subIdx+1).join('\n').replace(/^\n+/,'') : text;
+
+  document.getElementById('email-draft-area').innerHTML = `
+    <div class="email-draft-card">
+      <div class="email-subject">
+        <span style="color:var(--text-muted);font-weight:400">To: </span>${esc(toEmail)}<br>
+        <span style="color:var(--text-muted);font-weight:400">Subject: </span>${esc(subject)}
+      </div>
+      <div>${esc(body)}</div>
+    </div>
+    <div class="cover-actions" style="margin-top:14px">
+      <button class="action-btn primary" onclick="copyEmail()">Copy Email</button>
+      <button class="action-btn" onclick="openMailto()">Open in Mail</button>
+      <button class="action-btn" onclick="editEmail()">Edit</button>
+      <button class="action-btn" onclick="draftRecruiterEmail()" style="margin-left:auto">↺ Refresh</button>
+    </div>`;
+  setTabStatus('email', 'done');
+}
+
+function copyEmail() {
+  navigator.clipboard.writeText(window._emailDraftText || '').then(() => {
+    const btn = event.target; btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy Email', 2000);
+  });
+}
+
+function openMailto() {
+  const t = window._emailDraftText || '';
+  const to = window._emailDraftTo || '';
+  const lines = t.split('\n');
+  const si = lines.findIndex(l => /^subject:/i.test(l.trim()));
+  const subject = si !== -1 ? lines[si].replace(/^subject:\s*/i,'').trim() : '';
+  const body = si !== -1 ? lines.slice(si+1).join('\n').replace(/^\n+/,'') : t;
+  window.location.href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function editEmail() {
+  document.getElementById('email-draft-area').innerHTML = `
+    <textarea class="cover-edit-area" id="email-edit-ta" spellcheck="true"></textarea>
+    <div class="cover-actions">
+      <button class="action-btn primary" onclick="saveEmailEdit()">Save</button>
+      <button class="action-btn" onclick="renderEmailDraft(window._emailDraftText,window._emailDraftTo)">Cancel</button>
+    </div>`;
+  document.getElementById('email-edit-ta').value = window._emailDraftText || '';
+  document.getElementById('email-edit-ta').focus();
+}
+
+function saveEmailEdit() {
+  renderEmailDraft(document.getElementById('email-edit-ta').value, window._emailDraftTo);
+}
+
+// ── Proxy / JD fetch ───────────────────────────────────────────────────────────
+async function fetchViaProxy(url) {
+  const proxies = [
+    async u => { const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, {signal:AbortSignal.timeout(8000)}); if(!r.ok)return null; const j=await r.json(); return j.contents?.length>500?j.contents:null; },
+    async u => { const r = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(u)}`, {signal:AbortSignal.timeout(8000)}); if(!r.ok)return null; const t=await r.text(); return t?.length>500?t:null; },
+    async u => { const r = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`, {signal:AbortSignal.timeout(8000)}); if(!r.ok)return null; const t=await r.text(); return t?.length>500&&!t.toLowerCase().includes('too many')?t:null; },
+  ];
+  for (const fn of proxies) { try { const h=await fn(url); if(h)return h; } catch {} }
+  return null;
+}
+
+async function fetchJD() {
+  const url = document.getElementById('url-input').value.trim();
+  if (!url) return;
+  document.getElementById('jd-input').value = 'Fetching…';
+  const html = await fetchViaProxy(url);
+  if (!html) { document.getElementById('jd-input').value = ''; alert('Could not fetch the page. Try pasting the job description manually.'); return; }
+  // Strip tags
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html;
+  const text = (tmp.innerText || tmp.textContent || '').replace(/\s{3,}/g,'\n\n').trim();
+  document.getElementById('jd-input').value = text.slice(0, 8000);
+  checkReady();
+}
+
+function clearCache(section) {
+  try { localStorage.removeItem(_cacheKey(section)); } catch {}
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────────
+updateApiKeyBtn();
+updateResumeBtn();
+
+// Load job from URL param (vanshika_aa_current_job)
+try {
+  const stored = localStorage.getItem('vanshika_aa_current_job');
+  if (stored) loadJob(stored);
+} catch {}
+checkReady();
+</script>
+</body>
+</html>

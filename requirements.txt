@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+python-jobspy
+pandas
+lxml
+playwright
