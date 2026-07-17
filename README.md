@@ -25,15 +25,22 @@ result with Claude, and delivers a filtered email digest plus dashboards.
 Everything runs on GitHub Actions on a cron schedule. To run it against your
 own inbox and profile you need:
 
-1. Set five secrets in the repo's Actions settings:
-   - `GMAIL_APP_PASSWORD` — 16-char Gmail app password for the sender account
-   - `GH_PAT` — Personal access token with `repo` scope (used only to push the
-     compiled dashboard HTML to a separate Pages repo)
-   - `ANTHROPIC_API_KEY` — for the Claude scoring calls
-   - `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` — optional; enables the Adzuna Phase 3
-     of the v2 crawler
-2. Update the `SENDER_EMAIL`, `NOTIFY_EMAIL`, and `DASHBOARD_URL` env vars in
-   `.github/workflows/crawl.yml` to match your accounts.
+1. Set these seven secrets at
+   `Settings → Secrets and variables → Actions` (or `gh secret set <NAME>`):
+
+   | Secret | Purpose |
+   |---|---|
+   | `GMAIL_APP_PASSWORD` | 16-char Gmail app password for the sender account |
+   | `GH_PAT` | Personal access token with `repo` scope (only for pushing compiled dashboards to a separate Pages repo) |
+   | `ANTHROPIC_API_KEY` | Claude scoring calls (Sonnet in `notify.py`, Opus in `score_linkedin.py`) |
+   | `ADZUNA_APP_ID` | Adzuna Phase 3 of the v2 crawler (optional but recommended) |
+   | `ADZUNA_APP_KEY` | Adzuna Phase 3 of the v2 crawler (optional but recommended) |
+   | `SENDER_EMAIL` | Gmail address the crawler sends from |
+   | `NOTIFY_EMAIL` | Address that receives the digests |
+
+2. Update the `DASHBOARD_URL` env var in `.github/workflows/crawl.yml` and the
+   `Deploy dashboard to public GitHub Pages repo` step's target repo to match
+   your own Pages repo.
 3. Update the candidate profile embedded in `score_linkedin.py`, `notify.py`,
    and `build_dashboard.py` to your own background — the scoring is
    personalised and will not be meaningful without it.
