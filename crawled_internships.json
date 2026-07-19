@@ -900,6 +900,18 @@
     "notes": "Via KPMG lunr JSON."
   },
   {
+    "company": "Gasunie N.V.",
+    "job_title": "Business development",
+    "location": "Netherlands",
+    "careers_url": "https://www.gasunie.nl/werken-bij-gasunie",
+    "job_url": "https://www.gasunie.nl/vacatures/vakgebied/business-development-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
     "company": "SBM Offshore N.V.",
     "job_title": "Be Proactive and Apply! Internship Program - Engineering",
     "location": "Netherlands",
