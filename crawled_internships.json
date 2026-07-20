@@ -225,17 +225,6 @@
     "notes": "Via Workday API."
   },
   {
-    "company": "ING Bank N.V.",
-    "job_title": "CMA ECG Analyst/Associate Home base Debt Capital Markets FIG",
-    "location": "AME (Amsterdam - Maple)",
-    "careers_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN",
-    "job_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN/job/AME-Amsterdam---Maple/CMA-ECG-Analyst-Associate-Home-base-Debt-Capital-Markets-FIG_REQ-10117925",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "Philips Electronics Nederland B.V.",
     "job_title": "Internship Development acceleration of IOT devices by using Zephyr",
     "location": "Eindhoven",
@@ -252,6 +241,17 @@
     "location": "Amsterdam",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
     "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/Internship--Data-Strategy_586087",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Philips Electronics Nederland B.V.",
+    "job_title": "Internship: Project Management Office (non-thesis)",
+    "location": "Amsterdam",
+    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/Internship--Project-Management-Office--non-thesis-_587524",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -391,17 +391,6 @@
   },
   {
     "company": "Signify Netherlands B.V.",
-    "job_title": "Embedded Systems Intern \u2013 MSc Graduation Project",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Embedded-Systems-Intern---MSc-Graduation-Project_364562",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Signify Netherlands B.V.",
     "job_title": "Junior Commercial Quote Engineer",
     "location": "Eindhoven",
     "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
@@ -516,6 +505,17 @@
     "location": "NLD - Hoevelaken",
     "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
     "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Product-Manager-Accounting-Software_R0053364",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Wolters Kluwer N.V.",
+    "job_title": "Associate Director, Product Software Engineering",
+    "location": "NLD - Hoevelaken",
+    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
+    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Associate-Director--Product-Software-Engineering_R0055949",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
