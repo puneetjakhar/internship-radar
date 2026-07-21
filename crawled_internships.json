@@ -817,6 +817,30 @@
     "notes": "Via DOM link heuristic (Playwright)."
   },
   {
+    "company": "Bain & Company Amsterdam",
+    "job_title": "Associate - ENR (Capital Projects) CoE",
+    "location": "Netherlands",
+    "careers_url": "https://careers.bain.com/jobs/SearchJobs/?3_56_3=2892",
+    "job_url": "https://careers.bain.com/jobs/FolderDetail/Associate-ENR-Capital-Projects-CoE/106558",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
+    "company": "Bain & Company Amsterdam",
+    "job_title": "Share Associate - ENR (Capital Projects) CoE on LinkedIn",
+    "location": "Netherlands",
+    "careers_url": "https://careers.bain.com/jobs/SearchJobs/?3_56_3=2892",
+    "job_url": "https://careers.bain.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fcareers.bain.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fcareers.bain.com%2Fjobs%2FFolderDetail%2FAssociate-ENR-Capital-Projects-CoE%2F106558",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
     "company": "Oliver Wyman Amsterdam",
     "job_title": "Oliver Wyman \u2013 Banking & Financial Services \u2013/ Finance & Risk \u2013 Senior Consultant/Associate \u2013 Paris Job ID is R_350300",
     "location": "Netherlands",
