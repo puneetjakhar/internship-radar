@@ -1,6 +1,18 @@
 [
   {
     "company": "Adyen N.V.",
+    "job_title": "Content Operations Manager",
+    "location": "Amsterdam, Netherlands",
+    "careers_url": "https://careers.adyen.com",
+    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/7597783",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-04-23",
+    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Content Operations Manager We are looking for a strategic, process-driven Content Operations Manager to join our in-house creative team, the Studio. In this role, you will sit at the intersection of creative development and operational excellence, serving as the architect of Adyen's content engine.&nbsp; Your work focuses on four strategic pillars:&nbsp; Process management &amp; Tooling: You design an operating model that includes AI-driven content supply chains (incl. \u201cbrand code\u201d and governance). You document, roll out and and educate colleagues on workflows &amp; frameworks. Performance &amp; Insights: You bring data to our Studio team and make sure creatives and marketers have access to actionable insights regarding our content. What\u2019s more, you measure the effectiveness of the processes and systems you run. Localization: As a champion of localization, you facilitate the flow of content between markets, striking a balance between global brand consistency and local relevance. Scalable Systems: You set up the systems that help us to use our content efficiently and effectively across formats, channels, and audiences.&nbsp; Please note that this is not a content management role. Instead, your mission is to build and run the scalable architecture required to turn content production into a repeatable growth engine, ensuring Adyen\u2019s content reaches internal stakeholders and global audiences without friction. Key Responsibilities Content Architecture: Design repeatable content formats (e.g., video series, case studies) and libraries that maintain creative distinctiveness while enabling local markets to produce content independently and coherently. Workflow &amp; AI Integration: Build and maintain AI-assisted production pipelines, establishing quality checkpoints to ensure scale does not compromise brand voice or creative standards. Systems &amp; Governance: Establish briefing infrastructure, intake standards, and governance models that facilitate global consistency while allowing for local market autonomy. Market Enablement: Develop localization frameworks and systems, ensuring global playbooks are actionable and embedded in daily workflows. Performance Measurement: Implement reporting frameworks and dashboards to surface actionable insights and inform future content strategy. Experience &amp; Background You bring 7+",
+    "notes": "Dept: Marketing. Via Greenhouse board."
+  },
+  {
+    "company": "Adyen N.V.",
     "job_title": "Group Product Manager - Commercial Risk & Platform Fraud",
     "location": "Amsterdam, Netherlands",
     "careers_url": "https://careers.adyen.com",
@@ -69,6 +81,18 @@
     "relocation_support": null,
     "date_posted": "2026-06-30",
     "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Senior Product Manager, Global Acquiring Adyen's Global Acquiring team powers the core card payment infrastructure behind billions of transactions worldwide. Through our direct connections with Visa, Mastercard, American Express, Discover, Diners Club, JCB, and China UnionPay, we enable merchants to accept payments globally with industry-leading reliability, performance, and innovation. As a Senior Product Manager, you will own the strategy and roadmap for critical parts of our global acquiring platform. You'll build the products that improve authorization rates, maximize merchant conversion, strengthen platform reliability, and enable Adyen to launch new payment capabilities and expand into new markets. You'll work at the intersection of engineering, payment networks, partnerships, commercial teams, compliance, and operations to transform the complex payments industry into scalable innovative platform capabilities that benefit every Adyen merchant. Your work will shape how millions of payments are processed every day while ensuring our platform remains the most reliable and innovative acquiring solution in the industry. What you'll do: Define and own the product strategy and roadmap for a critical area of Adyen's Global Acquiring. Build scalable acquiring capabilities that improve payment performance, increase authorization rates, and maximize merchant conversion. Partner directly with Visa, Mastercard, American Express and other global payment networks to influence roadmaps, implement new capabilities, and ensure ongoing compliance. Drive complex cross-functional initiatives across Engineering, Partnerships, Commercial, Compliance, Operations and Product teams. Translate changing scheme requirements into scalable platform capabilities rather than one-off merchant solutions. Use data to identify opportunities that improve merchant performance, operational efficiency, and platform scalability. Lead difficult product decisions through influence, aligning stakeholders across multiple organizations without direct authority. Mentor other product managers and contribute to raising the overall quality of product management within the organization. Who you are: You have 8+ years of Product Management experience building complex software products at scale. You have domain knowledge in Payments or Fintech; preferably with",
+    "notes": "Dept: Product Management. Via Greenhouse board."
+  },
+  {
+    "company": "Adyen N.V.",
+    "job_title": "Senior Product Manager - Developer Experience",
+    "location": "Amsterdam, Netherlands",
+    "careers_url": "https://careers.adyen.com",
+    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/7941728",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-06-19",
+    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Senior Product Manager - Developer Experience The Internal Developer Platform (IDP) cluster is on a mission to create standardized, scalable, and delightful experiences across the software development life cycle (SDLC) so Adyen engineers are empowered to deliver value more efficiently and reliably for our customers. As a Senior Product Manager within the IDP cluster, you will manage a key stream of our platform evolution. Your goal is to transition our engineering organization from fragmented, \"tribal knowledge\" based flows to a cohesive, automated ecosystem that reduces cognitive load, minimizes manual toil, and ensures our platform scales with our global engineering footprint. 2026 is our year of deep optimization and resilience; you are a product leader who understands that scaling a platform requires balancing innovation with mandatory reliability and stability mandates What you\u2019ll do: Optimize the SDLC: Drive initiatives to reduce SDLC friction, such as reducing CI flakiness and improving build insights, to help teams shift from centralized, manual processes to systemic, automated \"golden paths\". Drive Product Maturity: Take ownership of product lifecycle management by assessing the maturity of our toolset, executing on necessary deprecations, and ensuring our core products have clear adoption paths and value propositions. Build Technical Context: Partner with IDP engineering to bridge the gap between generic AI models and Adyen\u2019s complex architecture. You will prioritize the rollout of AGENTS.md standards, internal RAG pipelines, and Model Context Protocol (MCP) servers for tools like GitLab and Jira. Foster Developer Autonomy: Work across the organization to bridge the gap between infrastructure and developer needs, building \"LEGO-block\" style abstractions that allow teams to own their pipelines and release cycles while maintaining secure, compliant guardrails. Validate ROI &amp; Manage Vendors: Implement data-driven feedback loops to track adoption and measure SDLC improvements against core metrics like DXI, Change Failure Rate, and developer velocity Who you are: 10+ years of product experience ideally within Platform Engineering, Developer Experience (DevEx), or AI-enabled technical products. You are technically credible. You can confidently spar with engineers about system architecture, CI/CD pipeline ",
     "notes": "Dept: Product Management. Via Greenhouse board."
   },
   {
@@ -566,17 +590,6 @@
   },
   {
     "company": "Rabobank Nederland",
-    "job_title": "Business Analyst \u2013 Managed Application Stacks (Squad Aurum)",
-    "location": "Utrecht Croeselaan 18",
-    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Business-Analyst---Managed-Application-Stacks--Squad-Aurum-_JR_00143304",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Rabobank Nederland",
     "job_title": "2027 Rabo Graduate Program - Banking Operations Graduate",
     "location": "Sydney - Darling Park",
     "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
@@ -895,78 +908,6 @@
     "location": "Netherlands",
     "careers_url": "https://careers.sbmoffshore.com/go/The-Netherlands/8785302/",
     "job_url": "https://careers.sbmoffshore.com/job/Rotterdam-Office-Be-Proactive-and-Apply%21-Internship-Program-Engineering/1332384857/",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "\u00d8rsted Netherlands",
-    "job_title": "Strategy and business development",
-    "location": "Netherlands",
-    "careers_url": "https://orsted.com/en/careers/early-careers",
-    "job_url": "https://orsted.com/en/careers/areas-of-work/strategy-and-business-development",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "\u00d8rsted Netherlands",
-    "job_title": "Early careers\n                                                                    Grow your talent at a global energy co",
-    "location": "Netherlands",
-    "careers_url": "https://orsted.com/en/careers/early-careers",
-    "job_url": "https://orsted.com/en/careers/early-careers",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "\u00d8rsted Netherlands",
-    "job_title": "\u00d8rsted Global Graduate Programme\n                                                                        Take the best f",
-    "location": "Netherlands",
-    "careers_url": "https://orsted.com/en/careers/early-careers",
-    "job_url": "https://orsted.com/en/careers/early-careers/graduate-programme",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "\u00d8rsted Netherlands",
-    "job_title": "Trainees and apprentices\n                                                                        Explore our trainee and",
-    "location": "Netherlands",
-    "careers_url": "https://orsted.com/en/careers/early-careers",
-    "job_url": "https://orsted.com/en/careers/early-careers/apprenticeships-trainees",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "\u00d8rsted Netherlands",
-    "job_title": "Global graduate programme",
-    "location": "Netherlands",
-    "careers_url": "https://orsted.com/en/careers/early-careers",
-    "job_url": "https://orsted.com/en/careers/early-careers/graduate-programme",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "\u00d8rsted Netherlands",
-    "job_title": "Trainees and apprentices",
-    "location": "Netherlands",
-    "careers_url": "https://orsted.com/en/careers/early-careers",
-    "job_url": "https://orsted.com/en/careers/early-careers/apprenticeships-trainees",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
