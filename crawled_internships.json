@@ -191,17 +191,6 @@
     "notes": "Via Workday API."
   },
   {
-    "company": "ING Bank N.V.",
-    "job_title": "Senior Product Manager WB Advanced Analytics and Artifical Intelligence",
-    "location": "CDR (Amsterdam - Cedar)",
-    "careers_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN",
-    "job_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN/job/CDR-Amsterdam---Cedar/Senior-Product-Manager-WB-Advanced-Analytics-and-Artifical-Intelligence_REQ-10116750-2",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "Philips Electronics Nederland B.V.",
     "job_title": "Internship Development acceleration of IOT devices by using Zephyr",
     "location": "Eindhoven",
@@ -357,17 +346,6 @@
   },
   {
     "company": "Signify Netherlands B.V.",
-    "job_title": "Commercial Effectiveness Analyst Intern",
-    "location": "Amsterdam",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/Commercial-Effectiveness-Analyst-Intern_364628",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Signify Netherlands B.V.",
     "job_title": "Junior Commercial Quote Engineer",
     "location": "Eindhoven",
     "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
@@ -504,6 +482,17 @@
     "location": "NLD - Hoevelaken",
     "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
     "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Senior-Product-Manager_R0056901-2",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Wolters Kluwer N.V.",
+    "job_title": "Product Manager",
+    "location": "NLD - Hoevelaken",
+    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
+    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Product-Manager_R0056921-1",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -834,6 +823,18 @@
     "location": "Netherlands",
     "careers_url": "https://careers.bain.com/jobs/SearchJobs/?3_56_3=2892",
     "job_url": "https://careers.bain.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fcareers.bain.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fcareers.bain.com%2Fjobs%2FFolderDetail%2FAssociate-ENR-Capital-Projects-CoE%2F106558",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
+    "company": "Oliver Wyman Amsterdam",
+    "job_title": "Oliver Wyman \u2013 Banking & Financial Services \u2013/ Finance & Risk \u2013 Senior Consultant/Associate \u2013 Paris Job ID is R_350300",
+    "location": "Netherlands",
+    "careers_url": "https://careers.marsh.com/global/en/oliver-wyman-early-careers-search",
+    "job_url": "https://careers.marsh.com/global/en/job/R_350300/Oliver-Wyman-Banking-Financial-Services-Finance-Risk-Senior-Consultant-Associate-Paris",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
