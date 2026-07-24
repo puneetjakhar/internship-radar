@@ -545,6 +545,17 @@
   },
   {
     "company": "Rabobank Nederland",
+    "job_title": "Business Analyst Team Atlas",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Business-Analyst-Team-Atlas_JR_00143618",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Rabobank Nederland",
     "job_title": "2027 Rabo Graduate Program - Banking Operations Graduate",
     "location": "Sydney - Darling Park",
     "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
@@ -611,10 +622,10 @@
   },
   {
     "company": "Rabobank Nederland",
-    "job_title": "Business Analyst (IGA4NHI)",
-    "location": "Utrecht Croeselaan 18",
+    "job_title": "Junior Cloud DevOps Engineer - Early Career Program IT",
+    "location": "2 Locations",
     "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Business-Analyst--IGA4NHI-_JR_00142622",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Junior-Cloud-DevOps-Engineer---Early-Career-Program-IT_JR_00143384",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -637,6 +648,17 @@
     "location": "Utrecht Croeselaan 18",
     "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
     "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Business-Analyst-End-to-End-Monitoring_JR_00143834",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Rabobank Nederland",
+    "job_title": "Business Analyst (IGA4NHI)",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Business-Analyst--IGA4NHI-_JR_00142622",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -854,6 +876,18 @@
     "date_posted": null,
     "description": "",
     "notes": "Via KPMG lunr JSON."
+  },
+  {
+    "company": "Gasunie N.V.",
+    "job_title": "Business development",
+    "location": "Netherlands",
+    "careers_url": "https://www.gasunie.nl/werken-bij-gasunie",
+    "job_url": "https://www.gasunie.nl/vacatures/vakgebied/business-development-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "SBM Offshore N.V.",
