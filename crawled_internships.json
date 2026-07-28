@@ -49,18 +49,6 @@
   },
   {
     "company": "Adyen N.V.",
-    "job_title": "Senior Product Manager - Banking Networks Global",
-    "location": "Amsterdam, Netherlands",
-    "careers_url": "https://careers.adyen.com",
-    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/8060230",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-07-16",
-    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Senior Product Manager, Banking Networks Adyen is a truly global company that processes billions in payments annually. Adyen's value goes beyond Ecommerce and In-Person payments with a broad offering of embedded payments and financial services like issuing, bank accounts, and capital; facilitated by Adyen's global banking licenses. Behind every one of these products sits a critical dependency: reliable, direct connectivity to the world's banking infrastructure. We are looking for a Senior Product Manager to lead and scale our global Banking Networks capabilities. You will lead the Banking Networks team responsible for integrating with banking partners worldwide, including banks, clearing houses, payment rails and providers (excluding North America, which is owned by a dedicated regional team). This role sits at the core of Adyen's financial products, owning the end-to-end processing of banking transactions across a wide variety of market infrastructures and use cases. You will build and maintain best-in-class banking connectivity that our financial products depend on, from local scheme integrations to real-time payment rails. You will work closely with Banking Products, Payouts, Payments, Merchant Finance, Accounting, Compliance, Legal, Risk, Commercial, and Operational teams, as well as customers, to understand their needs and translate them into product enhancements together with the development team. What you'll do Set Vision &amp; Strategy Define Long-Term Strategy: Define and own the long-term vision and strategy for Adyen's global banking network, grounded in customer value and measurable business impact. Translate Strategy into Roadmap: Translate market infrastructure opportunities and regulatory requirements into clear priorities, actionable roadmaps, and success metrics. Simplify Ambiguity: Simplify a complex, fragmented space of local schemes, clearing houses, and payment rails by defining clear, actionable integration and capability use cases alongside your engineering and commercial teams. Own Product Lifecycle: Lead the end-to-end product lifecycle for banking network integrations and the underlying banking capabilities. Lead Through Influence Act as Product Authority: Operate as the primary product authority for global banking networks across Adyen. Subject Matter Expertise: Serve as a subject matte",
-    "notes": "Dept: Product Management. Via Greenhouse board."
-  },
-  {
-    "company": "Adyen N.V.",
     "job_title": "Senior Product Manager - Cards Acquiring",
     "location": "Amsterdam, Netherlands",
     "careers_url": "https://careers.adyen.com",
@@ -81,18 +69,6 @@
     "relocation_support": null,
     "date_posted": "2026-06-19",
     "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Senior Product Manager - Developer Experience The Internal Developer Platform (IDP) cluster is on a mission to create standardized, scalable, and delightful experiences across the software development life cycle (SDLC) so Adyen engineers are empowered to deliver value more efficiently and reliably for our customers. As a Senior Product Manager within the IDP cluster, you will manage a key stream of our platform evolution. Your goal is to transition our engineering organization from fragmented, \"tribal knowledge\" based flows to a cohesive, automated ecosystem that reduces cognitive load, minimizes manual toil, and ensures our platform scales with our global engineering footprint. 2026 is our year of deep optimization and resilience; you are a product leader who understands that scaling a platform requires balancing innovation with mandatory reliability and stability mandates What you\u2019ll do: Optimize the SDLC: Drive initiatives to reduce SDLC friction, such as reducing CI flakiness and improving build insights, to help teams shift from centralized, manual processes to systemic, automated \"golden paths\". Drive Product Maturity: Take ownership of product lifecycle management by assessing the maturity of our toolset, executing on necessary deprecations, and ensuring our core products have clear adoption paths and value propositions. Build Technical Context: Partner with IDP engineering to bridge the gap between generic AI models and Adyen\u2019s complex architecture. You will prioritize the rollout of AGENTS.md standards, internal RAG pipelines, and Model Context Protocol (MCP) servers for tools like GitLab and Jira. Foster Developer Autonomy: Work across the organization to bridge the gap between infrastructure and developer needs, building \"LEGO-block\" style abstractions that allow teams to own their pipelines and release cycles while maintaining secure, compliant guardrails. Validate ROI &amp; Manage Vendors: Implement data-driven feedback loops to track adoption and measure SDLC improvements against core metrics like DXI, Change Failure Rate, and developer velocity Who you are: 10+ years of product experience ideally within Platform Engineering, Developer Experience (DevEx), or AI-enabled technical products. You are technically credible. You can confidently spar with engineers about system architecture, CI/CD pipeline ",
-    "notes": "Dept: Product Management. Via Greenhouse board."
-  },
-  {
-    "company": "Adyen N.V.",
-    "job_title": "Senior Product Manager - Split Payments",
-    "location": "Amsterdam, Netherlands",
-    "careers_url": "https://careers.adyen.com",
-    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/8045868",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-07-10",
-    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Senior Product Manager, Split Payments&nbsp; Adyen is a truly global company that processes billions in payments annually. Adyen\u2019s value goes beyond Ecommerce and In-Person payments with a broad offering of embedded payments and financial services like issuing, bank accounts and capital; facilitated by Adyen\u2019s global Banking licenses. Behind every platform transaction is a critical need to dynamically automate fund distribution, enabling platforms to scale their monetization models, protect their margins, and manage commissions smoothly. We are looking for a Senior Product Manager to lead and scale our Split Payments capabilities.&nbsp;&nbsp; You will join the team responsible for Split Payments. This role sits at the intersection of core payment processing, financial data routing, and platform scalability. Split Payments allows our Platform customers to monetize payment processing towards their sub-merchants. You will lead the product lifecycle for split logic across authorization, capture, refunds, and chargebacks, building reliable systems that support Adyen's expanding platform ecosystem. You will work closely with Payments, Accounting, Compliance, Legal, Commercial and Operational teams, and customers to understand their needs and translate them into product enhancements together with the development team. What you'll do Set Vision &amp; Strategy Define Long-Term Strategy: Define and own the long-term vision and strategy for Adyen\u2019s split payment product, grounded in customer value and measurable business impact. Translate Strategy into Roadmaps: Translate market opportunities and platform requirements into clear priorities, actionable roadmaps, and success metrics. Simplify Ambiguity: Simplify an ambiguous, highly complex space by defining clear, actionable split payment and monetization use cases alongside your engineering and commercial teams. Own Product Lifecycle: Lead the end-to-end product lifecycle for automated split configurations. &nbsp;Lead Through Influence Act as Product Authority: Operate as the primary product authority for split payments across Adyen. Subject Matter Expertise: Serve as a subject matter expert on payment lifecycle variations, clearing/settlement flows, and Adyen's overarching Adyen for platform's product. Cross-Functional Collaboration: Partner closely with Engineering, Suppo",
     "notes": "Dept: Product Management. Via Greenhouse board."
   },
   {
@@ -338,17 +314,6 @@
   },
   {
     "company": "Philips Electronics Nederland B.V.",
-    "job_title": "AI Strategy & Business Operations MBA Intern",
-    "location": "Amsterdam",
-    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/AI-Strategy---Business-Operations-MBA-Intern_587182-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Philips Electronics Nederland B.V.",
     "job_title": "Operations Manager Molding & Decoration - Philips - Drachten",
     "location": "Drachten",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
@@ -364,6 +329,17 @@
     "location": "Drachten",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
     "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Drachten/Internship--Mechanical-and-Mechatronics-Development_586559",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Philips Electronics Nederland B.V.",
+    "job_title": "AI Strategy & Business Operations MBA Intern",
+    "location": "Amsterdam",
+    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/AI-Strategy---Business-Operations-MBA-Intern_587182-1",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
