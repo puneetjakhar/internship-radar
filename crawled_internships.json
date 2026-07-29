@@ -204,6 +204,17 @@
     "notes": "Dept: Product. Via Greenhouse board."
   },
   {
+    "company": "Shell Netherlands",
+    "job_title": "Operations Manager Global Derivatives",
+    "location": "Chennai - RMZ Millenia",
+    "careers_url": "https://shell.wd3.myworkdayjobs.com/ShellCareers",
+    "job_url": "https://shell.wd3.myworkdayjobs.com/ShellCareers/job/Chennai---RMZ-Millenia/Operations-Manager-Global-Derivatives_R204157",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
     "company": "Philips Electronics Nederland B.V.",
     "job_title": "Internship Development acceleration of IOT devices by using Zephyr",
     "location": "Eindhoven",
@@ -293,6 +304,17 @@
   },
   {
     "company": "Philips Electronics Nederland B.V.",
+    "job_title": "Internship: Marketing Planning and Operations",
+    "location": "Amsterdam",
+    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/Internship--Marketing-Planning-and-Operations_587742",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Philips Electronics Nederland B.V.",
     "job_title": "Internship: Measurement Systems Development",
     "location": "Drachten",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
@@ -341,17 +363,6 @@
     "location": "Drachten",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
     "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Drachten/Internship--Mechanical-and-Mechatronics-Development_586559",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Philips Electronics Nederland B.V.",
-    "job_title": "AI Strategy & Business Operations MBA Intern",
-    "location": "Amsterdam",
-    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Amsterdam/AI-Strategy---Business-Operations-MBA-Intern_587182-1",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -666,17 +677,6 @@
     "notes": "Via Workday API."
   },
   {
-    "company": "Rabobank Nederland",
-    "job_title": "Business Analyst (IGA4NHI)",
-    "location": "Utrecht Croeselaan 18",
-    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Business-Analyst--IGA4NHI-_JR_00142622",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "Vanderlande Industries B.V.",
     "job_title": "International Controls Project Engineer -  Loop sorters",
     "location": "Veghel",
@@ -866,6 +866,18 @@
     "date_posted": null,
     "description": "",
     "notes": "Via KPMG lunr JSON."
+  },
+  {
+    "company": "Gasunie N.V.",
+    "job_title": "Business development",
+    "location": "Netherlands",
+    "careers_url": "https://www.gasunie.nl/werken-bij-gasunie",
+    "job_url": "https://www.gasunie.nl/vacatures/vakgebied/business-development-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "SBM Offshore N.V.",
@@ -1077,6 +1089,18 @@
     "location": "Netherlands",
     "careers_url": "https://careers.justeattakeaway.com/global/en/the-netherlands",
     "job_url": "https://careers.justeattakeaway.com/global/en/early-careers",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
+    "company": "Just Eat Takeaway.com",
+    "job_title": "Program Delivery Manager - Retail Media",
+    "location": "Netherlands",
+    "careers_url": "https://careers.justeattakeaway.com/global/en/the-netherlands",
+    "job_url": "https://careers.justeattakeaway.com/global/en/job/R_052722/Program-Delivery-Manager-Retail-Media",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
