@@ -369,6 +369,17 @@
     "notes": "Via Workday API."
   },
   {
+    "company": "Philips Electronics Nederland B.V.",
+    "job_title": "Internship: Commercial Strategy & Sales (Dutch speaking)",
+    "location": "Best",
+    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Best/Internship--Commercial-Strategy---Sales--Dutch-speaking-_587803",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
     "company": "Signify Netherlands B.V.",
     "job_title": "Global Product Management Intern",
     "location": "Eindhoven",
@@ -855,6 +866,18 @@
     "date_posted": null,
     "description": "",
     "notes": "Via KPMG lunr JSON."
+  },
+  {
+    "company": "Gasunie N.V.",
+    "job_title": "Business development",
+    "location": "Netherlands",
+    "careers_url": "https://www.gasunie.nl/werken-bij-gasunie",
+    "job_url": "https://www.gasunie.nl/vacatures/vakgebied/business-development-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "SBM Offshore N.V.",
