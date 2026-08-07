@@ -1,18 +1,6 @@
 [
   {
     "company": "Adyen N.V.",
-    "job_title": "Business Analyst - Operations",
-    "location": "Amsterdam, Netherlands",
-    "careers_url": "https://careers.adyen.com",
-    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/7985544",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-06-24",
-    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Operations Analytics&nbsp; Our dedicated team of data analysts, engineers and business analysts is committed to empowering operational teams to make strategic and data-driven decisions on a global scale. We are structured into subject matter areas, with analysts focusing on Merchant Operations, Support, Professional Services, &amp; Supply Chain, ensuring deep expertise and tailored insights within each area, driving operational excellence and informed decision-making. We strive to foster a collaborative and approachable environment, making data insights accessible and actionable for everyone. In short, our vision is to empower teams with self-service analytics and deliver strategic insights that drive high-impact decisions. What you\u2019ll do&nbsp; Gain a comprehensive understanding of business processes to solve critical problems and ensure analysis efforts are effectively targeted. Master the art of storytelling by connecting data to a narrative, evolving from step-by-step analytical plans to complex stories that provide actionable advice. Partner with leadership to define key performance indicators (KPIs) and select metrics that align specifically with business strategy and objectives. Act as a bridge between the business and technical teams, translating complex requirements into clear requests for data engineering. Redesign recurring operational issues into scalable, long-term solutions by clarifying stakeholder needs and anticipating future requirements. Independently separate main issues from secondary noise, ensuring that every analysis remains focused on the core business question. Manage project stakeholders proactively, identifying necessary collaborators and keeping them informed through structured communication and documentation. Who you are You possess at least 4 years of relevant working experience in an analytical or business-focused environment. You are an independent and enthusiastic problem-solver who thrives when navigating the ambiguity of stakeholder requests. You have a proven track record in project management, with the ability to drive initiatives in a structured and accountable manner. You are highly proficient in writing complex SQL queries and have extensive experience with BI tools, specifically Looker and LookML. You are a confident communicator, able to influence decision-makers by artic",
-    "notes": "Dept: Data Analytics. Via Greenhouse board."
-  },
-  {
-    "company": "Adyen N.V.",
     "job_title": "Content Operations Manager",
     "location": "Amsterdam, Netherlands",
     "careers_url": "https://careers.adyen.com",
@@ -510,6 +498,17 @@
     "location": "Eindhoven",
     "careers_url": "https://nxp.wd3.myworkdayjobs.com/careers",
     "job_url": "https://nxp.wd3.myworkdayjobs.com/careers/job/Eindhoven/Business-Management-Internship_R-10064503-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "NXP Semiconductors Netherlands B.V.",
+    "job_title": "Industrial Project Manager",
+    "location": "Nijmegen",
+    "careers_url": "https://nxp.wd3.myworkdayjobs.com/careers",
+    "job_url": "https://nxp.wd3.myworkdayjobs.com/careers/job/Nijmegen/Industrial-Project-Manager_R-10065116-1",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
