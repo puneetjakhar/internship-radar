@@ -468,19 +468,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Viking Nederland",
-    "job_title": "Internship Project Management",
-    "location": "Venlo, Limburg, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/vikingnederland",
-    "job_url": "https://www.linkedin.com/jobs/view/4402007802",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-08-01",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Arcadis",
     "job_title": "Business Process & Transformation Internship",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -528,19 +515,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-31",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Procter & Gamble",
-    "job_title": "Supply Chain Internship",
-    "location": "Rotterdam, South Holland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/procter-and-gamble",
-    "job_url": "https://www.linkedin.com/jobs/view/4434861422",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-07-29",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -1092,6 +1066,19 @@
     "source": "indeed"
   },
   {
+    "company": "IT Solutions Worldwide",
+    "job_title": "Cyber Security Intern",
+    "location": "Rotterdam, ZH, NL",
+    "careers_url": "https://nl.indeed.com/cmp/IT-Solutions-Worldwide",
+    "job_url": "https://nl.indeed.com/viewjob?jk=1890d7ad65b0005e",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-07-24",
+    "applicant_count": null,
+    "description": "**Cyber Security Intern**  \n\n**Job Type:** Internship/On\\-site\n\n\n**Experience Required:** Not specified\n\n\n**Languages Required:** English\n\n\n**Work Location:** IT Solutions Worldwide BV Mandenmakerstraat 100C, 3194 DG Hoogvliet\n\n\n\nRotterdam, Netherlands, Netherlands\n\n\n**Work Authorization:** Must be authorized to work in Netherlands\n\n\n**About Us**\n\n\n\nIT Solutions Worldwide is a pioneering force in global IT innovation, driven by a commitment\n\n\n\nto data\\-centric excellence and transformative growth. We empower businesses worldwide with\n\n\n\ncutting\\-edge solutions, fostering a culture of continuous learning and collaborative impact.\n\n\n\nJoin us in shaping the future of technology and delivering unparalleled value on a global scale.\n\n\n**Position Overview**\n\n\n\nThis Cyber Security Internship offers a dynamic opportunity for an aspiring professional to\n\n\n\nimmerse themselves in real\\-world cybersecurity challenges from the agreed start date. The\n\n\n\nintern will gain hands\\-on experience in critical areas like security operations, vulnerability\n\n\n\nmanagement, and incident response, contributing directly to the robust defense of our global\n\n\n\ninfrastructure under expert guidance. This role is pivotal in strengthening our cyber resilience\n\n\n\nand nurturing the next generation of security specialists.\n\n\n**Key Responsibilities**\n\n\n* Security Assessments: Assist in conducting security assessments, penetration testing, and\n\n\n\nvulnerability scanning to identify and mitigate potential risks across our network and\n\n\napplications.\n\n\n* Operations \\& Management: Support daily security operations, including monitoring security\n\n\n\nsystems, participating in vulnerability management processes, and contributing to risk\n\n\n\nassessments.\n\n\n* Project Participation: Collaborate on active cybersecurity projects, focusing on areas such as\n\n\n\ncloud security initiatives and contributing to incident response simulations and protocols.\n\n\n**Skills \\& Requirements**\n\n\n* Experience: Foundational understanding or demonstrable interest in cybersecurity principles\n\n\n\nthrough coursework, personal projects, or relevant extracurricular activities.\n\n\n* Education: Currently pursuing a Bachelor's or Master's degree in Cybersecurity, Computer\n\n\n\nScience, Information Technology, or a closely related field.\n\n\n* Technical Skills: Basic knowledge or eagerness to learn about information security concepts,\n\n\n\nnetwork security, ethical hacking methodologies, and familiarity with security tools (e.g.,\n\n\n\nSIEM, vulnerability scanners).\n\n\n* Soft Skills: Strong analytical and problem\\-solving abilities, excellent communication skills, a\n\n\n\nproactive attitude, and a high degree of autonomy with a keen eagerness to learn and adapt.\n\n\n**What We Offer**\n\n\n* Learning \\& Support: Direct mentorship from seasoned cybersecurity professionals,\n\n\n\nstructured learning opportunities, and a supportive environment for professional development.\n\n\n* Flexibility \\& Team Exposure: An on\\-site role providing immersive team collab",
+    "source": "indeed"
+  },
+  {
     "company": "Flix",
     "job_title": "Intern \u2013 Operations Benelux (m/f/d)",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -1308,6 +1295,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-30",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Procter & Gamble",
+    "job_title": "Supply Chain Internship",
+    "location": "Rotterdam, South Holland, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/procter-and-gamble",
+    "job_url": "https://www.linkedin.com/jobs/view/4434861422",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-07-29",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -2340,6 +2340,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Viking Nederland",
+    "job_title": "Internship Project Management",
+    "location": "Venlo, Limburg, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/vikingnederland",
+    "job_url": "https://www.linkedin.com/jobs/view/4402007802",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-08-01",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Signify",
     "job_title": "Internship Signify Foundation",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -2361,19 +2374,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-29",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Versuni",
-    "job_title": "Internship: Product Management - Robot Vacuums",
-    "location": "",
-    "careers_url": "https://nl.linkedin.com/company/versuni",
-    "job_url": "https://www.linkedin.com/jobs/view/4432367854",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-07-22",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -2413,32 +2413,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-17",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Tencent",
-    "job_title": "Product Manager Intern, Game Performance Optimization",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://cn.linkedin.com/company/tencentglobal",
-    "job_url": "https://www.linkedin.com/jobs/view/4439080082",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-07-10",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "DSV - Global Transport and Logistics",
-    "job_title": "Intern",
-    "location": "Maastricht-Airport, Limburg, Netherlands",
-    "careers_url": "https://dk.linkedin.com/company/dsv",
-    "job_url": "https://www.linkedin.com/jobs/view/4432609580",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
