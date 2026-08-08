@@ -325,19 +325,6 @@
     "source": "indeed"
   },
   {
-    "company": "Simon-Kucher",
-    "job_title": "Intern/Associate Consultant",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://de.linkedin.com/company/simon-kucher",
-    "job_url": "https://www.linkedin.com/jobs/view/4431958069",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Kantar",
     "job_title": "Research & Engagement Intern",
     "location": "Amsterdam, NH, NL",
@@ -619,6 +606,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-20",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Simon-Kucher",
+    "job_title": "Intern/Associate Consultant",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://de.linkedin.com/company/simon-kucher",
+    "job_url": "https://www.linkedin.com/jobs/view/4431958069",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -2275,6 +2275,19 @@
     "source": "indeed"
   },
   {
+    "company": "Damen",
+    "job_title": "Internship: Content Projectmanager",
+    "location": "Gorinchem, South Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/damen-shipyards",
+    "job_url": "https://www.linkedin.com/jobs/view/4414937286",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-08-07",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "ING Nederland",
     "job_title": "Intern Project Support Sustainability & Employee Engagement",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -2319,6 +2332,19 @@
     "location": "Zoetermeer, South Holland, Netherlands",
     "careers_url": "https://fr.linkedin.com/company/danone",
     "job_url": "https://www.linkedin.com/jobs/view/4448177233",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-08-03",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Philips",
+    "job_title": "Internship: HR People Activation Management (Eindhoven, non-thesis)",
+    "location": "Eindhoven, North Brabant, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/philips",
+    "job_url": "https://www.linkedin.com/jobs/view/4447979113",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-08-03",
@@ -2374,19 +2400,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-21",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Damen",
-    "job_title": "Internship: Content Projectmanager",
-    "location": "Gorinchem, South Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/damen-shipyards",
-    "job_url": "https://www.linkedin.com/jobs/view/4414937286",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
