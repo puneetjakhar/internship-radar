@@ -1118,19 +1118,6 @@
     "source": "indeed"
   },
   {
-    "company": "Skytree",
-    "job_title": "Sales and Operations Intern",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/skytree",
-    "job_url": "https://www.linkedin.com/jobs/view/4403751623",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-08-09",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Driscoll Strawberry Assoc Inc",
     "job_title": "Allocation Intern / Weekend Assistant \u2013 Breda",
     "location": "Breda, North Brabant, Netherlands",
@@ -1339,11 +1326,11 @@
     "source": "linkedin"
   },
   {
-    "company": "Minor Hotels Europe and Americas",
-    "job_title": "Meeting & Events Operations Internship - nhow Amsterdam RAI - September 2026",
-    "location": "Amsterdam-Zuid, North Holland, Netherlands",
-    "careers_url": "https://es.linkedin.com/company/minor-hotels-europe-americas",
-    "job_url": "https://www.linkedin.com/jobs/view/4403946803",
+    "company": "TUI",
+    "job_title": "Operations & Delivery Intern - Intercruises",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://de.linkedin.com/company/tuigroup",
+    "job_url": "https://www.linkedin.com/jobs/view/4438608355",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-31",
@@ -1378,11 +1365,50 @@
     "source": "linkedin"
   },
   {
+    "company": "Driscoll's EMEA",
+    "job_title": "Intern BP&A",
+    "location": "Breda, North Brabant, Netherlands",
+    "careers_url": "https://nl.linkedin.com/showcase/driscollsemea/",
+    "job_url": "https://www.linkedin.com/jobs/view/4446593966",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-07-29",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "ofi",
+    "job_title": "Internship Supply Chain",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://sg.linkedin.com/company/ofi-group",
+    "job_url": "https://www.linkedin.com/jobs/view/4444138374",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-07-29",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "BESTSELLER",
     "job_title": "E-commerce & Business Operations Intern",
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://dk.linkedin.com/company/bestseller",
     "job_url": "https://www.linkedin.com/jobs/view/4431698770",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-07-28",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Tencent",
+    "job_title": "Overseas Game Operations (SRE) Intern",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://cn.linkedin.com/company/tencentglobal",
+    "job_url": "https://www.linkedin.com/jobs/view/4445499512",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-07-28",
@@ -1476,7 +1502,7 @@
     "job_url": "https://www.linkedin.com/jobs/view/4426814067",
     "visa_support": null,
     "relocation_support": null,
-    "date_posted": "2026-07-14",
+    "date_posted": null,
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
