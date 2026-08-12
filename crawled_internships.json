@@ -308,17 +308,6 @@
   },
   {
     "company": "Philips Electronics Nederland B.V.",
-    "job_title": "Internship: Measurement Systems Development",
-    "location": "Drachten",
-    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Drachten/Internship--Measurement---Analysis_586111",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Philips Electronics Nederland B.V.",
     "job_title": "Product Design Internship \u2013 Philips Avent Experience Innovation",
     "location": "Amsterdam",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
@@ -334,6 +323,17 @@
     "location": "Eindhoven",
     "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
     "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Product-Innovation---AI-Powered-Video-Creation-Internship---Philips-Avent-Experience-Innovation_586187",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Philips Electronics Nederland B.V.",
+    "job_title": "Internship: Measurement Systems Development",
+    "location": "Drachten",
+    "careers_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Drachten/Internship--Measurement---Analysis_586111",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -521,6 +521,17 @@
     "location": "16 Locations",
     "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
     "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/USA---St-Cloud-MN/Senior-Product-Manager--Auto-Lending----Hybrid--USA-_R0058266",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Alliander N.V.",
+    "job_title": "Junior projectmanager Hoogspanningsstations (Rijnland)",
+    "location": "AMSTERDAM",
+    "careers_url": "https://alliander.wd3.myworkdayjobs.com/alliander",
+    "job_url": "https://alliander.wd3.myworkdayjobs.com/alliander/job/AMSTERDAM/Projectmanager-Hoogspanningsstations--Rijnland-_JR18208",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
