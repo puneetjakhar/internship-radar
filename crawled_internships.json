@@ -494,33 +494,11 @@
     "notes": "Via Workday API."
   },
   {
-    "company": "Alliander N.V.",
-    "job_title": "Technisch\u202fKennismanagement Consultant\u202f",
-    "location": "ARNHEM",
-    "careers_url": "https://alliander.wd3.myworkdayjobs.com/alliander",
-    "job_url": "https://alliander.wd3.myworkdayjobs.com/alliander/job/ARNHEM/Technisch-Kennismanagement-Consultant--medior-_JR18354",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "Stedin Groep N.V.",
     "job_title": "Trainee Kathodische Bescherming",
     "location": "Utrecht",
     "careers_url": "https://stedin.wd3.myworkdayjobs.com/WerkenbijStedin",
     "job_url": "https://stedin.wd3.myworkdayjobs.com/WerkenbijStedin/job/Utrecht/Trainee-Kathodische-Bescherming_JR16695",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Rabobank Nederland",
-    "job_title": "Product Manager Data Management Team",
-    "location": "Utrecht Croeselaan 18",
-    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Manager-Data-Management-Team_JR_00144534",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
@@ -609,6 +587,17 @@
     "location": "Veghel",
     "careers_url": "https://vanderlande.wd3.myworkdayjobs.com/careers",
     "job_url": "https://vanderlande.wd3.myworkdayjobs.com/careers/job/Veghel/Program-Manager-Compliance_JR37359-2",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Vanderlande Industries B.V.",
+    "job_title": "Business Development Manager Services",
+    "location": "2 Locations",
+    "careers_url": "https://vanderlande.wd3.myworkdayjobs.com/careers",
+    "job_url": "https://vanderlande.wd3.myworkdayjobs.com/careers/job/Veghel/Business-Development-Manager-Services_JR36963-2",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
