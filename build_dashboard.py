@@ -349,7 +349,13 @@ function scoreJob(j) {{
     else if (desc.includes(kw)) bonus += Math.round(pts / 2);
   }}
   score += Math.min(10, bonus);
-  return Math.min(100, score);
+  score = Math.min(100, score);
+  // She has no full-time PM job yet, so seniority in the title bounds the fit.
+  if (/\\b(vp|vice president|head of|director|chief|cpo)\\b/i.test(title)) return Math.min(score, 25);
+  if (/\\b(principal|group|staff|lead)\\b/i.test(title)) return Math.min(score, 40);
+  if (/\\b(senior|sr\\.?|expert)\\b/i.test(title)) return Math.min(score, 60);
+  if (/\\b(associate|junior|jr\\.?|new grad|graduate|entry|apm)\\b/i.test(title)) return Math.min(100, score + 10);
+  return Math.min(score, 85);
 }}
 
 // v2: stores {{s, r}} objects — bump key if schema changes again
@@ -430,6 +436,14 @@ CV VARIANTS
 45–59   Decent fit: worth applying but not a standout match
 30–44   Weak fit: significant skill/interest mismatch
 0–29    Poor fit: wrong language, wrong seniority, or fundamentally misaligned
+
+SENIORITY IS THE MAIN FILTER (judge from title AND description: years asked, people management, scope)
+- VP / Head of / Director / Chief: 0-15
+- Principal / Group / Staff / Lead PM, or 7+ years of PM experience: 5-25
+- Senior PM, or 4-6 years of PM experience: 20-45 at most, even at a dream company
+- PM asking about 2-3 years: 45-70 depending on domain match
+- Associate / junior / new-grad / MBA programme, or PM with no hard years requirement: 65-95
+Do not give a high score just because the title says Product Manager or the company is famous.
 
 PENALISE when:
 - Job description or title implies Dutch fluency required ("vloeiend Nederlands", "native Dutch")

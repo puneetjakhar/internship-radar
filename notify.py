@@ -6,7 +6,7 @@ Modes:
   python notify.py            -- email new jobs found since last run (runs every hour)
   python notify.py --daily    -- email full 24h summary report (runs at 12pm NL)
 """
-import json, os, sys, smtplib, threading
+import json, os, re, sys, smtplib, threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
@@ -98,75 +98,108 @@ def _rule_score(job) -> int:
         elif kw in desc:
             bonus += pts // 2
     score += min(10, bonus)
-    return min(100, score)
+    return _apply_seniority(title, min(100, score))
+
+# She has no full-time PM job yet, so seniority in the title bounds the fit.
+_SENIORITY_CAPS = [
+    (25, re.compile(r'\b(vp|vice president|head of|director|chief|cpo)\b', re.I)),
+    (40, re.compile(r'\b(principal|group|staff|lead)\b', re.I)),
+    (60, re.compile(r'\b(senior|sr\.?|expert)\b', re.I)),
+]
+_ENTRY_RE = re.compile(r'\b(associate|junior|jr\.?|new grad|graduate|entry)\b|\bapm\b', re.I)
+
+def _apply_seniority(title: str, score: int) -> int:
+    for cap, rx in _SENIORITY_CAPS:
+        if rx.search(title):
+            return min(score, cap)
+    if _ENTRY_RE.search(title):
+        return min(100, score + 10)
+    return min(score, 85)   # title-only match: never claim a near-perfect fit without AI review
 
 # ── AI scorer ──────────────────────────────────────────────────────────────────
 
-VANSHIKA_PROFILE = """Vanshika Rana is looking for a FULL-TIME tech product management role in the Netherlands.
+VANSHIKA_PROFILE = """You are a rigorous recruiter-style evaluator. Score how well ONE job fits ONE candidate, Vanshika Rana, who wants a FULL-TIME tech product management role in the Netherlands. Judge the real match between what the job demands and what she has. Do not reward keywords, and do not give a high score just because the title says "Product Manager" or the company is famous.
 
-Background:
-- MBA at Rotterdam School of Management (RSM), 2024-2026, Strategy & Leadership. President of the RSM Product Club (100+ members), Markstrat simulation 1st place, RSM Business Games winner.
+=== CANDIDATE ===
+- MBA, Rotterdam School of Management (RSM), 2024-2026, Strategy & Leadership. President of the RSM Product Club (100+ members), Markstrat product-strategy simulation 1st place, RSM Business Games winner (200+ teams).
 - Currently doing an internship at TomTom in the Netherlands.
-- Around 5-6 years at ONGC (upstream oil and gas) leading production operations and cross-functional teams.
-- IIT Bombay science/engineering degree: strong quantitative and analytical foundation.
-- Fluent English, beginner Dutch (A1). Based in Rotterdam.
-- No full-time product management job yet, so she is realistic for Associate PM, Product Manager and some mid-level PM roles, not for roles demanding many years of prior PM experience.
+- About 5 years at ONGC (upstream oil and gas) as Deputy Manager, Production Operations: led operations for large assets, coordinated engineering, finance and regulatory teams, drove process improvement, managed senior stakeholders.
+- IIT Bombay degree in a hard science/engineering field: strong quantitative and analytical base.
+- Fluent English. Dutch is beginner (A1). Based in Rotterdam.
+- Product experience so far: MBA coursework, Product Club leadership and the internship. She has NOT held a full-time product manager job and has not shipped software as a PM over multiple years. She does not code.
 
-What she is looking for (highest to lowest priority):
-1. Product Manager / Technical Product Manager / Associate Product Manager at tech or tech-enabled companies
-2. Product Owner
-3. Product operations, product strategy, growth product roles
-4. Program Manager / Technical Program Manager in a product or engineering organisation
+=== WHAT FITS ===
+Best: Associate Product Manager, Product Manager (entry to mid level, roughly 0-3 years of PM experience asked), MBA or graduate product programmes, Technical PM roles that value analytical and domain depth over coding.
+Good: Product Owner, product operations, product strategy, growth product roles, and program manager roles inside product or engineering organisations, at a level open to a post-MBA hire.
+Domain edge: energy, energy-tech, industrial, mobility/maps and operations-heavy products, where ONGC and TomTom make her credible. Fintech and pure developer-tooling products are possible but she has no domain edge there.
 
-Preferred employers: tech product companies (Adyen, Booking.com, TomTom, Uber, Databricks, Mollie, bol, Backbase, Catawiki), industrial tech (ASML, Philips, Signify), energy and energy-tech (Shell, Eneco, Vattenfall, TenneT) where her ONGC domain knowledge is a real edge, and fintech/banks with digital product teams.
+=== SENIORITY IS THE MAIN FILTER ===
+Work out the level the job really asks for, from the title AND the description (years of experience, "proven track record shipping", people management, scope).
+- VP, Head of, Director, Chief: score 0-15. She is not a candidate.
+- Principal, Group, Staff, Lead PM, or anything asking 7+ years of product management: score 5-25.
+- Senior PM, or asking about 4-6 years of product management: score 20-45. At most 45, even at a dream company.
+- PM with about 2-3 years asked: score 45-70 depending on domain match.
+- Associate PM, junior PM, new-grad or MBA programme, or PM with no hard years requirement: score 65-95 depending on domain, company and language.
+If there is no description, judge from the title alone and stay conservative: an unqualified "Product Manager" title with no description scores 50-65.
 
-Not a fit: internships, working-student or thesis roles; software engineering, data science or design roles; product marketing, sales, account management; physical-goods or FMCG brand/category 'product manager' roles with no digital or technical product; roles that require fluent Dutch; roles that require 5+ years of product management experience (Senior/Principal/Head/Director) should score low to moderate, not high."""
+=== OTHER RULES ===
+- Fluent Dutch required, or the posting is written in Dutch: cap at 25.
+- Internship, working-student or thesis: 0-10 (she wants full-time).
+- Not really product management (product marketing, sales, account management, engineering, design, data science, project management of construction or hardware rollouts): 0-25.
+- "Product manager" for physical goods, retail categories, fashion, food or FMCG brands with no digital or technical product: 10-30.
+- Requires deep hands-on technical skills she lacks (writing code, ML engineering, a specific engineering degree): reduce by 15-30.
+- Outside the Netherlands: 0-10.
+Use the full range. Most jobs should land between 20 and 70; scores of 85+ are rare and need level, role type and domain all to match."""
 
-def _ai_score(job) -> int:
+_ai_disabled = False   # set once the API rejects the key, so we stop calling it this run
+
+def _ai_score(job):
+    """Return an AI score 0-100, or None if AI scoring is unavailable."""
+    global _ai_disabled
+    if _ai_disabled:
+        return None
     try:
         import anthropic
     except ImportError:
-        return _rule_score(job)
+        return None
 
     title   = job.get('job_title') or ''
     company = job.get('company') or ''
     location = job.get('location') or ''
-    desc    = (job.get('description') or '')[:2000]
+    desc    = (job.get('description') or '')[:4000]
 
-    prompt = f"""{VANSHIKA_PROFILE}
-
-Score this job for Vanshika on a scale of 0-100.
+    prompt = f"""Score this job for Vanshika.
 
 Job title: {title}
 Company: {company}
 Location: {location}
-Description: {desc}
+Description: {desc or '(no description available)'}
 
-Rules:
-- 85-100: excellent fit (digital/technical product role at her level + preferred employer or domain)
-- 65-84: good fit (right role type, minor gaps in seniority or domain)
-- 45-64: moderate fit (adjacent role, or a product role that is a seniority stretch)
-- 20-44: weak fit (tangentially relevant)
-- 0-19: not a fit (wrong function, internship, or Dutch required)
-
-Respond with only a JSON object: {{"score": <integer 0-100>, "reason": "<one sentence>"}}"""
+Respond with only a JSON object:
+{{"level": "<the seniority this job asks for, and the evidence>", "score": <integer 0-100>, "reason": "<one sentence>"}}"""
 
     try:
         client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
         response = client.messages.create(
             model='claude-sonnet-4-6',
-            max_tokens=300,
+            max_tokens=400,
+            system=[{'type': 'text', 'text': VANSHIKA_PROFILE, 'cache_control': {'type': 'ephemeral'}}],
             messages=[{'role': 'user', 'content': prompt}],
         )
         text = response.content[0].text.strip()
         # strip markdown code fences if present
         if text.startswith('```'):
             text = text.split('```')[1].lstrip('json').strip()
-        data = json.loads(text)
+        data = json.loads(text[text.index('{'):text.rindex('}') + 1])
         return max(0, min(100, int(data['score'])))
     except Exception as e:
-        print(f'  ⚠ AI score failed for "{title}": {e} — using rules')
-        return _rule_score(job)
+        if 'authentication_error' in str(e) or 'invalid x-api-key' in str(e):
+            if not _ai_disabled:
+                print('  ⚠ ANTHROPIC_API_KEY was rejected (401) — AI scoring is off for this run, using rules')
+            _ai_disabled = True
+        else:
+            print(f'  ⚠ AI score failed for "{title}": {e} — using rules')
+        return None
 
 def calc_match(job) -> int:
     url = job.get('job_url') or job.get('url') or ''
@@ -174,11 +207,11 @@ def calc_match(job) -> int:
         if url and url in _score_cache:
             return _score_cache[url]
 
-    if ANTHROPIC_KEY:
-        score = _ai_score(job)
-    else:
-        print('  ⚠ ANTHROPIC_API_KEY not set — using rule-based scoring')
-        score = _rule_score(job)
+    score = _ai_score(job) if ANTHROPIC_KEY else None
+    if score is None:
+        # Rule scores are a stopgap and are not cached, so the job is rescored by AI
+        # as soon as the API key works.
+        return _rule_score(job)
 
     if url:
         with _score_cache_lock:
@@ -351,6 +384,18 @@ def run_daily(all_jobs, seen):
     send_email(f'Daily product roles report | {len(scored)} roles | {today}', html)
     print(f'Daily report sent: {len(scored)} jobs')
 
+def backfill_scores(all_jobs):
+    """AI-score listed jobs that have no cached AI score yet (e.g. scored by rules while the key was down)."""
+    if not ANTHROPIC_KEY or _ai_disabled:
+        return
+    todo = [j for j in all_jobs
+            if (j.get('job_url') or j.get('url')) and (j.get('job_url') or j.get('url')) not in _score_cache]
+    if not todo:
+        return
+    print(f'Backfilling AI scores for {len(todo)} jobs without one...')
+    score_jobs_parallel(todo)
+    _save_score_cache()
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
@@ -368,6 +413,7 @@ def main():
     else:
         seen = run_hourly(all_jobs, seen)
         save_seen(seen)
+        backfill_scores(all_jobs)
 
 if __name__ == '__main__':
     main()
