@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanshika — NL Intern Apply Assistant</title>
+  <title>Vanshika — NL Product Roles Apply Assistant</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -149,7 +149,7 @@
 <body>
 
 <header>
-  <h1>Vanshika — NL Intern Apply Assistant</h1>
+  <h1>Vanshika — NL Product Roles Apply Assistant</h1>
   <a class="back-btn" href="job-search.html">← Dashboard</a>
   <div class="hdr-right">
     <button class="back-btn" id="api-key-btn" onclick="promptApiKey()" style="margin-left:0">🔑 API Key</button>
@@ -250,12 +250,12 @@ Oil and Natural Gas Corporation (ONGC) — Deputy Manager, Production Operations
 - Markstrat 1st place shows quantitative strategy execution, not just conceptual understanding
 - Product Club President = she drove community building and structured learning — leadership beyond academics
 - Energy background (ONGC) is a direct differentiator for energy/sustainability roles (Shell, Eneco, Vattenfall, Alliander, SBM)
-- RSM Rotterdam location means zero relocation needed for NL internships
+- RSM Rotterdam location means zero relocation needed for NL roles
 - Strong English; working towards Dutch (A1 level currently)
 
 === CV VARIANTS ===
 CV_Uber    -> Operations / general strategy / cross-functional roles / energy / consulting (emphasises ONGC ops leadership)
-CV_Product -> Product management / product strategy / product operations / PM intern roles (emphasises RSM Product Club, Markstrat, analytical skills)`;
+CV_Product -> Product management / product strategy / product operations / PM roles (emphasises RSM Product Club, Markstrat, analytical skills)`;
 }
 
 // ── CV Management ──────────────────────────────────────────────────────────────
@@ -481,8 +481,8 @@ async function generateCover() {
     const rec = window._recommendedCV || 'CV_Uber';
     const cvCtx = getResumeContext(rec);
     const text = await callClaude(
-      'You are an expert cover letter writer for MBA internship applications in the Netherlands. Write in a professional, warm, and confident tone. Never use em-dashes (—). Never use filler phrases like "I am passionate about", "I am reaching out to express my interest", "I hope this finds you well". Be specific, not generic.',
-      `Write a cover letter for Vanshika Rana applying for the ${j.job_title || 'internship'} role at ${j.company || 'this company'}.
+      'You are an expert cover letter writer for full-time product management applications in the Netherlands. Write in a professional, warm, and confident tone. Never use em-dashes (—). Never use filler phrases like "I am passionate about", "I am reaching out to express my interest", "I hope this finds you well". Be specific, not generic.',
+      `Write a cover letter for Vanshika Rana applying for the ${j.job_title || 'product'} role at ${j.company || 'this company'}.
 
 JOB CONTEXT:
 ${jdCtx}
@@ -557,7 +557,7 @@ async function generateResume() {
   const j = window._job || {};
   try {
     const raw = await callClaude(
-      'You are an expert career advisor for MBA students applying for internships in the Netherlands. Give concrete, actionable advice.',
+      'You are an expert career advisor for MBA graduates applying for full-time product management roles in the Netherlands. Give concrete, actionable advice.',
       `Analyse which CV is best for Vanshika Rana to use for this role, and suggest targeted edits.
 
 JOB:
@@ -568,7 +568,7 @@ ${profile}
 
 CV VARIANTS:
 - CV_Uber: Operations / general strategy / cross-functional / energy / consulting emphasis
-- CV_Product: Product management / product strategy / PM intern roles
+- CV_Product: Product management / product strategy / PM roles
 
 LOADED CV TEXTS:
 ${RESUME_NAMES.map(n => { const t = getResumeText(n); return t ? `--- ${n} ---\n${t.slice(0,2000)}` : `--- ${n} --- (not loaded)`; }).join('\n\n')}
@@ -631,7 +631,7 @@ async function generateQA() {
   const j = window._job || {};
   try {
     const text = await callClaude(
-      'You are an expert at answering MBA internship application questions. Write concise, specific, authentic answers for Vanshika Rana. Never use em-dashes.',
+      'You are an expert at answering job application questions for full-time product management roles. Write concise, specific, authentic answers for Vanshika Rana. Never use em-dashes.',
       `Extract application questions from this job description and write ideal answers for Vanshika.
 
 JOB:
@@ -642,8 +642,8 @@ ${profile}
 
 INSTRUCTIONS:
 1. If the JD contains explicit application questions (motivation, strengths, experience), answer each one with a short paragraph (100-150 words each).
-2. If no explicit questions are found, write answers to these standard MBA internship questions:
-   - Why do you want to intern at ${j.company || 'this company'}?
+2. If no explicit questions are found, write answers to these standard application questions:
+   - Why do you want to work at ${j.company || 'this company'}?
    - Why are you interested in ${(j.job_title || 'this role').replace(/intern/i,'').trim()}?
    - What is your biggest achievement and what did you learn from it?
    - Where do you see yourself in 5 years?
@@ -710,8 +710,8 @@ async function draftRecruiterEmail() {
   const cvCtx = getResumeContext(rec);
   try {
     const text = await callClaude(
-      'You are an expert at professional outreach emails for MBA internship applications. Write naturally and concisely. Never use em-dashes. Never use filler openers.',
-      `Draft a cold outreach email from Vanshika Rana to a recruiter/hiring manager at ${j.company || 'this company'} for the ${j.job_title || 'internship'} role.
+      'You are an expert at professional outreach emails for full-time product management applications. Write naturally and concisely. Never use em-dashes. Never use filler openers.',
+      `Draft a cold outreach email from Vanshika Rana to a recruiter/hiring manager at ${j.company || 'this company'} for the ${j.job_title || 'product'} role.
 
 JOB:
 ${jdCtx}
@@ -722,7 +722,7 @@ ${profile}${cvCtx}
 STRUCTURE (3 short paragraphs, 100-130 words total in body):
 Paragraph 1 (2 sentences): Who she is (IIT Bombay + ONGC + RSM MBA) and the specific role she is applying for.
 Paragraph 2 (2 sentences): One specific, concrete achievement with a number or result (Business Games win, Markstrat 1st, or ONGC milestone — whichever fits best). One sentence on why ${j.company || 'this company'} specifically (something real, not generic).
-Paragraph 3 (2 sentences): She is based in Rotterdam and available immediately for the internship (no relocation needed). Close: CV attached, happy to chat.
+Paragraph 3 (2 sentences): She is based in Rotterdam and already in the Netherlands (no relocation needed). Close: CV attached, happy to chat.
 
 FORMAT:
 - First line: Subject: [concise subject line]
