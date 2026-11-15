@@ -36,11 +36,23 @@ except ImportError:
 
 # ── Target roles: full-time tech product management + adjacent roles ─────────
 _ROLE_RE = re.compile(
-    r'\bproduct\s*(manager|management|owner|lead|operations|ops|strategy|strategist|growth)\b'
-    r'|\b(head|director|vp)\s+of\s+product\b'
-    r'|\bgrowth\s+(product\s+)?manager\b'
-    r'|\b(program|programme)\s+manager\b'
+    # "Product Manager", "Product Portfolio Manager", "Product Owner Data", "Product Lead", "Product Analyst"...
+    r'\bproduct\b.{0,25}?\b(manager|management|owner|lead|analyst)\b'
+    r'|\bproduct\s+(operations|ops|strategy|strategist|growth|graduate|trainee|associate|fellow|rotational)\b'
+    # Dutch one-word forms: productmanager, productowner, producteigenaar
+    r'|\bproduct(manager|owner|eigenaar|lead)\w*'
+    r'|\b(head|director|vp|vice\s+president|chief)\b.{0,15}\bproduct\b|\bproduct\s+(head|director)\b|\bcpo\b'
+    r'|\bproposition\s+(manager|owner|lead)\b'
+    r'|\bgrowth\s+(product\s+)?(manager|lead)\b'
+    r'|\b(program|programme)\s+(manager|lead)\b'
     r'|\b(apm|tpm)\b',
+    re.IGNORECASE,
+)
+# "Product ..." titles that are not product management.
+_NOT_PM_RE = re.compile(
+    r'\bproduct\s+(marketing|sales|design|designer|engineer|engineering|security|compliance|support|quality'
+    r'|counsel|legal|safety|specialist|photographer|content)\b'
+    r'|\bproduction\b',
     re.IGNORECASE,
 )
 # Full-time only: drop internships, working-student and thesis postings.
@@ -51,7 +63,7 @@ _NOT_FULLTIME_RE = re.compile(
 
 def is_product_role(title: str) -> bool:
     t = title or ''
-    return bool(_ROLE_RE.search(t)) and not _NOT_FULLTIME_RE.search(t)
+    return bool(_ROLE_RE.search(t)) and not _NOT_FULLTIME_RE.search(t) and not _NOT_PM_RE.search(t)
 
 # ── NL location keywords ──────────────────────────────────────────────────────
 NL_LOCATIONS = [
@@ -1114,8 +1126,8 @@ def fetch_workday(company: dict) -> list[dict]:
     NL_TERMS = {'netherlands', 'amsterdam', 'rotterdam', 'utrecht', 'eindhoven'}
     all_jobs = []  # list of (job_dict, found_via_nl_term)
     # Search multiple terms to catch NL product management and adjacent roles
-    for search_term in ['netherlands', 'amsterdam', 'product manager', 'product owner',
-                        'product operations', 'product strategy', 'program manager']:
+    for search_term in ['netherlands', 'amsterdam', 'product', 'proposition', 'program manager',
+                        'programme manager', 'growth']:
         nl_search = search_term in NL_TERMS
         offset = 0
         limit = 20

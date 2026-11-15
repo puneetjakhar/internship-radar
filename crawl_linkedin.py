@@ -42,26 +42,43 @@ OUT_FILE = os.path.join(BASE, 'linkedin_jobs.json')
 ALL_SITES = ["linkedin", "indeed", "glassdoor"]
 
 # ── Search queries ─────────────────────────────────────────────────────────────
-# Each tuple: (search_term, use_internship_job_type). Full-time product roles, so the
-# internship job-type filter stays off.
+# Each tuple: (search_term, results_wanted). Busy searches ask for more results so they
+# are not just sampled.
 SEARCH_QUERIES = [
     # Core product management
-    ("product manager Netherlands",            False),
-    ("technical product manager Netherlands",  False),
-    ("associate product manager Netherlands",  False),
-    ("product owner Netherlands",              False),
-    ("product manager Amsterdam",              False),
-    ("product manager Rotterdam",              False),
+    ("product manager Netherlands",            150),
+    ("product owner Netherlands",              150),
+    ("technical product manager Netherlands",  75),
+    ("associate product manager Netherlands",  75),
+    ("junior product manager Netherlands",     75),
+    ("digital product manager Netherlands",    75),
+    ("data product manager Netherlands",       50),
+    ("AI product manager Netherlands",         50),
+    ("platform product manager Netherlands",   50),
+    ("product lead Netherlands",               50),
+    ("product analyst Netherlands",            50),
+    ("product management graduate Netherlands", 50),
+    ("MBA product manager Netherlands",        50),
+    ("productmanager Nederland",               50),
+    ("proposition manager Netherlands",        50),
+    # Cities (LinkedIn ranks differently per location term)
+    ("product manager Amsterdam",              75),
+    ("product manager Rotterdam",              50),
+    ("product manager Utrecht",                50),
+    ("product manager Eindhoven",              50),
+    ("product manager The Hague",              50),
     # Adjacent roles
-    ("product operations Netherlands",         False),
-    ("product strategy Netherlands",           False),
-    ("growth product manager Netherlands",     False),
-    ("program manager Netherlands",            False),
-    ("technical program manager Netherlands",  False),
-    # Themes that fit her background
-    ("AI product manager Netherlands",         False),
-    ("platform product manager Netherlands",   False),
-    ("product manager energy Netherlands",     False),
+    ("product operations Netherlands",         50),
+    ("product strategy Netherlands",           50),
+    ("growth product manager Netherlands",     50),
+    ("growth manager Netherlands",             50),
+    ("program manager Netherlands",            75),
+    ("technical program manager Netherlands",  50),
+    # Domains that fit her background
+    ("product manager energy Netherlands",     50),
+    ("product manager mobility Netherlands",   50),
+    ("product manager fintech Netherlands",    50),
+    ("product manager SaaS Netherlands",       50),
 ]
 
 # ── NL location strings to keep ────────────────────────────────────────────────
@@ -96,11 +113,23 @@ def _is_nl(job: dict) -> bool:
 
 # ── Parsing helpers ────────────────────────────────────────────────────────────
 _ROLE_RE = re.compile(
-    r'\bproduct\s*(manager|management|owner|lead|operations|ops|strategy|strategist|growth)\b'
-    r'|\b(head|director|vp)\s+of\s+product\b'
-    r'|\bgrowth\s+(product\s+)?manager\b'
-    r'|\b(program|programme)\s+manager\b'
+    # "Product Manager", "Product Portfolio Manager", "Product Owner Data", "Product Lead", "Product Analyst"...
+    r'\bproduct\b.{0,25}?\b(manager|management|owner|lead|analyst)\b'
+    r'|\bproduct\s+(operations|ops|strategy|strategist|growth|graduate|trainee|associate|fellow|rotational)\b'
+    # Dutch one-word forms: productmanager, productowner, producteigenaar
+    r'|\bproduct(manager|owner|eigenaar|lead)\w*'
+    r'|\b(head|director|vp|vice\s+president|chief)\b.{0,15}\bproduct\b|\bproduct\s+(head|director)\b|\bcpo\b'
+    r'|\bproposition\s+(manager|owner|lead)\b'
+    r'|\bgrowth\s+(product\s+)?(manager|lead)\b'
+    r'|\b(program|programme)\s+(manager|lead)\b'
     r'|\b(apm|tpm)\b',
+    re.IGNORECASE,
+)
+# "Product ..." titles that are not product management.
+_NOT_PM_RE = re.compile(
+    r'\bproduct\s+(marketing|sales|design|designer|engineer|engineering|security|compliance|support|quality'
+    r'|counsel|legal|safety|specialist|photographer|content)\b'
+    r'|\bproduction\b',
     re.IGNORECASE,
 )
 # Full-time only: drop internships, working-student and thesis postings.
@@ -111,7 +140,7 @@ _NOT_FULLTIME_RE = re.compile(
 
 def is_product_role(title: str) -> bool:
     t = title or ''
-    return bool(_ROLE_RE.search(t)) and not _NOT_FULLTIME_RE.search(t)
+    return bool(_ROLE_RE.search(t)) and not _NOT_FULLTIME_RE.search(t) and not _NOT_PM_RE.search(t)
 _APPLICANT_RE = re.compile(
     r'be among the first\s+(\d+)\s+applicant'
     r'|(\d+)\s+applicants?\b'
@@ -169,20 +198,18 @@ def _normalize(row: pd.Series) -> dict:
         'source':             s('site'),   # linkedin / indeed / glassdoor
     }
 
-def scrape_query(query: str, sites: list, use_internship_type: bool,
+def scrape_query(query: str, sites: list, results_wanted: int,
                  fetch_descriptions: bool = False) -> pd.DataFrame | None:
     kwargs = dict(
         site_name=sites,
         search_term=query,
         location="Netherlands",
-        results_wanted=50,
+        results_wanted=results_wanted,
         hours_old=24 * 28,          # scrape 28-day window; dashboard date filter controls what's shown
         country_indeed="Netherlands",
         linkedin_fetch_description=fetch_descriptions,
         verbose=0,
     )
-    if use_internship_type:
-        kwargs['job_type'] = 'internship'
 
     try:
         df = scrape_jobs(**kwargs)
@@ -309,9 +336,9 @@ def main():
     print(f"Queries:  {len(SEARCH_QUERIES)} (parallel, 4 workers)\n")
 
     def _run_query(args):
-        i, (query, use_intern_type) = args
+        i, (query, results_wanted) = args
         print(f"[{i}/{len(SEARCH_QUERIES)}] {query!r}")
-        df = scrape_query(query, sites, use_intern_type, fetch_descriptions=full)
+        df = scrape_query(query, sites, results_wanted, fetch_descriptions=full)
         if df is None:
             print(f"    [{i}] No results.")
             return []

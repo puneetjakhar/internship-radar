@@ -24,18 +24,9 @@ if os.path.exists(LINKEDIN_JSON):
 
 jobs = crawler_jobs + linkedin_jobs
 
-# Only keep full-time product management and adjacent roles (same filter as the crawlers)
-_role_re = re.compile(
-    r'\bproduct\s*(manager|management|owner|lead|operations|ops|strategy|strategist|growth)\b'
-    r'|\b(head|director|vp)\s+of\s+product\b'
-    r'|\bgrowth\s+(product\s+)?manager\b'
-    r'|\b(program|programme)\s+manager\b'
-    r'|\b(apm|tpm)\b', re.IGNORECASE)
-_not_fulltime_re = re.compile(
-    r'\bintern(ship)?s?\b|\bstage\b|\bstagiair\w*|\bwerkstudent\b|working\s+student|\bthesis\b|\bafstudeer\w*',
-    re.IGNORECASE)
-jobs = [j for j in jobs
-        if _role_re.search(j.get('job_title', '')) and not _not_fulltime_re.search(j.get('job_title', ''))]
+# Only keep full-time product management and adjacent roles (same filter as the LinkedIn crawler)
+from crawl_linkedin import is_product_role
+jobs = [j for j in jobs if is_product_role(j.get('job_title', ''))]
 
 # Exclude obviously non-NL locations (check both location field AND title)
 def _is_nl_job(j):
