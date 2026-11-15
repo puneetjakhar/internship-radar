@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Score internship jobs via Claude Sonnet, detect new ones, send emails to Vanshika.
+Score full-time tech product management jobs via Claude Sonnet, detect new ones, send emails to Vanshika.
 
 Modes:
   python notify.py            -- email new jobs found since last run (runs every hour)
@@ -47,34 +47,31 @@ def _save_score_cache():
 SECTOR_MAP = {
     'Energy':      ['shell','eneco','vattenfall','tennet','alliander','stedin','orsted','ørsted','sbm offshore','neste','fugro'],
     'Consulting':  ['bcg','bain','mckinsey','oliver wyman','kearney','strategy&','roland berger','ey-parthenon','deloitte','accenture'],
-    'Tech':        ['adyen','booking','uber','databricks','prosus','backbase','catawiki','tomtom'],
+    'Tech':        ['adyen','booking','uber','databricks','prosus','backbase','catawiki','tomtom','mollie','bol.com','just eat','coolblue','exact'],
     'Industrial':  ['asml','nxp','signify','philips','wolters kluwer','vanderlande','tno'],
     'Finance':     ['ing ','rabobank','abn amro','nn group','aegon','van lanschot'],
     'FMCG':        ['unilever','heineken','akzonobel','dsm','ahold','frieslandcampina'],
 }
-SECTOR_SCORES = {'Energy':30,'Consulting':28,'Tech':22,'Industrial':20,'Finance':16,'FMCG':15,'Other':8}
+SECTOR_SCORES = {'Tech':30,'Industrial':22,'Energy':22,'Finance':20,'FMCG':14,'Consulting':12,'Other':12}
 COMPANY_BONUS = [
-    (20, ['shell','eneco','vattenfall','tennet','alliander','stedin','orsted','ørsted','sbm offshore','neste','fugro']),
-    (18, ['bcg','bain','mckinsey','oliver wyman','kearney','strategy&','roland berger','ey-parthenon','deloitte','accenture']),
-    (15, ['adyen','booking','uber','databricks','prosus','backbase','catawiki','tomtom']),
-    (12, ['unilever','heineken','akzonobel','dsm','firmenich','ahold','frieslandcampina']),
-    (12, ['asml','nxp','signify','philips','wolters kluwer','vanderlande','tno']),
-    (10, ['ing ','rabobank','abn amro','nn group','aegon','van lanschot']),
+    (20, ['adyen','booking','uber','databricks','prosus','backbase','catawiki','tomtom','mollie','bol.com','just eat','coolblue','exact']),
+    (16, ['asml','nxp','signify','philips','wolters kluwer','vanderlande','tno']),
+    (14, ['shell','eneco','vattenfall','tennet','alliander','stedin','orsted','ørsted','sbm offshore','neste','fugro']),
+    (12, ['ing ','rabobank','abn amro','nn group','aegon','van lanschot']),
+    (10, ['unilever','heineken','akzonobel','dsm','firmenich','ahold','frieslandcampina']),
+    (6,  ['bcg','bain','mckinsey','oliver wyman','kearney','strategy&','roland berger','ey-parthenon','deloitte','accenture']),
 ]
 ROLES = [
-    (50, ['strategy intern','corporate strategy intern','strategic planning intern']),
-    (48, ['consultant intern','consulting intern','associate consultant intern','management consultant intern']),
-    (46, ['operations intern','business operations intern','strategy & operations intern','strategy and operations intern','commercial intern']),
-    (45, ['product manager intern','product management intern','associate product manager intern','apm intern']),
-    (42, ['business analyst intern','commercial analyst intern']),
-    (38, ['mba intern','graduate intern','management trainee intern']),
-    (35, ['programme manager intern','program manager intern','project management intern']),
-    (30, ['procurement intern','supply chain intern','sourcing intern']),
-    (25, ['project manager intern']),
+    (50, ['technical product manager','product manager','productmanager','product management']),
+    (48, ['associate product manager','apm']),
+    (44, ['product owner','product lead']),
+    (42, ['product operations','product ops','product strategy','growth product','growth manager']),
+    (36, ['technical program manager','program manager','programme manager','tpm']),
+    (25, ['head of product','director of product','vp of product']),
 ]
 KW_BONUSES = [
-    ('strategy',3),('operations',3),('sustainability',2),('energy',2),
-    ('product',2),('mba',2),('transformation',2),('commercial',1),('analytics',1),('innovation',1),
+    ('product',3),('platform',2),('data',2),('growth',2),('energy',2),
+    ('roadmap',2),('b2b',1),('saas',1),('analytics',1),('strategy',1),
 ]
 
 def _rule_score(job) -> int:
@@ -105,20 +102,25 @@ def _rule_score(job) -> int:
 
 # ── AI scorer ──────────────────────────────────────────────────────────────────
 
-VANSHIKA_PROFILE = """Vanshika is an MBA/master's student seeking internships (3-6 months) in the Netherlands.
+VANSHIKA_PROFILE = """Vanshika Rana is looking for a FULL-TIME tech product management role in the Netherlands.
 
-What she's looking for (highest to lowest priority):
-1. Strategy internships — corporate strategy, strategic planning, market entry, M&A
-2. Management consulting internships — BCG, Bain, McKinsey, Deloitte, Accenture, Oliver Wyman, Roland Berger, Kearney
-3. Operations / business operations / strategy & operations
-4. Product management internships
-5. Business analyst / commercial analyst internships
-6. MBA / graduate / management trainee programs
-7. Procurement, supply chain, program management (lower priority)
+Background:
+- MBA at Rotterdam School of Management (RSM), 2024-2026, Strategy & Leadership. President of the RSM Product Club (100+ members), Markstrat simulation 1st place, RSM Business Games winner.
+- Currently doing an internship at TomTom in the Netherlands.
+- Around 5-6 years at ONGC (upstream oil and gas) leading production operations and cross-functional teams.
+- IIT Bombay science/engineering degree: strong quantitative and analytical foundation.
+- Fluent English, beginner Dutch (A1). Based in Rotterdam.
+- No full-time product management job yet, so she is realistic for Associate PM, Product Manager and some mid-level PM roles, not for roles demanding many years of prior PM experience.
 
-Preferred sectors: Energy (Shell, Vattenfall, Eneco, TenneT, Ørsted), Consulting firms, Tech (Adyen, Booking, Databricks), Industrial (ASML, Philips), Finance (ING, Rabobank), FMCG (Unilever, Heineken)
+What she is looking for (highest to lowest priority):
+1. Product Manager / Technical Product Manager / Associate Product Manager at tech or tech-enabled companies
+2. Product Owner
+3. Product operations, product strategy, growth product roles
+4. Program Manager / Technical Program Manager in a product or engineering organisation
 
-Not a fit: software engineering, data science / ML engineering, HR internships, pure marketing / PR, finance/accounting without strategy component, research internships."""
+Preferred employers: tech product companies (Adyen, Booking.com, TomTom, Uber, Databricks, Mollie, bol, Backbase, Catawiki), industrial tech (ASML, Philips, Signify), energy and energy-tech (Shell, Eneco, Vattenfall, TenneT) where her ONGC domain knowledge is a real edge, and fintech/banks with digital product teams.
+
+Not a fit: internships, working-student or thesis roles; software engineering, data science or design roles; product marketing, sales, account management; physical-goods or FMCG brand/category 'product manager' roles with no digital or technical product; roles that require fluent Dutch; roles that require 5+ years of product management experience (Senior/Principal/Head/Director) should score low to moderate, not high."""
 
 def _ai_score(job) -> int:
     try:
@@ -133,7 +135,7 @@ def _ai_score(job) -> int:
 
     prompt = f"""{VANSHIKA_PROFILE}
 
-Score this internship opportunity for Vanshika on a scale of 0-100.
+Score this job for Vanshika on a scale of 0-100.
 
 Job title: {title}
 Company: {company}
@@ -141,11 +143,11 @@ Location: {location}
 Description: {desc}
 
 Rules:
-- 85-100: excellent fit (right role type + preferred sector/company)
-- 65-84: good fit (right role or sector, minor gaps)
-- 45-64: moderate fit (adjacent role, acceptable sector)
+- 85-100: excellent fit (digital/technical product role at her level + preferred employer or domain)
+- 65-84: good fit (right role type, minor gaps in seniority or domain)
+- 45-64: moderate fit (adjacent role, or a product role that is a seniority stretch)
 - 20-44: weak fit (tangentially relevant)
-- 0-19: not a fit (wrong function entirely)
+- 0-19: not a fit (wrong function, internship, or Dutch required)
 
 Respond with only a JSON object: {{"score": <integer 0-100>, "reason": "<one sentence>"}}"""
 
@@ -307,17 +309,17 @@ def run_hourly(all_jobs, seen):
     scored = score_jobs_parallel(new_jobs)
     _save_score_cache()
 
-    print(f'{len(scored)} new internships found:')
+    print(f'{len(scored)} new product roles found:')
     for j, pct in scored[:10]:
         print(f'  {pct}% | {j.get("job_title")} @ {j.get("company")}')
 
     now_str = datetime.now(timezone.utc).strftime('%b %d %H:%M')
     html = build_email(
-        f'{len(scored)} new internship{"s" if len(scored) != 1 else ""} found',
+        f'{len(scored)} new product role{"s" if len(scored) != 1 else ""} found',
         f'Scored by Claude AI · Crawled at {now_str} UTC',
         scored,
     )
-    send_email(f'{len(scored)} new NL internships | {now_str} UTC', html)
+    send_email(f'{len(scored)} new NL product roles | {now_str} UTC', html)
 
     for j, _ in scored:
         url = j.get('job_url') or j.get('url')
@@ -342,11 +344,11 @@ def run_daily(all_jobs, seen):
 
     today = datetime.now(timezone.utc).strftime('%b %d, %Y')
     html = build_email(
-        f'Daily Report: {len(scored)} internships in the last 24 hours',
+        f'Daily Report: {len(scored)} product roles in the last 24 hours',
         f'{today} | Scored by Claude AI | Sorted by match',
         scored,
     )
-    send_email(f'Daily internship report | {len(scored)} roles | {today}', html)
+    send_email(f'Daily product roles report | {len(scored)} roles | {today}', html)
     print(f'Daily report sent: {len(scored)} jobs')
 
 # ── Main ───────────────────────────────────────────────────────────────────────

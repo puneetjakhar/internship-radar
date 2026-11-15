@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-crawl_internships.py — NL Intern / MBA Job Search Crawler (Vanshika Rana)
+crawl_internships.py — NL Tech Product Management Job Crawler (Vanshika Rana)
+(file and JSON names kept from the earlier internship search)
 ==========================================================================
-Crawls career pages of NL companies for strategy, product, operations,
-program management, and consulting internship/junior roles.
+Crawls career pages of NL companies for full-time product management roles
+and adjacent ones (product operations, product strategy, growth, program management).
 
 Updates:
   - crawled_internships.json  (job listings)
@@ -33,48 +34,24 @@ except ImportError:
     import requests
     from bs4 import BeautifulSoup
 
-# ── Target role keywords (case-insensitive substring match) ──────────────────
-TARGET_ROLES = [
-    # Strategy & Consulting
-    'strategy intern', 'strategy analyst', 'strategy associate', 'consultant intern',
-    'consulting intern', 'intern consultant', 'junior consultant', 'associate consultant',
-    'business analyst intern', 'business analyst', 'junior analyst',
-    'management consultant', 'strategy & operations', 'corporate strategy',
-    'visiting associate', 'summer associate', 'fellow intern',
-    # Product Management
-    'product manager intern', 'product manager', 'product management intern',
-    'associate product manager', 'apm', 'junior product manager',
-    'product strategy', 'product analyst', 'product operations',
-    # Program / Project Management
-    'program manager intern', 'program manager', 'programme manager',
-    'project manager intern', 'project manager', 'junior project manager',
-    'technical program manager', 'tpm', 'delivery manager',
-    # Operations & BizOps
-    'operations intern', 'operations analyst', 'business operations',
-    'biz ops', 'bizops', 'strategy and operations', 'operations associate',
-    'operations manager', 'junior operations', 'go-to-market',
-    # Business Development
-    'business development intern', 'business development', 'biz dev',
-    'commercial intern', 'commercial analyst', 'commercial associate',
-    # General / MBA
-    'mba intern', 'mba associate', 'graduate intern', 'trainee',
-    'intern strategy', 'intern operations', 'intern product',
-    'management trainee', 'graduate trainee', 'junior associate',
-    # Procurement & Supply Chain
-    'procurement intern', 'supply chain intern', 'supply chain analyst',
-    'procurement analyst', 'sourcing intern',
-    # Broad programme/scheme titles (catch-all)
-    'internship programme', 'internship program', 'assessed internship',
-    'graduate programme', 'graduate program', 'traineeship',
-    'development programme', 'development program',
-    'talent lab', 'young talent', 'early career',
-]
+# ── Target roles: full-time tech product management + adjacent roles ─────────
+_ROLE_RE = re.compile(
+    r'\bproduct\s*(manager|management|owner|lead|operations|ops|strategy|strategist|growth)\b'
+    r'|\b(head|director|vp)\s+of\s+product\b'
+    r'|\bgrowth\s+(product\s+)?manager\b'
+    r'|\b(program|programme)\s+manager\b'
+    r'|\b(apm|tpm)\b',
+    re.IGNORECASE,
+)
+# Full-time only: drop internships, working-student and thesis postings.
+_NOT_FULLTIME_RE = re.compile(
+    r'\bintern(ship)?s?\b|\bstage\b|\bstagiair\w*|\bwerkstudent\b|working\s+student|\bthesis\b|\bafstudeer\w*',
+    re.IGNORECASE,
+)
 
-# For compound matching — intern/junior × broad craft
-_SENIORITY_KW = {'intern', 'junior', 'associate', 'trainee', 'graduate', 'mba', 'stage'}
-_CRAFT_KW = {'strategy', 'operations', 'product', 'program', 'programme', 'project',
-             'analyst', 'consultant', 'manager', 'development', 'procurement', 'commercial',
-             'business', 'transformation', 'innovation', 'supply chain'}
+def is_product_role(title: str) -> bool:
+    t = title or ''
+    return bool(_ROLE_RE.search(t)) and not _NOT_FULLTIME_RE.search(t)
 
 # ── NL location keywords ──────────────────────────────────────────────────────
 NL_LOCATIONS = [
@@ -184,13 +161,7 @@ def is_nl(location: str) -> bool:
     return any(kw in loc for kw in NL_LOCATIONS)
 
 def is_target_role(title: str) -> bool:
-    t = (title or '').lower()
-    if any(kw in t for kw in TARGET_ROLES):
-        return True
-    # Compound match: seniority + craft (catches "Senior Python Engineer", "Lead iOS Developer")
-    has_seniority = any(s in t for s in _SENIORITY_KW)
-    has_craft = any(c in t for c in _CRAFT_KW)
-    return has_seniority and has_craft
+    return is_product_role(title)
 
 def fmt_date(raw: str) -> str | None:
     """Normalise any ISO-ish date string to YYYY-MM-DD."""
@@ -1140,9 +1111,9 @@ def fetch_workday(company: dict) -> list[dict]:
 
     NL_TERMS = {'netherlands', 'amsterdam', 'rotterdam', 'utrecht', 'eindhoven'}
     all_jobs = []  # list of (job_dict, found_via_nl_term)
-    # Search multiple terms to catch NL strategy/ops/product/intern roles
-    for search_term in ['netherlands', 'amsterdam', 'intern', 'strategy', 'product manager',
-                        'program manager', 'operations', 'analyst', 'consultant', 'trainee']:
+    # Search multiple terms to catch NL product management and adjacent roles
+    for search_term in ['netherlands', 'amsterdam', 'product manager', 'product owner',
+                        'product operations', 'product strategy', 'program manager']:
         nl_search = search_term in NL_TERMS
         offset = 0
         limit = 20

@@ -13,7 +13,6 @@ PII_FIELDS = {'recruiter_email'}
 TARGETS = [
     'crawled_internships.json',
     'linkedin_jobs.json',
-    'linkedin_v2_jobs.json',
 ]
 
 

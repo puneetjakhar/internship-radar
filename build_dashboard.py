@@ -24,9 +24,18 @@ if os.path.exists(LINKEDIN_JSON):
 
 jobs = crawler_jobs + linkedin_jobs
 
-# Only keep jobs with "intern" or "internship" in the title
-_intern_re = re.compile(r'\bintern(ship)?\b', re.IGNORECASE)
-jobs = [j for j in jobs if _intern_re.search(j.get('job_title', ''))]
+# Only keep full-time product management and adjacent roles (same filter as the crawlers)
+_role_re = re.compile(
+    r'\bproduct\s*(manager|management|owner|lead|operations|ops|strategy|strategist|growth)\b'
+    r'|\b(head|director|vp)\s+of\s+product\b'
+    r'|\bgrowth\s+(product\s+)?manager\b'
+    r'|\b(program|programme)\s+manager\b'
+    r'|\b(apm|tpm)\b', re.IGNORECASE)
+_not_fulltime_re = re.compile(
+    r'\bintern(ship)?s?\b|\bstage\b|\bstagiair\w*|\bwerkstudent\b|working\s+student|\bthesis\b|\bafstudeer\w*',
+    re.IGNORECASE)
+jobs = [j for j in jobs
+        if _role_re.search(j.get('job_title', '')) and not _not_fulltime_re.search(j.get('job_title', ''))]
 
 # Exclude obviously non-NL locations (check both location field AND title)
 def _is_nl_job(j):
@@ -102,7 +111,7 @@ DASH_HTML = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NL Intern Job Search — Vanshika Rana</title>
+  <title>NL Product Roles — Vanshika Rana</title>
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
     :root {{
@@ -195,9 +204,9 @@ DASH_HTML = f"""<!DOCTYPE html>
 <body>
 
 <header>
-  <h1>NL Intern Job Search</h1>
+  <h1>NL Product Management Job Search</h1>
   <span class="badge purple" id="total-badge">– roles</span>
-  <span class="hdr-sub">Vanshika Rana · MBA Internship Tracker · May 2026</span>
+  <span class="hdr-sub">Vanshika Rana · Full-time Tech Product Roles</span>
 </header>
 
 <div class="controls">
@@ -304,15 +313,12 @@ function scoreJob(j) {{
 
   // Role type (0–50)
   const ROLES = [
-    [50, ['strategy intern','corporate strategy intern','strategic planning intern']],
-    [48, ['consultant intern','consulting intern','associate consultant intern','management consultant intern']],
-    [46, ['operations intern','business operations intern','strategy & operations intern','strategy and operations intern','commercial intern']],
-    [45, ['product manager intern','product management intern','associate product manager intern','apm intern']],
-    [42, ['business analyst intern','business analyst intern','commercial analyst intern']],
-    [38, ['mba intern','graduate intern','management trainee intern']],
-    [35, ['programme manager intern','program manager intern','project management intern']],
-    [30, ['procurement intern','supply chain intern','sourcing intern']],
-    [25, ['project manager intern']],
+    [50, ['technical product manager','product manager','productmanager','product management']],
+    [48, ['associate product manager','apm']],
+    [44, ['product owner','product lead']],
+    [42, ['product operations','product ops','product strategy','growth product','growth manager']],
+    [36, ['technical program manager','program manager','programme manager','tpm']],
+    [25, ['head of product','director of product','vp of product']],
   ];
   for (const [pts, kws] of ROLES) {{
     if (kws.some(k => title.includes(k))) {{ score += pts; break; }}
@@ -320,16 +326,16 @@ function scoreJob(j) {{
   if (score === 0) score += 15;
 
   // Sector fit (0–30)
-  score += ({{ Energy:30, Consulting:28, Tech:22, Industrial:20, Finance:16, FMCG:15, Other:8 }})[sector] || 8;
+  score += ({{ Tech:30, Industrial:22, Energy:22, Finance:20, FMCG:14, Consulting:12, Other:12 }})[sector] || 12;
 
   // Company bonus (0–20)
   const CO = [
-    [20, ['shell','eneco','vattenfall','tennet','alliander','stedin','orsted','ørsted','sbm offshore','neste','fugro']],
-    [18, ['bcg','bain','mckinsey','oliver wyman','kearney','strategy&','roland berger','ey-parthenon','deloitte','accenture']],
-    [15, ['adyen','booking','uber','databricks','prosus','backbase','catawiki','tomtom']],
-    [12, ['unilever','heineken','akzonobel','dsm','firmenich','ahold','frieslandcampina']],
-    [12, ['asml','nxp','signify','philips','wolters kluwer','vanderlande','tno']],
-    [10, ['ing ','rabobank','abn amro','nn group','aegon','van lanschot']],
+    [20, ['adyen','booking','uber','databricks','prosus','backbase','catawiki','tomtom','mollie','bol.com','just eat','coolblue','exact']],
+    [16, ['asml','nxp','signify','philips','wolters kluwer','vanderlande','tno']],
+    [14, ['shell','eneco','vattenfall','tennet','alliander','stedin','orsted','ørsted','sbm offshore','neste','fugro']],
+    [12, ['ing ','rabobank','abn amro','nn group','aegon','van lanschot']],
+    [10, ['unilever','heineken','akzonobel','dsm','firmenich','ahold','frieslandcampina']],
+    [6,  ['bcg','bain','mckinsey','oliver wyman','kearney','strategy&','roland berger','ey-parthenon','deloitte','accenture']],
   ];
   for (const [pts, kws] of CO) {{
     if (kws.some(k => company.includes(k))) {{ score += pts; break; }}
@@ -337,8 +343,8 @@ function scoreJob(j) {{
 
   // Keyword signals in title/desc (+0–10)
   let bonus = 0;
-  for (const [kw, pts] of [['strategy',3],['operations',3],['sustainability',2],['energy',2],
-      ['product',2],['mba',2],['transformation',2],['commercial',1],['analytics',1],['innovation',1]]) {{
+  for (const [kw, pts] of [['product',3],['platform',2],['data',2],['growth',2],['energy',2],
+      ['roadmap',2],['b2b',1],['saas',1],['analytics',1],['strategy',1]]) {{
     if (title.includes(kw)) bonus += pts;
     else if (desc.includes(kw)) bonus += Math.round(pts / 2);
   }}
@@ -347,7 +353,7 @@ function scoreJob(j) {{
 }}
 
 // v2: stores {{s, r}} objects — bump key if schema changes again
-const AI_SCORES_KEY = 'vanshika_ai_scores_v2';
+const AI_SCORES_KEY = 'vanshika_ai_scores_v3';
 function getAiScores() {{ try {{ return JSON.parse(localStorage.getItem(AI_SCORES_KEY) || '{{}}'); }} catch {{ return {{}}; }} }}
 function saveAiScores(obj) {{ try {{ localStorage.setItem(AI_SCORES_KEY, JSON.stringify(obj)); }} catch {{}} }}
 
@@ -372,13 +378,13 @@ function matchBadgeHtml(score, isAi, reason) {{
 }}
 
 // ── Full candidate profile (system prompt — prompt-cached across batches) ─────
-const AI_SYSTEM_PROMPT = `You score internship job-fit for Vanshika Rana. Reply ONLY with valid JSON — no preamble, no markdown, no other text.
+const AI_SYSTEM_PROMPT = `You score job-fit of full-time tech product management roles for Vanshika Rana. Reply ONLY with valid JSON — no preamble, no markdown, no other text.
 
 === CANDIDATE: VANSHIKA RANA ===
-Current status: MBA student at Rotterdam School of Management (RSM), Erasmus University, Rotterdam, Netherlands (2024–2026).
+Current status: MBA at Rotterdam School of Management (RSM), Erasmus University, Rotterdam, Netherlands (2024–2026). Currently doing an internship at TomTom in the Netherlands. Seeking a FULL-TIME tech product management role.
 Specialisation: Strategy & Leadership.
 Location: Rotterdam — zero relocation needed for any NL role.
-Work authorisation: Fully authorised to work in Netherlands during studies and internship. No visa complexity.
+Work authorisation: do not factor visa sponsorship into the score; if a posting explicitly rules out sponsorship, mention it in the reason.
 Language: Fluent English. Dutch at A1 level (beginner) — cannot do Dutch-only roles yet.
 
 EDUCATION
@@ -407,20 +413,18 @@ STRENGTHS & DIFFERENTIATORS
 6. Rotterdam-based: available immediately, no logistics friction
 
 TARGET ROLES (in priority order)
-1. Strategy intern / Corporate strategy intern
-2. Consultant intern / Associate consultant intern
-3. Operations intern / Business operations intern / Biz ops
-4. Product Manager intern / Associate PM intern
-5. Business analyst intern / Commercial analyst intern
-6. Management trainee / Graduate programme (strategy/ops track)
-7. Program/project manager intern (ops-heavy)
+1. Product Manager / Technical Product Manager / Associate Product Manager at tech or tech-enabled companies
+2. Product Owner
+3. Product operations / Product strategy / Growth product roles
+4. Program Manager / Technical Program Manager in a product or engineering organisation
+She has no full-time PM job yet: realistic for APM, PM and some mid-level PM roles, a stretch for Senior, not realistic for Principal/Head/Director.
 
 CV VARIANTS
 - CV_Uber (ops/strategy/energy/consulting focus): best for ONGC-adjacent and strategy roles
 - CV_Product (PM/product/analytics focus): best for product, tech, and data-adjacent roles
 
 === SCORING RUBRIC ===
-90–100  Perfect fit: role + sector + company all align with top strengths (e.g. Shell strategy intern, BCG consultant intern, Adyen PM intern)
+90–100  Perfect fit: digital/technical product role at her level + strong employer or domain match (e.g. TomTom Product Manager, Adyen Associate PM, energy-tech Product Manager)
 75–89   Strong fit: 2 of 3 dimensions align well; clear mutual value
 60–74   Good fit: relevant role or sector, some match gaps
 45–59   Decent fit: worth applying but not a standout match
@@ -429,8 +433,10 @@ CV VARIANTS
 
 PENALISE when:
 - Job description or title implies Dutch fluency required ("vloeiend Nederlands", "native Dutch")
-- Role is primarily coding/software engineering (not strategy or product management)
-- Requires 2+ years specific technical or domain experience beyond her profile
+- Role is primarily coding/software engineering, design, product marketing or sales (not product management)
+- Role is an internship, working-student or thesis position
+- 'Product manager' for physical goods / FMCG brand or category with no digital or technical product
+- Requires 5+ years of product management experience (Senior/Principal/Head/Director)
 - Role is outside Netherlands or requires relocation`;
 
 // ── AI batch scoring ──────────────────────────────────────────────────────────
@@ -705,7 +711,7 @@ AUTO_HTML = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanshika — NL Intern Apply Assistant</title>
+  <title>Vanshika — NL Product Roles Apply Assistant</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -851,7 +857,7 @@ AUTO_HTML = """<!DOCTYPE html>
 <body>
 
 <header>
-  <h1>Vanshika — NL Intern Apply Assistant</h1>
+  <h1>Vanshika — NL Product Roles Apply Assistant</h1>
   <a class="back-btn" href="job-search.html">← Dashboard</a>
   <div class="hdr-right">
     <button class="back-btn" id="api-key-btn" onclick="promptApiKey()" style="margin-left:0">🔑 API Key</button>
@@ -952,12 +958,12 @@ Oil and Natural Gas Corporation (ONGC) — Deputy Manager, Production Operations
 - Markstrat 1st place shows quantitative strategy execution, not just conceptual understanding
 - Product Club President = she drove community building and structured learning — leadership beyond academics
 - Energy background (ONGC) is a direct differentiator for energy/sustainability roles (Shell, Eneco, Vattenfall, Alliander, SBM)
-- RSM Rotterdam location means zero relocation needed for NL internships
+- RSM Rotterdam location means zero relocation needed for NL roles
 - Strong English; working towards Dutch (A1 level currently)
 
 === CV VARIANTS ===
 CV_Uber    -> Operations / general strategy / cross-functional roles / energy / consulting (emphasises ONGC ops leadership)
-CV_Product -> Product management / product strategy / product operations / PM intern roles (emphasises RSM Product Club, Markstrat, analytical skills)`;
+CV_Product -> Product management / product strategy / product operations / PM roles (emphasises RSM Product Club, Markstrat, analytical skills)`;
 }
 
 // ── CV Management ──────────────────────────────────────────────────────────────
@@ -1183,8 +1189,8 @@ async function generateCover() {
     const rec = window._recommendedCV || 'CV_Uber';
     const cvCtx = getResumeContext(rec);
     const text = await callClaude(
-      'You are an expert cover letter writer for MBA internship applications in the Netherlands. Write in a professional, warm, and confident tone. Never use em-dashes (—). Never use filler phrases like "I am passionate about", "I am reaching out to express my interest", "I hope this finds you well". Be specific, not generic.',
-      `Write a cover letter for Vanshika Rana applying for the ${j.job_title || 'internship'} role at ${j.company || 'this company'}.
+      'You are an expert cover letter writer for full-time product management applications in the Netherlands. Write in a professional, warm, and confident tone. Never use em-dashes (—). Never use filler phrases like "I am passionate about", "I am reaching out to express my interest", "I hope this finds you well". Be specific, not generic.',
+      `Write a cover letter for Vanshika Rana applying for the ${j.job_title || 'product'} role at ${j.company || 'this company'}.
 
 JOB CONTEXT:
 ${jdCtx}
@@ -1259,7 +1265,7 @@ async function generateResume() {
   const j = window._job || {};
   try {
     const raw = await callClaude(
-      'You are an expert career advisor for MBA students applying for internships in the Netherlands. Give concrete, actionable advice.',
+      'You are an expert career advisor for MBA graduates applying for full-time product management roles in the Netherlands. Give concrete, actionable advice.',
       `Analyse which CV is best for Vanshika Rana to use for this role, and suggest targeted edits.
 
 JOB:
@@ -1270,7 +1276,7 @@ ${profile}
 
 CV VARIANTS:
 - CV_Uber: Operations / general strategy / cross-functional / energy / consulting emphasis
-- CV_Product: Product management / product strategy / PM intern roles
+- CV_Product: Product management / product strategy / PM roles
 
 LOADED CV TEXTS:
 ${RESUME_NAMES.map(n => { const t = getResumeText(n); return t ? `--- ${n} ---\\n${t.slice(0,2000)}` : `--- ${n} --- (not loaded)`; }).join('\\n\\n')}
@@ -1333,7 +1339,7 @@ async function generateQA() {
   const j = window._job || {};
   try {
     const text = await callClaude(
-      'You are an expert at answering MBA internship application questions. Write concise, specific, authentic answers for Vanshika Rana. Never use em-dashes.',
+      'You are an expert at answering job application questions for full-time product management roles. Write concise, specific, authentic answers for Vanshika Rana. Never use em-dashes.',
       `Extract application questions from this job description and write ideal answers for Vanshika.
 
 JOB:
@@ -1344,8 +1350,8 @@ ${profile}
 
 INSTRUCTIONS:
 1. If the JD contains explicit application questions (motivation, strengths, experience), answer each one with a short paragraph (100-150 words each).
-2. If no explicit questions are found, write answers to these standard MBA internship questions:
-   - Why do you want to intern at ${j.company || 'this company'}?
+2. If no explicit questions are found, write answers to these standard application questions:
+   - Why do you want to work at ${j.company || 'this company'}?
    - Why are you interested in ${(j.job_title || 'this role').replace(/intern/i,'').trim()}?
    - What is your biggest achievement and what did you learn from it?
    - Where do you see yourself in 5 years?
@@ -1412,8 +1418,8 @@ async function draftRecruiterEmail() {
   const cvCtx = getResumeContext(rec);
   try {
     const text = await callClaude(
-      'You are an expert at professional outreach emails for MBA internship applications. Write naturally and concisely. Never use em-dashes. Never use filler openers.',
-      `Draft a cold outreach email from Vanshika Rana to a recruiter/hiring manager at ${j.company || 'this company'} for the ${j.job_title || 'internship'} role.
+      'You are an expert at professional outreach emails for full-time product management applications. Write naturally and concisely. Never use em-dashes. Never use filler openers.',
+      `Draft a cold outreach email from Vanshika Rana to a recruiter/hiring manager at ${j.company || 'this company'} for the ${j.job_title || 'product'} role.
 
 JOB:
 ${jdCtx}
@@ -1424,7 +1430,7 @@ ${profile}${cvCtx}
 STRUCTURE (3 short paragraphs, 100-130 words total in body):
 Paragraph 1 (2 sentences): Who she is (IIT Bombay + ONGC + RSM MBA) and the specific role she is applying for.
 Paragraph 2 (2 sentences): One specific, concrete achievement with a number or result (Business Games win, Markstrat 1st, or ONGC milestone — whichever fits best). One sentence on why ${j.company || 'this company'} specifically (something real, not generic).
-Paragraph 3 (2 sentences): She is based in Rotterdam and available immediately for the internship (no relocation needed). Close: CV attached, happy to chat.
+Paragraph 3 (2 sentences): She is based in Rotterdam and already in the Netherlands (no relocation needed). Close: CV attached, happy to chat.
 
 FORMAT:
 - First line: Subject: [concise subject line]

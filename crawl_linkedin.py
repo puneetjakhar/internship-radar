@@ -2,7 +2,7 @@
 """
 crawl_linkedin.py — LinkedIn / Indeed / Glassdoor job scraper (no login required)
 ==================================================================================
-Uses JobSpy (python-jobspy) to scrape NL internship/strategy/product/ops roles
+Uses JobSpy (python-jobspy) to scrape full-time NL tech product management roles
 from LinkedIn, Indeed, and Glassdoor simultaneously.
 
 Output: linkedin_jobs.json (same schema as crawled_internships.json + extra fields)
@@ -42,34 +42,26 @@ OUT_FILE = os.path.join(BASE, 'linkedin_jobs.json')
 ALL_SITES = ["linkedin", "indeed", "glassdoor"]
 
 # ── Search queries ─────────────────────────────────────────────────────────────
-# Each tuple: (search_term, use_internship_job_type)
+# Each tuple: (search_term, use_internship_job_type). Full-time product roles, so the
+# internship job-type filter stays off.
 SEARCH_QUERIES = [
-    # Strategy & Consulting
-    ("strategy intern Netherlands",         True),
-    ("consultant intern Netherlands",       True),
-    ("business analyst intern Netherlands", True),
-    # Product Management
-    ("product manager intern Netherlands",  True),
-    ("associate product manager Netherlands", False),
-    # Operations
-    ("operations intern Netherlands",       True),
-    ("business operations intern Netherlands", True),
-    # MBA / Graduate
-    ("MBA intern Netherlands",              False),
-    ("graduate trainee Netherlands",        False),
-    ("management trainee Netherlands",      False),
-    # Program / Project Management
-    ("program manager intern Netherlands",  True),
-    ("project manager intern Netherlands",  True),
-    # Dutch stage (internship) — catches Dutch-posted roles at English-first companies
-    ("stage strategie Nederland",           True),
-    ("stage product manager Nederland",     True),
-    # Targeted consulting firm searches (they use non-standard titles)
-    ("Accenture intern Netherlands",        False),
-    ("Deloitte intern Netherlands",         False),
-    ("KPMG intern Netherlands",             False),
-    ("EY intern Netherlands",               False),
-    ("PwC intern Netherlands",              False),
+    # Core product management
+    ("product manager Netherlands",            False),
+    ("technical product manager Netherlands",  False),
+    ("associate product manager Netherlands",  False),
+    ("product owner Netherlands",              False),
+    ("product manager Amsterdam",              False),
+    ("product manager Rotterdam",              False),
+    # Adjacent roles
+    ("product operations Netherlands",         False),
+    ("product strategy Netherlands",           False),
+    ("growth product manager Netherlands",     False),
+    ("program manager Netherlands",            False),
+    ("technical program manager Netherlands",  False),
+    # Themes that fit her background
+    ("AI product manager Netherlands",         False),
+    ("platform product manager Netherlands",   False),
+    ("product manager energy Netherlands",     False),
 ]
 
 # ── NL location strings to keep ────────────────────────────────────────────────
@@ -103,7 +95,23 @@ def _is_nl(job: dict) -> bool:
     return False
 
 # ── Parsing helpers ────────────────────────────────────────────────────────────
-_INTERN_RE = re.compile(r'\bintern(ship)?\b', re.IGNORECASE)
+_ROLE_RE = re.compile(
+    r'\bproduct\s*(manager|management|owner|lead|operations|ops|strategy|strategist|growth)\b'
+    r'|\b(head|director|vp)\s+of\s+product\b'
+    r'|\bgrowth\s+(product\s+)?manager\b'
+    r'|\b(program|programme)\s+manager\b'
+    r'|\b(apm|tpm)\b',
+    re.IGNORECASE,
+)
+# Full-time only: drop internships, working-student and thesis postings.
+_NOT_FULLTIME_RE = re.compile(
+    r'\bintern(ship)?s?\b|\bstage\b|\bstagiair\w*|\bwerkstudent\b|working\s+student|\bthesis\b|\bafstudeer\w*',
+    re.IGNORECASE,
+)
+
+def is_product_role(title: str) -> bool:
+    t = title or ''
+    return bool(_ROLE_RE.search(t)) and not _NOT_FULLTIME_RE.search(t)
 _APPLICANT_RE = re.compile(
     r'be among the first\s+(\d+)\s+applicant'
     r'|(\d+)\s+applicants?\b'
@@ -323,7 +331,7 @@ def main():
     for job in all_rows:
         if not _is_nl(job):
             continue
-        if not _INTERN_RE.search(job['job_title']):
+        if not is_product_role(job['job_title']):
             continue
         key = (job['company'], job['job_title'])
         if key not in seen_keys:

@@ -1,21 +1,22 @@
 # internship-radar
 
-Automated internship crawler for the Netherlands. Scrapes LinkedIn, Indeed, and
-company career sites twice per hour during Amsterdam waking hours, scores each
-result with Claude, and delivers a filtered email digest plus dashboards.
+Automated crawler for full-time tech product management roles in the Netherlands
+(Product Manager, Technical PM, Associate PM, Product Owner, plus product operations,
+product strategy, growth and program management). The repo and some file names date
+from its first life as an internship crawler. It scrapes LinkedIn, Indeed, Glassdoor
+and company career sites hourly during Amsterdam waking hours, scores each result
+with Claude, and delivers an email digest plus a dashboard.
 
 ## What it does
 
-- **Scrapers**: `crawl_internships.py` (company career pages), `crawl_linkedin.py`
-  (LinkedIn search), `crawl_linkedin_v2.py` (JobSpy + Adzuna + LinkedIn guest API).
-- **Scoring**: `notify.py` uses Claude Sonnet for a fast per-run scoring pass.
-  `score_linkedin.py` uses Claude Opus for the higher-quality v2 pipeline with
-  cached verdicts.
-- **Email**: `notify.py` and `notify_v2.py` send hourly and daily digests via
-  Gmail SMTP.
-- **Dashboards**: `build_dashboard.py` and `build_linkedin_dashboard.py` regenerate
-  static HTML dashboards; the workflow pushes them to a separate GitHub Pages
-  repo for viewing.
+- **Scrapers**: `crawl_internships.py` (company career pages) and `crawl_linkedin.py`
+  (LinkedIn, Indeed, Glassdoor via JobSpy). Both keep only product-role titles and
+  drop internships, working-student and thesis postings.
+- **Scoring**: `notify.py` scores each new role with Claude Sonnet against the
+  candidate profile, with a rule-based fallback.
+- **Email**: `notify.py` sends hourly new-role digests and a daily summary via Gmail SMTP.
+- **Dashboard**: `build_dashboard.py` regenerates the static dashboard and apply
+  assistant; the workflow pushes them to a separate GitHub Pages repo.
 - **PII hygiene**: `strip_pii.py` runs before every commit and removes any
   recruiter contact fields that scrapers may have collected. No third-party
   personal data lands in a public commit.
@@ -25,23 +26,21 @@ result with Claude, and delivers a filtered email digest plus dashboards.
 Everything runs on GitHub Actions on a cron schedule. To run it against your
 own inbox and profile you need:
 
-1. Set these seven secrets at
+1. Set these five secrets at
    `Settings → Secrets and variables → Actions` (or `gh secret set <NAME>`):
 
    | Secret | Purpose |
    |---|---|
    | `GMAIL_APP_PASSWORD` | 16-char Gmail app password for the sender account |
    | `GH_PAT` | Personal access token with `repo` scope (only for pushing compiled dashboards to a separate Pages repo) |
-   | `ANTHROPIC_API_KEY` | Claude scoring calls (Sonnet in `notify.py`, Opus in `score_linkedin.py`) |
-   | `ADZUNA_APP_ID` | Adzuna Phase 3 of the v2 crawler (optional but recommended) |
-   | `ADZUNA_APP_KEY` | Adzuna Phase 3 of the v2 crawler (optional but recommended) |
+   | `ANTHROPIC_API_KEY` | Claude scoring calls (Sonnet in `notify.py`) |
    | `SENDER_EMAIL` | Gmail address the crawler sends from |
    | `NOTIFY_EMAIL` | Address that receives the digests |
 
 2. Update the `DASHBOARD_URL` env var in `.github/workflows/crawl.yml` and the
    `Deploy dashboard to public GitHub Pages repo` step's target repo to match
    your own Pages repo.
-3. Update the candidate profile embedded in `score_linkedin.py`, `notify.py`,
+3. Update the candidate profile embedded in `notify.py`
    and `build_dashboard.py` to your own background — the scoring is
    personalised and will not be meaningful without it.
 
@@ -49,10 +48,10 @@ own inbox and profile you need:
 
 ```bash
 pip install -r requirements.txt
-python crawl_linkedin_v2.py --force
-python score_linkedin.py
-python build_linkedin_dashboard.py
-open linkedin.html
+python crawl_internships.py --force
+python crawl_linkedin.py --force
+python build_dashboard.py
+open job-search.html
 ```
 
 ## Notes on scraping

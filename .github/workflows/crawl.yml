@@ -1,4 +1,4 @@
-name: Hourly Internship Crawl + Notify
+name: Hourly Product Roles Crawl + Notify
 
 # Runs hourly during Amsterdam waking hours (08:00–23:00 local, 16 runs/day),
 # silent overnight to save Actions minutes. The 12:00 UTC run also sends the
@@ -12,6 +12,7 @@ name: Hourly Internship Crawl + Notify
 #   GMAIL_APP_PASSWORD  — App password for puneetjakhar1996@gmail.com
 #   GH_PAT              — Personal Access Token with repo scope (used only for the
 #                         cross-repo Pages deploy step; checkout uses github.token)
+#   ANTHROPIC_API_KEY, SENDER_EMAIL, NOTIFY_EMAIL — scoring and email delivery
 
 on:
   schedule:
@@ -58,13 +59,18 @@ jobs:
       - name: Install dependencies
         run: pip install -q requests beautifulsoup4 python-jobspy pandas lxml playwright anthropic
 
-      - name: Install Playwright browsers (only if not cached)
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: playwright install chromium --with-deps
-
-      - name: Install Playwright system deps (always needed)
-        if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: playwright install-deps chromium
+      # Retries because an unreachable Ubuntu apt mirror (seen 2026-11-11 in role-radar)
+      # can fail the whole run. If apt stays down, fall back to the browser alone:
+      # ubuntu-latest already ships Chromium's runtime libraries.
+      - name: Install Playwright chromium + system deps
+        run: |
+          # Each attempt is capped at 4 min: a dead mirror otherwise stalls apt for ~10 min.
+          for i in 1 2; do
+            timeout 240 bash -c 'sudo apt-get update -qq && playwright install chromium --with-deps' && exit 0
+            echo "attempt $i failed, retrying in 20s"; sleep 20
+          done
+          echo "::warning::system deps install failed, falling back to browser-only install"
+          playwright install chromium
 
       - name: Run portal + LinkedIn crawl in parallel
         run: |
@@ -78,7 +84,7 @@ jobs:
           exit $PORTAL_EXIT
         continue-on-error: true
 
-      - name: Send hourly new-internships email
+      - name: Send hourly new-roles email
         if: "!(github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')"
         run: python notify.py
         env:
@@ -103,45 +109,6 @@ jobs:
       - name: Rebuild dashboard with AI scores
         run: python build_dashboard.py
 
-      - name: Run LinkedIn v2 scrape + enrichment
-        run: python crawl_linkedin_v2.py --force
-        env:
-          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
-          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
-        continue-on-error: true
-
-      - name: Score LinkedIn v2 jobs with Claude Opus
-        run: python score_linkedin.py
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        continue-on-error: true
-
-      - name: Build LinkedIn v2 dashboard
-        run: python build_linkedin_dashboard.py
-        continue-on-error: true
-
-      - name: Send hourly v2 email
-        if: "!(github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')"
-        run: python notify_v2.py
-        continue-on-error: true
-        env:
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-          DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/linkedin.html
-
-      - name: Send daily v2 summary (12:00 UTC = 14:00 CEST)
-        if: >
-          github.event.schedule == '0 12 * * *' ||
-          (github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')
-        run: python notify_v2.py --daily
-        continue-on-error: true
-        env:
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-          DASHBOARD_URL: https://puneetjakhar.github.io/vanshika-nl-jobs-dashboard/linkedin.html
-
       - name: Strip PII from data files before commit
         run: python strip_pii.py
 
@@ -149,8 +116,8 @@ jobs:
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
-          git add crawled_internships.json linkedin_jobs.json linkedin_v2_jobs.json linkedin_v2_scores.json job-search.html linkedin.html seen_jobs.json score_cache.json autoapply.html || true
-          git diff --staged --quiet || git commit -m "chore: internship data $(date -u +%Y-%m-%dT%H:%M)Z"
+          git add crawled_internships.json linkedin_jobs.json job-search.html seen_jobs.json score_cache.json autoapply.html || true
+          git diff --staged --quiet || git commit -m "chore: job data $(date -u +%Y-%m-%dT%H:%M)Z"
           git pull --no-rebase -X ours --no-edit origin main
           git push
 
@@ -161,10 +128,9 @@ jobs:
           git clone --depth 1 https://x-access-token:${GH_PAT}@github.com/puneetjakhar/vanshika-nl-jobs-dashboard.git _dashboard
           cp job-search.html _dashboard/index.html
           cp autoapply.html _dashboard/autoapply.html
-          cp linkedin.html   _dashboard/linkedin.html
           cd _dashboard
           git config user.email "github-actions@github.com"
           git config user.name "GitHub Actions"
-          git add index.html autoapply.html linkedin.html
+          git add index.html autoapply.html
           git diff --staged --quiet || git commit -m "Update dashboard $(date -u +%Y-%m-%dT%H:%M)Z"
           git push
