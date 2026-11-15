@@ -423,8 +423,10 @@ def fetch_icims(company: dict) -> list[dict]:
 
 def fetch_lever(company: dict) -> list[dict]:
     """Lever public API: api.lever.co/v0/postings/{company} (or EU endpoint)"""
-    board = company.get('lever_board', '')
-    base = company.get('lever_base', 'https://api.lever.co/v0/postings')
+    # Older entries use lever_slug / lever_eu; newer ones use lever_board / lever_base.
+    board = company.get('lever_board') or company.get('lever_slug', '')
+    base = company.get('lever_base') or ('https://api.eu.lever.co/v0/postings' if company.get('lever_eu')
+                                         else 'https://api.lever.co/v0/postings')
     # Build URL with location filter where specified
     loc = company.get('location_filter', '')
     params = '?mode=json'
@@ -474,7 +476,7 @@ def fetch_lever(company: dict) -> list[dict]:
 
 def fetch_smartrecruiters(company: dict) -> list[dict]:
     """SmartRecruiters public API"""
-    board = company.get('smartrecruiters_id', '')
+    board = company.get('smartrecruiters_id') or company.get('smartrecruiters_company', '')
     url = f'https://api.smartrecruiters.com/v1/companies/{board}/postings?limit=100&country=NLD'
     print(f'  → SmartRecruiters API: {url}')
     r = get(url)
@@ -1372,8 +1374,8 @@ COMPANIES = [
     # ── LEVER ────────────────────────────────────────
     # ════════════════════════════════════════════════════
 
-    {"ind_name": "Mollie B.V.",             "type": "lever", "lever_slug": "mollie",
-     "careers_url": "https://jobs.eu.lever.co/mollie"},
+    {"ind_name": "Mollie B.V.",             "type": "ashby", "ashby_board": "mollie",
+     "careers_url": "https://jobs.ashbyhq.com/mollie"},
 
     {"ind_name": "Prosus N.V.",             "type": "lever", "lever_slug": "prosus", "lever_eu": True,
      "careers_url": "https://jobs.eu.lever.co/prosus"},
@@ -1382,8 +1384,8 @@ COMPANIES = [
     # ── SMARTRECRUITERS ──────────────────────────────
     # ════════════════════════════════════════════════════
 
-    {"ind_name": "Booking.com B.V.",        "type": "smartrecruiters", "smartrecruiters_company": "Booking",
-     "careers_url": "https://careers.booking.com"},
+    {"ind_name": "Booking.com B.V.",        "type": "icims", "api_url": "https://jobs.booking.com/api/jobs",
+     "careers_url": "https://jobs.booking.com/booking/jobs?location=Netherlands&woe=12&regionCode=NL&stretchUnit=MILES&stretch=25"},
 
     {"ind_name": "Deloitte Netherlands",    "type": "smartrecruiters", "smartrecruiters_company": "Deloitte6",
      "careers_url": "https://careers.smartrecruiters.com/Deloitte6"},
@@ -1560,8 +1562,8 @@ COMPANIES = [
     {"ind_name": "Uber B.V.",               "type": "spa",
      "careers_url": "https://www.uber.com/us/en/careers/locations/amsterdam/"},
 
-    {"ind_name": "Bol.com B.V.",            "type": "spa",
-     "careers_url": "https://careers.bol.com/en/earlycareers/"},
+    {"ind_name": "Bol.com B.V.",            "type": "greenhouse", "greenhouse_board": "bolcomen",
+     "jd_base_url": "https://careers.bol.com/en/job", "careers_url": "https://careers.bol.com/en/jobs/"},
 
     {"ind_name": "Coolblue B.V.",           "type": "spa",
      "careers_url": "https://www.careersatcoolblue.com/vacancies/"},
