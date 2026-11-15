@@ -193,9 +193,9 @@ Respond with only a JSON object:
         data = json.loads(text[text.index('{'):text.rindex('}') + 1])
         return max(0, min(100, int(data['score'])))
     except Exception as e:
-        if 'authentication_error' in str(e) or 'invalid x-api-key' in str(e):
+        if any(k in str(e) for k in ('authentication_error', 'invalid x-api-key', 'credit balance is too low')):
             if not _ai_disabled:
-                print('  ⚠ ANTHROPIC_API_KEY was rejected (401) — AI scoring is off for this run, using rules')
+                print(f'  ⚠ Anthropic API unusable ({str(e)[:120]}) — AI scoring is off for this run, using rules')
             _ai_disabled = True
         else:
             print(f'  ⚠ AI score failed for "{title}": {e} — using rules')

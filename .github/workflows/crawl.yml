@@ -1,12 +1,8 @@
 name: Hourly Product Roles Crawl + Notify
 
-# Runs hourly during Amsterdam waking hours (08:00–23:00 local, 16 runs/day),
-# silent overnight to save Actions minutes. The 12:00 UTC run also sends the
-# daily 24h summary.
-#
-# Cron is UTC and does NOT shift with DST — this schedule targets CEST
-# (summer, UTC+2). In winter (CET, UTC+1) the window becomes 07:00–22:00
-# Amsterdam local. Retune the range if that drift matters.
+# Same schedule as role-radar (the software-engineer crawler). Times are UTC; GitHub
+# cron has no DST. Hourly ~08:00-21:00 CEST plus one at 00:00 CEST; the 12:19 UTC run
+# also sends the daily 24h summary. In winter (CET) local times are one hour earlier.
 #
 # Required GitHub Secrets:
 #   GMAIL_APP_PASSWORD  — App password for puneetjakhar1996@gmail.com
@@ -16,8 +12,9 @@ name: Hourly Product Roles Crawl + Notify
 
 on:
   schedule:
-    - cron: '0 6-21 * * *'   # 06:00–21:00 UTC = 08:00–23:00 CEST — hourly email
-    - cron: '0 12 * * *'     # 12:00 UTC = 14:00 CEST — daily 24h summary
+    - cron: '19 6-11,13-19 * * *'  # hourly ~08:00-21:00 CEST, minus 14:00 (handled below), offset :19: new roles email
+    - cron: '19 22 * * *'          # 00:00 CEST (Amsterdam midnight): new roles email
+    - cron: '19 12 * * *'          # 14:00 CEST: new roles email + daily 24h summary
   workflow_dispatch:
     inputs:
       daily:
@@ -96,7 +93,7 @@ jobs:
 
       - name: Send daily 24h summary (12:00 UTC = 14:00 CEST)
         if: >
-          github.event.schedule == '0 12 * * *' ||
+          github.event.schedule == '19 12 * * *' ||
           (github.event_name == 'workflow_dispatch' && github.event.inputs.daily == 'true')
         run: python notify.py --daily
         env:
