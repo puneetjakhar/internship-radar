@@ -121,7 +121,7 @@
     "job_title": "Senior Product Manager - Business Banking",
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/mollie",
-    "job_url": "https://www.linkedin.com/jobs/view/4482827845",
+    "job_url": "https://www.linkedin.com/jobs/view/4482842433",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-13",
@@ -1391,6 +1391,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Deel",
+    "job_title": "Country Product Manager - Sweden",
+    "location": "Netherlands",
+    "careers_url": "https://www.linkedin.com/company/deel",
+    "job_url": "https://www.linkedin.com/jobs/view/4475269422",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-31",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Aquablu",
     "job_title": "Product Manager Digital Platforms",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -1742,19 +1755,6 @@
     "source": "linkedin"
   },
   {
-    "company": "ASN Bank",
-    "job_title": "Product Manager Business Lending",
-    "location": "Utrecht, Utrecht, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/asn-bank",
-    "job_url": "https://www.linkedin.com/jobs/view/4474293510",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-26",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Databricks",
     "job_title": "Staff Product Manager",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -2004,9 +2004,9 @@
   {
     "company": "Google",
     "job_title": "Data Center Site Program Manager",
-    "location": "Winschoten, GR, Netherlands",
+    "location": "Groningen, GR, Netherlands",
     "careers_url": "https://nl.indeed.com/cmp/Google",
-    "job_url": "https://nl.indeed.com/viewjob?jk=16216d476750928b",
+    "job_url": "https://nl.indeed.com/viewjob?jk=fadbc47fee5209c0",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-03",
@@ -2015,27 +2015,14 @@
     "source": "indeed"
   },
   {
-    "company": "Solera",
-    "job_title": "Product Owner III",
-    "location": "Nieuwegein, UT, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Solera",
-    "job_url": "https://nl.indeed.com/viewjob?jk=58618b4b8ab806e9",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-28",
-    "applicant_count": null,
-    "description": "**About Solera**\n\n  \n\nAt Solera, we continuously improve our products and services to deliver measurable value to insurers, MGAs, and other insurance market participants. Within the Netherlands market, our Data Processing portfolio consists of CHV (Clearing House Volmachten) and VRA (Volmacht Resultaat Analyse), services that process, validate, enrich, reconcile and deliver insurance portfolio, financial and claims information to insurers and delegated authority organizations.\n\nThe CHV/VRA platform supports critical insurer processes, operational reporting, regulatory reporting, portfolio analysis, data quality monitoring, and management information services. The platform currently serves dozens of insurers and hundreds of MGA data providers and remains a strategic component of Solera's International Underwriting portfolio.\n\n**The Role**\n\nAs Product Owner for CHV/VRA Dataprocessing, you are responsible for defining and executing the product vision, roadmap and backlog for the CHV/VRA portfolio.\n\nYou act as the primary liaison between insurers, MGA organizations, Product Management, Engineering, Operations, Data Processing specialists and commercial teams. You ensure that customer requirements, market developments, regulatory obligations and operational needs are translated into clear priorities and deliverables.\n\nYou provide day-to-day direction to AI driven teams and maintain ownership of the product backlog, release planning and roadmap execution. You balance customer commitments, technical debt, compliance requirements, operational stability and strategic product investments.\n\n**Key Responsibilities:**\n\n**Product Ownership**\n\n* Own and maintain the CHV/VRA product backlog.\n* Define product vision and roadmap in alignment with Product Management.\n* Prioritize features, enhancements and maintenance activities.\n* Translate customer and market needs into epics, features and user stories.\n* Ensure backlog readiness and sprint preparation.\n* Lead backlog grooming and iteration planning activities.\n* Coordinate release planning and production deployment priorities.\n\n**Customer & Market Engagement**\n\n* Act as primary product contact for insurers, MGAs and strategic customers.\n* Conduct requirements workshops and customer alignment sessions.\n* Support customer implementations, migrations and onboarding activities.\n* Participate in customer working groups and advisory boards.\n* Evaluate customer feedback and convert findings into roadmap priorities.\n\n**Data Processing & Domain Ownership**\n\n* Maintain deep understanding of CHV Financial, Policy & Claims processing.\n* Maintain understanding of VRA portfolio reporting and analytics.\n* Monitor data quality, reconciliation, validation and transformation requirements.\n* Support insurer-specific output specifications and integrations.\n* Drive simplification and standardization initiatives across the processing chain.\n* Safeguard regulatory and market compliance requirements.\n\n**Delivery Leadership**\n\n* Provide",
-    "source": "indeed"
-  },
-  {
     "company": "Nearfield Instruments",
     "job_title": "Head of Product",
-    "location": "Rotterdam, ZH, Netherlands",
+    "location": "Eindhoven, NB, Netherlands",
     "careers_url": "https://nl.indeed.com/cmp/Nearfield-Instruments",
-    "job_url": "https://nl.indeed.com/viewjob?jk=a0c4f1b7d3ada310",
+    "job_url": "https://nl.indeed.com/viewjob?jk=66a431695aabb766",
     "visa_support": null,
     "relocation_support": null,
-    "date_posted": "2026-10-28",
+    "date_posted": "2026-10-30",
     "applicant_count": null,
     "description": "#### **About Nearfield Instruments**\n\nNearfield Instruments (NFI) is a fast-growing high-tech scale-up. We design, develop, integrate, market and service advanced metrology systems that help the world\u2019s leading chipmakers improve production yields and enable smaller, more powerful microchips.\n\nFounded in 2016, we bring together experts in science and technology to develop a unique, high-throughput Scanning Probe Microscopy system.\n\n**This role involves approximately 35% international travel.**\n\nNearfield Instruments is scaling rapidly in one of the world\u2019s most demanding industries: semiconductor manufacturing.\n\nAs Head of Product, you will lead the product management process, translating customer problems, market developments and technology opportunities into clear product definitions, portfolio choices and development priorities.\n\nYour focus is on the **why and the what**: identifying the right problems to solve, defining product outcomes and requirements, and making evidence-based decisions about where Nearfield should invest.\n\nCombining deep customer understanding, systems thinking and technical judgement, you will guide teams from problem discovery through product definition and roadmap decisions, creating clarity before development commitments are made.\n\nThis role reports to the Director of Product and Program Management.\n\n### **What you will do**\n\n* Own and evolve Nearfield\u2019s **product strategy, portfolio and integrated product roadmap**, translating company strategy, market developments and technology opportunities into clear priorities.\n* Lead **customer and market discovery** to understand the workflows, constraints and unmet needs of leading semiconductor manufacturers and identify the problems worth solving.\n* Translate complex customer needs into **clear product outcomes, system-level requirements and acceptance criteria**.\n* Lead early product definition with System Engineering and Development & Engineering, evaluating solution options, technical feasibility, risk and trade-offs before development commitments are made.\n* Drive **portfolio and roadmap decisions** based on customer value, strategic fit, development effort, lifecycle impact, risk and time-to-impact.\n* Partner with Product Marketing to combine customer evidence, market and competitive insights, installed-base learning and product data into well-founded product opportunities.\n* Connect customers, Sales, System Engineering, Development & Engineering and Operations, creating alignment on **what we build, why we build it and what takes priority**.\n* Lead strategic customer discussions on future use cases, performance requirements and technology readiness.\n* Further professionalize Nearfield\u2019s **product management organization**, establishing clear ownership, decision rights and effective product governance.\n* Build and develop a high-performing product management capability with strong technical depth, customer focus, accountability and fact-based decision-making.\n\n### **Wh",
     "source": "indeed"
@@ -2051,6 +2038,19 @@
     "date_posted": "2026-10-28",
     "applicant_count": null,
     "description": "##### **Hybrid**\n\n**About the role**\n------------------\n\nIn this role, you take charge of the entire payroll chain at large organisations that have outsourced their payroll to a BPO partner, or where multiple countries and systems come together. You are the linchpin between HR, Finance, IT, the payroll provider and the (local) payroll leads. You make sure risks are identified early and that the provider delivers what has been agreed. At the same time, you help build our growing Payroll Services team. Is this the next step you are looking for?\n\n**Why Highberg?**\n-----------------\n\nAt Highberg, everything revolves around people. Around colleagues who want to make a difference, take ownership, and work together based on trust and craftsmanship. We believe real change happens when strategy, execution, and humanity come together. That starts with our own team. This is why we create an environment where you can continue to grow, apply your expertise, and expand it further. An environment where you can make lasting impact.\n\n##### **Bringing strategy to life**\n\nAt Highberg, you are not a remote advisor. You work closely with clients on challenges that truly matter, from strategy through to implementation. This allows you to make an immediate impact and see the results of your work in practice.\n\n##### **Collaborative, human, and professional**\n\nWe work closely together, share knowledge, and strengthen one another to achieve the best possible outcomes. Our culture is open and built on trust, with room for both ambition and humanity. We listen, celebrate successes, and hold each other accountable, always with attention to people as well as to quality.\n\n##### **European outlook, locally rooted**\n\nWith teams in the Netherlands and the DACH region, you work in an organization with a broad, European perspective. At the same time, the culture remains personal and close-knit. This gives you the opportunity to collaborate internationally at a high level, within a committed and engaged team.\n\n##### **Culture as a catalyst**\n\nOur culture is a key reason why colleagues enjoy working at Highberg. We place trust in our people, value initiative, and believe it is important that everyone can continue to develop. This enables you to get the best out of yourself, while together contributing to sustainable growth.\n\n**Your role as Payroll Product Owner / Payroll Lead**\n-----------------------------------------------------\n\nAs Payroll Product Owner / Payroll Lead at Highberg, you own the payroll chain. Without a clear owner, issues fall between the cracks; you ensure that collective labour agreement (CAO) and legislative changes go live on time, that systems stay aligned and that payroll runs correctly every period. You work within Payroll Services, the Dutch-speaking payroll team of Highberg | Consultday.\n\n  \n\nYour responsibilities include:\n\n* Managing and prioritising the backlog: planning CAO, legislative and system changes, so that statutory changes go live on time.\n* Ven",
+    "source": "indeed"
+  },
+  {
+    "company": "Solera",
+    "job_title": "Product Owner III",
+    "location": "Nieuwegein, UT, Netherlands",
+    "careers_url": "https://nl.indeed.com/cmp/Solera",
+    "job_url": "https://nl.indeed.com/viewjob?jk=58618b4b8ab806e9",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-28",
+    "applicant_count": null,
+    "description": "**About Solera**\n\n  \n\nAt Solera, we continuously improve our products and services to deliver measurable value to insurers, MGAs, and other insurance market participants. Within the Netherlands market, our Data Processing portfolio consists of CHV (Clearing House Volmachten) and VRA (Volmacht Resultaat Analyse), services that process, validate, enrich, reconcile and deliver insurance portfolio, financial and claims information to insurers and delegated authority organizations.\n\nThe CHV/VRA platform supports critical insurer processes, operational reporting, regulatory reporting, portfolio analysis, data quality monitoring, and management information services. The platform currently serves dozens of insurers and hundreds of MGA data providers and remains a strategic component of Solera's International Underwriting portfolio.\n\n**The Role**\n\nAs Product Owner for CHV/VRA Dataprocessing, you are responsible for defining and executing the product vision, roadmap and backlog for the CHV/VRA portfolio.\n\nYou act as the primary liaison between insurers, MGA organizations, Product Management, Engineering, Operations, Data Processing specialists and commercial teams. You ensure that customer requirements, market developments, regulatory obligations and operational needs are translated into clear priorities and deliverables.\n\nYou provide day-to-day direction to AI driven teams and maintain ownership of the product backlog, release planning and roadmap execution. You balance customer commitments, technical debt, compliance requirements, operational stability and strategic product investments.\n\n**Key Responsibilities:**\n\n**Product Ownership**\n\n* Own and maintain the CHV/VRA product backlog.\n* Define product vision and roadmap in alignment with Product Management.\n* Prioritize features, enhancements and maintenance activities.\n* Translate customer and market needs into epics, features and user stories.\n* Ensure backlog readiness and sprint preparation.\n* Lead backlog grooming and iteration planning activities.\n* Coordinate release planning and production deployment priorities.\n\n**Customer & Market Engagement**\n\n* Act as primary product contact for insurers, MGAs and strategic customers.\n* Conduct requirements workshops and customer alignment sessions.\n* Support customer implementations, migrations and onboarding activities.\n* Participate in customer working groups and advisory boards.\n* Evaluate customer feedback and convert findings into roadmap priorities.\n\n**Data Processing & Domain Ownership**\n\n* Maintain deep understanding of CHV Financial, Policy & Claims processing.\n* Maintain understanding of VRA portfolio reporting and analytics.\n* Monitor data quality, reconciliation, validation and transformation requirements.\n* Support insurer-specific output specifications and integrations.\n* Drive simplification and standardization initiatives across the processing chain.\n* Safeguard regulatory and market compliance requirements.\n\n**Delivery Leadership**\n\n* Provide",
     "source": "indeed"
   },
   {
@@ -3653,6 +3653,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Teradata",
+    "job_title": "Director, Product Management \u2014 Core Database Engine & AI",
+    "location": "Netherlands",
+    "careers_url": "https://www.linkedin.com/company/teradata",
+    "job_url": "https://www.linkedin.com/jobs/view/4489660784",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-11",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Wolters Kluwer",
     "job_title": "Senior Product Manager \u2013 Integrations & Data Connectivity",
     "location": "Alphen aan den Rijn, South Holland, Netherlands",
@@ -3700,19 +3713,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Teradata",
-    "job_title": "Director, Product Management \u2014 Core Database Engine & AI",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/teradata",
-    "job_url": "https://www.linkedin.com/jobs/view/4476275833",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-31",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4238,32 +4238,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Adyen",
-    "job_title": "Product Manager - Interface Foundations",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/adyen",
-    "job_url": "https://www.linkedin.com/jobs/view/4480742495",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-11",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "IEX Media BV",
-    "job_title": "Product & Digital Manager",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/iex-media",
-    "job_url": "https://www.linkedin.com/jobs/view/4487018314",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-04",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "UWV",
     "job_title": "Product Owner II/III \u2013 Dataplatform (5 vacatures)",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -4415,19 +4389,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-01",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Deel",
-    "job_title": "Country Product Manager - Sweden",
-    "location": "Netherlands",
-    "careers_url": "https://www.linkedin.com/company/deel",
-    "job_url": "https://www.linkedin.com/jobs/view/4475269422",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-31",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4870,6 +4831,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-28",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "ASN Bank",
+    "job_title": "Product Manager Business Lending",
+    "location": "Utrecht, Utrecht, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/asn-bank",
+    "job_url": "https://www.linkedin.com/jobs/view/4474293510",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-26",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -5447,6 +5421,19 @@
     "source": "linkedin"
   },
   {
+    "company": "IEX Media BV",
+    "job_title": "Product & Digital Manager",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/iex-media",
+    "job_url": "https://www.linkedin.com/jobs/view/4487018314",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-04",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Deel",
     "job_title": "Staff Product Operations Manager - Benefits",
     "location": "Netherlands",
@@ -5499,32 +5486,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Signify",
-    "job_title": "Global Product Manager Home Entertainment Philips Hue",
-    "location": "Eindhoven, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Signify-4",
-    "job_url": "https://nl.indeed.com/viewjob?jk=a7ffc15b4c5f0e37",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-11",
-    "applicant_count": null,
-    "description": "Eindhoven, Netherlands Category Marketing Posted Date 11/12/2026 Job Id 366971\n\n  \n\n**About Signify**\n\n  \n  \n\nThrough bold discovery and cutting-edge innovation, we lead an industry that is vital for the future of our planet: lighting. Through our leadership in connected lighting and the Internet of Things, we're breaking new ground in data analytics, AI, and smart solutions for homes, offices, cities, and beyond.\n\n  \n  \n\nAt Signify, you can shape tomorrow by building on our incredible 125+ year legacy while working toward even bolder sustainability goals. Our culture of continuous learning, creativity, and commitment to diversity and inclusion empowers you to grow your skills and career.\n\n  \n  \n\nJoin us, and together, we\u2019ll transform our industry, making a lasting difference for brighter lives and a better world.\n\n  \n  \n\n**More about the role**\n\n  \n  \n\nWe\u2019re looking for a Global Product Manager with a passion for Home Entertainment to join our Philips Hue Product Management team in Eindhoven.\n\nWorking for Signify means being creative and adaptive while working in a fast-paced company. Our culture of continuous learning and commitment to diversity and inclusion creates an environment that allows you to build your skills and career while transforming our industry.\n\nAs the world leader in lighting, we are constantly ahead of the curve. Through our leadership in connected lighting and the Internet of Things, we are breaking new grounds in data analytics, AI, and smart homes, offices, cities and more!\n\nSignify is one of the few companies in the world to achieve carbon neutrality and our next sustainability goals are even bolder: doubling our positive impact on the environment and society by 2025.\n\nAs a Global Product Manager for Philips Hue you will be responsible for leading and developing the global offer strategy and roadmap for our Philips Hue hardware portfolio with a strong focus on home entertainment and gaming propositions. You will help building the business by translating consumer insights into propositions that address end user needs with clear benefits. You will work together with an international team to develop a compelling product roadmap and go-to-market strategy to reach consumers homes around the world.\n\nWe are on the lookout for forward-thinking innovators with a passion for sustainability. If you match this description, get in touch!\n\n  \n  \n\n**This position is a 6 month contract, with opportunity to extend.**\n\n**Key areas of Responsibility**\n-------------------------------\n\n* Value Proposition creation and Portfolio Management\n* You are responsible for leading and developing the complete offer strategy and roadmap for the hardware category\n* You gather insights from the market, initiating user studies and research, to address any opportunities in the hardware roadmap.\n* You define and build required capabilities for the product management function\n* You plan and execute successful launches of products jointly with the market and m",
-    "source": "indeed"
-  },
-  {
-    "company": "ING",
-    "job_title": "Senior Product Manager (CJE) - Open Banking",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Ing",
-    "job_url": "https://nl.indeed.com/viewjob?jk=37d101d939d10e3e",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-10",
-    "applicant_count": null,
-    "description": "* REQ-10114108\n* 10/11/2026\n* Customer Journey\n* Amsterdam, Netherlands\n* \u20ac6.728 - \u20ac10.753\n* ING Bank\n\n  \n\nOriginal posting date 29/4/2026\n\n  \n  \n\nING Open Banking is evolving beyond compliance into a strategic platform that enables ecosystems, new business models, and seamless integration with our partners\u2019 and clients\u2019 systems. As an Open Banking Customer Journey Expert, you will play a pivotal role at the intersection of product strategy and management, platform integrations, and external partnerships.\n\nYou are responsible for shaping how ING collaborates with external partners (e.g. PSPs, fintechs, ERP/TMS providers, high-impact partners) while connecting internal business lines across ING verticals (Retail, Business Banking, Wholesale Banking) to the Open Banking platform.\n\nYou are accountable for translating ecosystem opportunities and regulatory developments into scalable platform adoption, value creation, and strategic partnerships, ensuring ING\u2019s Open Banking capabilities are positioned as a trusted, compliant, and commercially viable platform in the market.\n\nYou will combine deep API and platform knowledge with a strong commercial mindset, enabling ING to expand its Open Banking reach while delivering a frictionless developer and client experience.\n\nYou act as a senior product professional who leads complex initiatives end-to-end, and represents ING Open Banking towards internal and external stakeholders.\n\n  \n  \n\n**Key responsibilities**\n\n* Define and execute the **Open Banking ecosystem and partnership strategy**, aligned with regulatory, technical, and commercial objectives.\n* Act as ING\u2019s **primary Open Banking contact** for external ecosystem partners and strategic alliances.\n* Identify, onboard, and scale partnerships that accelerate adoption, ecosystem reach, and monetisation.\n* Serve as the main liaison between the **Open Banking Platform** and ING business lines (Retail, Business, Wholesale).\n* Translate business strategy and regulatory requirements into **clear platform use cases and integration opportunities**.\n* Design and deliver **secure, low\u2011friction integrations** in collaboration with Product, IT, Legal, Risk, and Compliance.\n* Lead joint **go\u2011to\u2011market initiatives** that drive sustainable platform usage and long\u2011term value.\n* Track ecosystem performance, define **KPIs**, and optimise partnership and commercial models using data and market insights.\n* Represent ING externally as a **product and technical authority** on Open Banking APIs, standards, and integration patterns.\n* Orchestrate end\u2011to\u2011end delivery across Engineering, Architecture, UX, Security, Legal, Compliance, Operations, and Commercial teams.\n  \n\n  \n\n**Your background**\n\n* You are a senior product professional who combines strategic thinking, technical depth, and strong stakeholder skills.\n  \n\n  \n\n**You bring:**\n\n* Senior-level product experience: Extensive experience as a Product Manager or Customer Journey Expert in platforms, APIs, integrations, or ecosy",
-    "source": "indeed"
-  },
-  {
     "company": "stichd",
     "job_title": "Creative Director Product",
     "location": "Den Bosch, NB, Netherlands",
@@ -5535,32 +5496,6 @@
     "date_posted": "2026-11-09",
     "applicant_count": null,
     "description": "**The Job**\n\nWe are looking for a Creative Director Product to lead and shape the future of our product categories across some of the most relevant global A-brands in sport and fashion.\n  \nAs a trusted long-term licensing partner, we have built global brand collaborations over decades \u2014 translating brand DNA into commercially successful, consumer-relevant products at scale. This role sits at the heart of that model: connecting brand vision, creative direction, and exceptional product execution.\n  \nYou will define a clear product vision, inspire your team, and translate global brand strategies into standout category concepts \u2014 from technically advanced first-layer products (socks, bodywear & underwear) to high-impact fanwear collections linked to the world\u2019s leading teams and assets.\n\n**Your Mission**\n\n* Define and drive a creative product strategy and long-term vision across all categories;\n* Translate brand and company strategy into compelling product concepts and seasonal roadmaps;\n* Bring brand DNA and storytelling to life through commercially relevant product design;\n* Lead the development of technically strong, best-in-class first-layer products;\n* Drive product execution at scale, delivering high-volume, commercially successful assortments;\n* Ensure products deliver on best price\u2013value ratio, balancing design, quality and cost;\n* Anticipate and translate consumer needs and trends into relevant assortments;\n* Ensure we are present where the consumer shops, delivering the right product for the right channel;\n\nFanwear (integrated scope):\n  \n\n* Lead the creation of fanwear collections for top-tier teams, translating partnerships into commercially successful products;\n* Operate within a triangle partnership model (brand \u2013 team \u2013 stichd) to ensure strong alignment and execution;\n* Drive fast, responsive product execution around key moments, turning speed into a differentiator ;\n* Translate real-time consumer insights (e.g. trackside, DTC) into scalable products that meet fan expectations;\n* Build focused assortments and capsule drops that drive engagement, conversion and sell-through.\n\n**Your Talent**\n\nYou bring the creative vision, product instinct and commercial sharpness to shape collections that move at the speed of culture \u2014 and perform in the real world.\n\n  \n  \n\n**You have:**  \n\n* 10+ years of experience in a senior creative or product leadership role within sport, fashion, lifestyle or a connected consumer goods environment;\n* A proven track record of working with global brands, preferably within a licensing, partnership or brand-led product environment;\n* Strong experience in building multi-year product visions and translating them into clear seasonal strategies, concepts and roadmaps;\n* A deep understanding of technical product development, ideally within first-layer categories such as socks, bodywear and underwear;\n* Experience creating high-volume, commercially successful product ranges that balance brand heat, consumer relevance, qual",
-    "source": "indeed"
-  },
-  {
-    "company": "stichd",
-    "job_title": "Product Manager Essentials",
-    "location": "Den Bosch, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Stichd",
-    "job_url": "https://nl.indeed.com/viewjob?jk=81f353ce61f149d6",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "**The Job**\n\nThe Product Management department oversees the end-to-end product process, ensuring the full collection is delivered on time. As Product Manager, you align the collection with market needs and the stichd strategy by connecting internal processes and creative teams. You act as the central coordinator across Product Development, Product Design, Operations, Marketing, and Sales.\n  \n  \nWorking with a brand focus across several product groups, you translate product needs for different distribution channels and manage key account requests.\n\n**Your Mission**\n\n* Execute and manage the product process from clear briefs to range launch;\n\n* Create a lineplan and planning and translate this effectively into a clear product briefing for the creative team and coordinate the tasks and responsibilities of the teams;\n\n* Develop short- and long-term collection strategies, tactical product executions and innovations that position our brands as the leaders in the assigned categories;\n\n* Prepare market- and competitor studies on an international level as well as analyzing forecasts and sales data;\n\n* Cooperate with design, development, and sales to ensure final collections reflect market needs;\n\n* Collaborate with stakeholders and drive the product creation process based on the Go-to-Market calendar milestones;\n\n* Understand sales, margin, and merchandising requirements to deliver market / account fitting product concepts;\n\n* Meet category financial targets as set by the organization;\n\n* Manage, maintain, and distribute all information of assigned product lines. Ensuring correct and on time input in PLM (Product Lifecycle Management) and ERP system;\n\n* Present product lines to internal and external teams in a comprehensive, clear, tactical manner.\n\n**Your Talent**\n\n* Bachelor\u2019s degree in Business, Marketing, Fashion Management, or a related field;\n\n* At least four years of product management experience, preferably in sports lifestyle, sporting goods, or an international organization working with global brands;\n\n* Strong knowledge of the lifestyle, fashion, and/or sporting goods markets, with a sharp commercial mindset and a solid understanding of sales drivers, retail dynamics, and competitor activity;\n\n* Experience in close-to-body product categories is preferred;\n\n* Flexible and open-minded team player with strong organizational, analytical, and prioritization skills;\n\n* Clear and confident communicator with excellent written and spoken English;\n\n* Advanced proficiency in Microsoft Office, particularly Excel, Word, and PowerPoint.\n\n  \n  \n\nThis role is based in Den Bosch, the Netherlands. Working remotely from other countries is not possible.\n\nTo apply for this role, you must already have the legal right to work in the Netherlands. We will not apply for work or residence permits.\n\n  \n  \n  \n\n**We Offer**\n\n  \n  \n\n* Our salaries are based on 38 hours per week, but full-time work is 40 hours per week. Instead, you choose between a lot of holidays; 40 per ye",
-    "source": "indeed"
-  },
-  {
-    "company": "DeepL SE",
-    "job_title": "Head of Product Growth",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Deepl-Se",
-    "job_url": "https://nl.indeed.com/viewjob?jk=3efe076a33a9b704",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-28",
-    "applicant_count": null,
-    "description": "**Meet DeepL**\n==============\n\nDeepL is a global AI product and research company focused on building secure, intelligent solutions to complex business problems. Over 200,000 business customers and millions of individuals across 228 global markets today trust DeepL's Language AI platform for human-like translation, improved writing and real-time voice translation.  \nFounded in 2017 by CEO Jaroslaw \u201cJarek\u201d Kutylowski, DeepL now has around 1,000 passionate employees and is supported by world-renowned investors including Benchmark, IVP, and Index Ventures.\n\nOur goal is to become the global leader in trusted, intelligent AI technology, building products that drive better communication, foster connections, and create a meaningful impact. To achieve this, we need talented people like you to join our journey. If you\u2019re ready to shape the future of AI and grow your career in a fast-moving, purpose-driven environment, DeepL is your next destination.\n\n**What sets us apart**\n----------------------\n\nWhat sets us apart is our blend of cutting-edge AI technology, meaningful work, and a culture where people truly thrive. We\u2019re a team of innovators, researchers, and creators driven by a shared purpose to unlock human potential by making work simpler, smarter, and more connected.\n\nWhen we share what it\u2019s like to work at DeepL, the reactions are overwhelmingly positive. This might be because of our technology that helps millions of people and businesses communicate and work better every day, or because of the trust, curiosity, and care that shape our culture.\n\nWhat we know for sure is this: being part of DeepL means joining a team dedicated to innovation, growth, and well-being. Discover more about life at DeepL onLinkedIn,Instagram, and our Blog.\n\n**Meet the team behind this journey**\n-------------------------------------\n\nDeepL runs product-led growth alongside our sales-led motion, with media translation as the strategic wedge. This role is responsible for turning DeepL into the default platform for translation worldwide driving adoption through product usage, and converting that usage into strong Product Qualified Leads (PQLs) tha convert into revenues and strengthen our sales pipeline. This role drives adoption of our core DeepL Translate features (e.g. Customization Hub, TQE) and cross-sell into adjacent products like DeepL Voice. You will start with a focus on Media Translation.\n\nYour Mission: Put DeepL Translate in the hands of everyone, everywhere and use that reach to grow adoption across DeepL's broader product surface, turning usage into a reliable, high-quality source of PQLs for the business.\n\n**Your responsibilities**\n-------------------------\n\n* **Use case strategy:** prioritize the highest-value use cases for media translation, and and build the growth loops and product surface to drive adoption of them.\n* **Distribution on the DeepL platform (main channel):** drive media translation adoption directly within web, browser extension, and apps. Work c",
     "source": "indeed"
   },
   {
@@ -5754,6 +5689,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-27",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Toelevering Online",
+    "job_title": "Head of Product",
+    "location": "Nijverdal, Overijssel, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/toelevering-online",
+    "job_url": "https://www.linkedin.com/jobs/view/4481534558",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-20",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -6391,6 +6339,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-26",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Adyen",
+    "job_title": "Product Manager - Interface Foundations",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/adyen",
+    "job_url": "https://www.linkedin.com/jobs/view/4480742495",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-11",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
