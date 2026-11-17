@@ -26,19 +26,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Maxxton B.V.",
-    "job_title": "Product Manager",
-    "location": "Amsterdam Area",
-    "careers_url": "https://www.linkedin.com/company/maxxton-b.v.",
-    "job_url": "https://www.linkedin.com/jobs/view/4491740064",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-17",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Renesas Electronics",
     "job_title": "Product Manager, Multiprotocol MCU for industrial and IoT (f/m/d)",
     "location": "\u2019s-Hertogenbosch, North Brabant, Netherlands",
@@ -160,7 +147,7 @@
     "job_title": "Senior Product Manager",
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://be.linkedin.com/company/loopearplugs",
-    "job_url": "https://www.linkedin.com/jobs/view/4479402833",
+    "job_url": "https://www.linkedin.com/jobs/view/4478911424",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-17",
@@ -187,19 +174,6 @@
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/adyen",
     "job_url": "https://www.linkedin.com/jobs/view/4438305258",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-16",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Jobgether",
-    "job_title": "Technical Product Manager, Identification & JS Agent",
-    "location": "Netherlands",
-    "careers_url": "https://be.linkedin.com/company/jobgether",
-    "job_url": "https://www.linkedin.com/jobs/view/4490290179",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
@@ -304,6 +278,19 @@
     "location": "Delft, South Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/exact",
     "job_url": "https://www.linkedin.com/jobs/view/4491503264",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-16",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Pie Medical Imaging",
+    "job_title": "Product Manager CT Guided PCI",
+    "location": "Maastricht, Limburg, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/pie-medical-imaging",
+    "job_url": "https://www.linkedin.com/jobs/view/4490321743",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
@@ -460,6 +447,32 @@
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/lynx",
     "job_url": "https://www.linkedin.com/jobs/view/4489927409",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-13",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "SPS Commerce",
+    "job_title": "Product Manager",
+    "location": "Breukelen, Utrecht, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/sps-commerce",
+    "job_url": "https://www.linkedin.com/jobs/view/4489825715",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-13",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "GlobalFoundries",
+    "job_title": "Product Manager, Quantum Technology Solutions",
+    "location": "Eindhoven, North Brabant, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/globalfoundries",
+    "job_url": "https://www.linkedin.com/jobs/view/4489583586",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-13",
@@ -793,19 +806,6 @@
     "source": "linkedin"
   },
   {
-    "company": "ClickHouse",
-    "job_title": "Senior Product Manager - AI/ML",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/clickhouseinc",
-    "job_url": "https://www.linkedin.com/jobs/view/4488624981",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-10",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Howspace",
     "job_title": "Senior Product Manager",
     "location": "Netherlands",
@@ -897,19 +897,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Suitsupply",
-    "job_title": "Junior Product Manager - Custom Made",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/suitsupply",
-    "job_url": "https://www.linkedin.com/jobs/view/4462309496",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-09",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Zeppelin Energy Solutions",
     "job_title": "Senior Product Manager BESS & PCS",
     "location": "Papendrecht, South Holland, Netherlands",
@@ -941,19 +928,6 @@
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/tmf-group",
     "job_url": "https://www.linkedin.com/jobs/view/4489142104",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-09",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "InSpace",
-    "job_title": "Product Owner / Product Domain Lead AI Platform",
-    "location": "Eindhoven Area",
-    "careers_url": "https://nl.linkedin.com/company/inspaceseo",
-    "job_url": "https://www.linkedin.com/jobs/view/4479002365",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-09",
@@ -1040,14 +1014,14 @@
     "source": "linkedin"
   },
   {
-    "company": "Cytek Biosciences",
-    "job_title": "Sr. Product Manager, Instruments and Software",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/cytek-biosciences",
-    "job_url": "https://www.linkedin.com/jobs/view/4426931047",
+    "company": "KGS DIAMOND USA",
+    "job_title": "Product Manager",
+    "location": "Elburg, Gelderland, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/kgs-diamond-usa",
+    "job_url": "https://www.linkedin.com/jobs/view/4488717041",
     "visa_support": null,
     "relocation_support": null,
-    "date_posted": "2026-11-06",
+    "date_posted": "2026-11-07",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -1144,6 +1118,19 @@
     "source": "linkedin"
   },
   {
+    "company": "EY",
+    "job_title": "Talent Product Owner - Skills - Associate Director",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://uk.linkedin.com/company/ernstandyoung",
+    "job_url": "https://www.linkedin.com/jobs/view/4459965359",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-06",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Nedap",
     "job_title": "Product Manager - iD Cloud      .",
     "location": "Groenlo, Gelderland, Netherlands",
@@ -1209,6 +1196,32 @@
     "source": "linkedin"
   },
   {
+    "company": "Mendix",
+    "job_title": "Product Manager- Workflow",
+    "location": "Rotterdam, South Holland, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/mendix",
+    "job_url": "https://www.linkedin.com/jobs/view/4440440726",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-05",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Worldline",
+    "job_title": "Product Manager",
+    "location": "Hoofddorp, North Holland, Netherlands",
+    "careers_url": "https://fr.linkedin.com/company/worldlineglobal",
+    "job_url": "https://www.linkedin.com/jobs/view/4488038237",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-05",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Rabobank",
     "job_title": "Product Manager Quality Engineering",
     "location": "Utrecht, Utrecht, Netherlands",
@@ -1240,6 +1253,19 @@
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://www.linkedin.com/company/harman-international",
     "job_url": "https://www.linkedin.com/jobs/view/4468572520",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-04",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Bitvavo",
+    "job_title": "Lead Product Manager Crypto Custody - Open to remote",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/bitvavocom",
+    "job_url": "https://www.linkedin.com/jobs/view/4479298493",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-04",
@@ -1339,11 +1365,11 @@
     "source": "linkedin"
   },
   {
-    "company": "Thales",
-    "job_title": "Product Manager \u2013 Delivery Services",
-    "location": "Amersfoort, Utrecht, Netherlands",
-    "careers_url": "https://fr.linkedin.com/company/thales",
-    "job_url": "https://www.linkedin.com/jobs/view/4483309428",
+    "company": "Stichting Expertisecentrum Oefenen.nl",
+    "job_title": "Product Lead",
+    "location": "The Hague, South Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/oefenennl",
+    "job_url": "https://www.linkedin.com/jobs/view/4484681223",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-03",
@@ -1846,6 +1872,19 @@
     "source": "linkedin"
   },
   {
+    "company": "HAPPY Professionals",
+    "job_title": "Productmanager Retail",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/happy-professionals",
+    "job_url": "https://www.linkedin.com/jobs/view/4469428625",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-22",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Booking Boosters",
     "job_title": "Senior Product Manager",
     "location": "Enschede, Overijssel, Netherlands",
@@ -2293,6 +2332,19 @@
     "location": "Utrecht, Utrecht, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/brocacef",
     "job_url": "https://www.linkedin.com/jobs/view/4471851820",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-16",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Jobgether",
+    "job_title": "Technical Product Manager, Identification & JS Agent",
+    "location": "Netherlands",
+    "careers_url": "https://be.linkedin.com/company/jobgether",
+    "job_url": "https://www.linkedin.com/jobs/view/4490290179",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
@@ -2925,6 +2977,19 @@
     "source": "linkedin"
   },
   {
+    "company": "InSpace",
+    "job_title": "Product Owner / Product Domain Lead AI Platform",
+    "location": "Eindhoven Area",
+    "careers_url": "https://nl.linkedin.com/company/inspaceseo",
+    "job_url": "https://www.linkedin.com/jobs/view/4479002365",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-09",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "University of Amsterdam",
     "job_title": "Product Owner Data",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -3021,19 +3086,6 @@
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/dpg-media-nl",
     "job_url": "https://www.linkedin.com/jobs/view/4479112317",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-06",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "EY",
-    "job_title": "Talent Product Owner - Skills - Associate Director",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://uk.linkedin.com/company/ernstandyoung",
-    "job_url": "https://www.linkedin.com/jobs/view/4459965359",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-06",
@@ -3307,19 +3359,6 @@
     "location": "Eindhoven, North Brabant, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/scholt-energy",
     "job_url": "https://www.linkedin.com/jobs/view/4466867621",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Stichting Expertisecentrum Oefenen.nl",
-    "job_title": "Product Lead",
-    "location": "The Hague, South Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/oefenennl",
-    "job_url": "https://www.linkedin.com/jobs/view/4484681223",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-03",
@@ -3731,6 +3770,45 @@
     "source": "linkedin"
   },
   {
+    "company": "Adyen",
+    "job_title": "Senior Product Manager, AML",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/adyen",
+    "job_url": "https://www.linkedin.com/jobs/view/4480218653",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-10",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Monta",
+    "job_title": "IT Product manager (Europa)",
+    "location": "Gorinchem, South Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/monta-bv",
+    "job_url": "https://www.linkedin.com/jobs/view/4486848594",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-03",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Teradata",
+    "job_title": "Director, Product Management \u2014 Core Database Engine & AI",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/teradata",
+    "job_url": "https://www.linkedin.com/jobs/view/4476275833",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-31",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Wolters Kluwer",
     "job_title": "Senior Product Manager, Data Platform",
     "location": "Alphen aan den Rijn, South Holland, Netherlands",
@@ -3739,6 +3817,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-29",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Gigs",
+    "job_title": "Connectivity Product Manager, Network Integrations (Europe)",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/meetgigs",
+    "job_url": "https://www.linkedin.com/jobs/view/4484048525",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-27",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -3952,6 +4043,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Suitsupply",
+    "job_title": "Junior Product Manager - Custom Made",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/suitsupply",
+    "job_url": "https://www.linkedin.com/jobs/view/4462309496",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-09",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Mediq Nederland",
     "job_title": "Product Manager Special Care",
     "location": "Utrecht, Utrecht, Netherlands",
@@ -3986,19 +4090,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-06",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Worldline",
-    "job_title": "Product Manager",
-    "location": "Hoofddorp, North Holland, Netherlands",
-    "careers_url": "https://fr.linkedin.com/company/worldlineglobal",
-    "job_url": "https://www.linkedin.com/jobs/view/4488038237",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-05",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4290,6 +4381,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Maxxton B.V.",
+    "job_title": "Product Manager",
+    "location": "Amsterdam Area",
+    "careers_url": "https://www.linkedin.com/company/maxxton-b.v.",
+    "job_url": "https://www.linkedin.com/jobs/view/4491740064",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-17",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "OWOW",
     "job_title": "Senior Commercieel productmanager",
     "location": "Eindhoven, North Brabant, Netherlands",
@@ -4355,24 +4459,11 @@
     "source": "linkedin"
   },
   {
-    "company": "Teradata",
-    "job_title": "Director, Product Management \u2014 Core Database Engine & AI",
-    "location": "Netherlands",
-    "careers_url": "https://www.linkedin.com/company/teradata",
-    "job_url": "https://www.linkedin.com/jobs/view/4489660784",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-11",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Adyen",
-    "job_title": "Senior Product Manager, AML",
+    "company": "ClickHouse",
+    "job_title": "Senior Product Manager - AI/ML",
     "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/adyen",
-    "job_url": "https://www.linkedin.com/jobs/view/4480218653",
+    "careers_url": "https://www.linkedin.com/company/clickhouseinc",
+    "job_url": "https://www.linkedin.com/jobs/view/4488624981",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-10",
@@ -4467,6 +4558,71 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-23",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "UWV",
+    "job_title": "Productowner - Cluster Afnemers en ketenpartners (2 vacatures)",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/uwv",
+    "job_url": "https://www.linkedin.com/jobs/view/4491183699",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-17",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Voodoo",
+    "job_title": "Product Lead - Portfolio Midcore Games",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://fr.linkedin.com/company/voodoo.io",
+    "job_url": "https://www.linkedin.com/jobs/view/4430907645",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-15",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Randstad Enterprise",
+    "job_title": "Sr. HubSpot product owner",
+    "location": "Diemen, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/randstadenterprise",
+    "job_url": "https://www.linkedin.com/jobs/view/4484688093",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-12",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Adyen",
+    "job_title": "Senior Product Manager - Banking Networks Global",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/adyen",
+    "job_url": "https://www.linkedin.com/jobs/view/4440796112",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-01",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Deel",
+    "job_title": "Country Product Manager - Sweden",
+    "location": "Netherlands",
+    "careers_url": "https://www.linkedin.com/company/deel",
+    "job_url": "https://www.linkedin.com/jobs/view/4482542619",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-28",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4602,6 +4758,19 @@
     "source": "indeed"
   },
   {
+    "company": "Thales",
+    "job_title": "Product Manager \u2013 Delivery Services",
+    "location": "Amersfoort, UT, Netherlands",
+    "careers_url": "https://nl.indeed.com/cmp/Thales",
+    "job_url": "https://nl.indeed.com/viewjob?jk=466a05adc9db22e0",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-24",
+    "applicant_count": null,
+    "description": "Location: Amersfoort CDI, Netherlands\n\n**Product Manager \u2013 Delivery Services**\n=======================================\n\n**Summary:**\n------------\n\nThis is a Product Manager role within the Identity & Access Management business of Thales' CSP business unit.\n\nThe role is responsible for defining, industrializing and growing Thales' delivery services for hardware authenticators, including smart cards and FIDO tokens. This covers personalization, packaging, fulfillment and distribution services, leveraging internal manufacturing and operational capabilities to deliver scalable, cost-effective and customer-centric solutions.\n\nBeyond service industrialization, the Product Manager will drive business development, market positioning and revenue growth for delivery services. This includes engaging with customers and partners, identifying new business opportunities, developing compelling commercial offers and representing Thales at industry events and trade shows.\n\nThe successful candidate will combine product management, business development and operational expertise to transform existing capabilities into profitable, scalable services that address evolving customer needs.\n\n**Main responsibilities:**\n--------------------------\n\n**Delivery Services Strategy & Roadmap**\n\n* Own the roadmap for Thales delivery services, covering:\n* Card and token personalization.\n* Packaging services.\n* Fulfillment and direct-to-end-user distribution.\n* Industrialize the existing personalization service in Sweden and develop a standardized, scalable offer across regions.\n* Identify new service opportunities based on market trends and customer needs.\n\n**Business Development & Customer Engagement**\n\n* Leverage PAY and IBS capabilities, including personalization, manufacturing and fulfillment.\n* Coordinate engineering, operations and manufacturing teams to standardize processes and improve efficiency.\n* Drive synergies across sites and business units.\n\n**Offer Management & Business Development**\n\n* Define and maintain the service portfolio, value proposition, pricing strategy and profitability.\n* Develop business cases, revenue forecasts and scalable commercial offers, including subscription models.\n* Identify new business opportunities and develop existing customer relationships.\n* Engage directly with customers to understand their needs, present solutions and support commercial negotiations.\n* Identify and develop partnerships to expand service capabilities and market reach.\n\n**Customer Projects & Business Support**\n\n* Lead customer-specific delivery projects, balancing customization, scalability and profitability.\n* Support Sales and Solution Engineering in customer engagements, tenders and RFPs.\n* Work with Marketing to promote services and enable sales teams.\n\n**Go-to-Market & Sales Channels**\n\n* Define and execute go-to-market strategies with Sales and Marketing.\n* Represent Thales at industry events, trade shows and customer meetings.\n* Monitor market trends, customer exp",
+    "source": "indeed"
+  },
+  {
     "company": "Nedap",
     "job_title": "Product & Delivery Lead",
     "location": "Groenlo, Gelderland, Netherlands",
@@ -4649,19 +4818,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Voodoo",
-    "job_title": "Product Lead - Portfolio Midcore Games",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://fr.linkedin.com/company/voodoo.io",
-    "job_url": "https://www.linkedin.com/jobs/view/4430907645",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-15",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4724,19 +4880,6 @@
     "location": "Eindhoven, North Brabant, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/sendcloud",
     "job_url": "https://www.linkedin.com/jobs/view/4471993721",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-12",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Randstad Enterprise",
-    "job_title": "Sr. HubSpot product owner",
-    "location": "Diemen, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/randstadenterprise",
-    "job_url": "https://www.linkedin.com/jobs/view/4484688093",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-12",
@@ -4810,19 +4953,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Bitvavo",
-    "job_title": "Lead Product Manager Crypto Custody - Open to remote",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/bitvavocom",
-    "job_url": "https://www.linkedin.com/jobs/view/4479298493",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-04",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "C2B Amsterdam",
     "job_title": "Head of Product",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -4844,19 +4974,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Adyen",
-    "job_title": "Senior Product Manager - Banking Networks Global",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/adyen",
-    "job_url": "https://www.linkedin.com/jobs/view/4440796112",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-01",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4953,19 +5070,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Pie Medical Imaging",
-    "job_title": "Product Manager CT Guided PCI",
-    "location": "Maastricht, Limburg, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/pie-medical-imaging",
-    "job_url": "https://www.linkedin.com/jobs/view/4490321743",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-16",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Cytek Biosciences",
     "job_title": "Clinical Market & Product Manager, EMEA",
     "location": "Amsterdam Area",
@@ -4974,19 +5078,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "GlobalFoundries",
-    "job_title": "Product Manager, Quantum Technology Solutions",
-    "location": "Eindhoven, North Brabant, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/globalfoundries",
-    "job_url": "https://www.linkedin.com/jobs/view/4489583586",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-13",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -5010,6 +5101,19 @@
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/booking.com",
     "job_url": "https://www.linkedin.com/jobs/view/4490531704",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-12",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "T\u00dcV NORD Nederland",
+    "job_title": "Internationaal Product Manager ISMS",
+    "location": "Son en Breugel, North Brabant, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/tuvnordnederland",
+    "job_url": "https://www.linkedin.com/jobs/view/4488526081",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-12",
@@ -5052,6 +5156,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-04",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Synthon",
+    "job_title": "Product Manager - Lifecycle, Launch and Tenders",
+    "location": "Nijmegen, Gelderland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/synthon",
+    "job_url": "https://www.linkedin.com/jobs/view/4486152122",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-02",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -5265,19 +5382,6 @@
     "source": "indeed"
   },
   {
-    "company": "Deel",
-    "job_title": "Country Product Manager - Sweden",
-    "location": "Netherlands",
-    "careers_url": "https://www.linkedin.com/company/deel",
-    "job_url": "https://www.linkedin.com/jobs/view/4482542619",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-28",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Jobster",
     "job_title": "Commercial Product Manager bij Coolblue - Studentjob.nl",
     "location": "Rotterdam, South Holland, Netherlands",
@@ -5369,19 +5473,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Synthon",
-    "job_title": "Product Manager - Lifecycle, Launch and Tenders",
-    "location": "Nijmegen, Gelderland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/synthon",
-    "job_url": "https://www.linkedin.com/jobs/view/4486152122",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-02",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "AMMEGA",
     "job_title": "Central Product Manager",
     "location": "Heerhugowaard, North Holland, Netherlands",
@@ -5442,19 +5533,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-10",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Mendix",
-    "job_title": "Product Manager- Workflow",
-    "location": "Rotterdam, South Holland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/mendix",
-    "job_url": "https://www.linkedin.com/jobs/view/4440440726",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-05",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -5575,19 +5653,6 @@
     "applicant_count": null,
     "description": "",
     "source": "glassdoor"
-  },
-  {
-    "company": "stichd",
-    "job_title": "Product Manager Essentials",
-    "location": "Den Bosch, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Stichd",
-    "job_url": "https://nl.indeed.com/viewjob?jk=81f353ce61f149d6",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "**The Job**\n\nThe Product Management department oversees the end-to-end product process, ensuring the full collection is delivered on time. As Product Manager, you align the collection with market needs and the stichd strategy by connecting internal processes and creative teams. You act as the central coordinator across Product Development, Product Design, Operations, Marketing, and Sales.\n  \n  \nWorking with a brand focus across several product groups, you translate product needs for different distribution channels and manage key account requests.\n\n**Your Mission**\n\n* Execute and manage the product process from clear briefs to range launch;\n\n* Create a lineplan and planning and translate this effectively into a clear product briefing for the creative team and coordinate the tasks and responsibilities of the teams;\n\n* Develop short- and long-term collection strategies, tactical product executions and innovations that position our brands as the leaders in the assigned categories;\n\n* Prepare market- and competitor studies on an international level as well as analyzing forecasts and sales data;\n\n* Cooperate with design, development, and sales to ensure final collections reflect market needs;\n\n* Collaborate with stakeholders and drive the product creation process based on the Go-to-Market calendar milestones;\n\n* Understand sales, margin, and merchandising requirements to deliver market / account fitting product concepts;\n\n* Meet category financial targets as set by the organization;\n\n* Manage, maintain, and distribute all information of assigned product lines. Ensuring correct and on time input in PLM (Product Lifecycle Management) and ERP system;\n\n* Present product lines to internal and external teams in a comprehensive, clear, tactical manner.\n\n**Your Talent**\n\n* Bachelor\u2019s degree in Business, Marketing, Fashion Management, or a related field;\n\n* At least four years of product management experience, preferably in sports lifestyle, sporting goods, or an international organization working with global brands;\n\n* Strong knowledge of the lifestyle, fashion, and/or sporting goods markets, with a sharp commercial mindset and a solid understanding of sales drivers, retail dynamics, and competitor activity;\n\n* Experience in close-to-body product categories is preferred;\n\n* Flexible and open-minded team player with strong organizational, analytical, and prioritization skills;\n\n* Clear and confident communicator with excellent written and spoken English;\n\n* Advanced proficiency in Microsoft Office, particularly Excel, Word, and PowerPoint.\n\n  \n  \n\nThis role is based in Den Bosch, the Netherlands. Working remotely from other countries is not possible.\n\nTo apply for this role, you must already have the legal right to work in the Netherlands. We will not apply for work or residence permits.\n\n  \n  \n  \n\n**We Offer**\n\n  \n  \n\n* Our salaries are based on 38 hours per week, but full-time work is 40 hours per week. Instead, you choose between a lot of holidays; 40 per ye",
-    "source": "indeed"
   },
   {
     "company": "Little Dutch",
@@ -5718,6 +5783,19 @@
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
+  },
+  {
+    "company": "stichd",
+    "job_title": "Product Manager Essentials",
+    "location": "Den Bosch, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE5601631.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010315318610",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-03",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
   },
   {
     "company": "Lemonade Insurance Company",
@@ -6604,19 +6682,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Gigs",
-    "job_title": "Connectivity Product Manager, Network Integrations (Europe)",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/meetgigs",
-    "job_url": "https://www.linkedin.com/jobs/view/4484048525",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-27",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Haystack People",
     "job_title": "Productmanager",
     "location": "The Randstad, Netherlands",
@@ -6664,19 +6729,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-02",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "SPS Commerce",
-    "job_title": "Product Manager",
-    "location": "Breukelen, Utrecht, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/sps-commerce",
-    "job_url": "https://www.linkedin.com/jobs/view/4489825715",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-13",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
