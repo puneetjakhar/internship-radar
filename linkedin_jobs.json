@@ -104,6 +104,32 @@
     "source": "linkedin"
   },
   {
+    "company": "Jobster",
+    "job_title": "Technical Product Manager Battery Chargers and DC Distribution - YER",
+    "location": "Zwolle, Overijssel, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/jobster-com",
+    "job_url": "https://www.linkedin.com/jobs/view/4491401596",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-17",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "ASN Bank",
+    "job_title": "Product Manager Business Lending",
+    "location": "Utrecht, Utrecht, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/asn-bank",
+    "job_url": "https://www.linkedin.com/jobs/view/4474293510",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-17",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Eurol",
     "job_title": "Productmanager",
     "location": "Almelo, Overijssel, Netherlands",
@@ -299,19 +325,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Vinted",
-    "job_title": "Product Manager, Vinted Go",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://lt.linkedin.com/company/vinted",
-    "job_url": "https://www.linkedin.com/jobs/view/4491261343",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-15",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Wolters Kluwer",
     "job_title": "Product Manager",
     "location": "Hoevelaken, Gelderland, Netherlands",
@@ -394,7 +407,7 @@
     "job_title": "Senior Product Manager - Business Banking",
     "location": "Amsterdam, North Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/mollie",
-    "job_url": "https://www.linkedin.com/jobs/view/4482842433",
+    "job_url": "https://www.linkedin.com/jobs/view/4482827845",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-13",
@@ -1417,6 +1430,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Storio group",
+    "job_title": "Senior Product Manager (Product Catalogue)",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/storiogroup",
+    "job_url": "https://www.linkedin.com/jobs/view/4486142922",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-02",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "albelli",
     "job_title": "Senior Product Manager (Product Catalogue)",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -1703,19 +1729,6 @@
     "source": "linkedin"
   },
   {
-    "company": "Billy Grace",
-    "job_title": "Technical Product Manager (Data Platform)",
-    "location": "Amsterdam, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/billygrace",
-    "job_url": "https://www.linkedin.com/jobs/view/4482573338",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-29",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "GoodHabitz",
     "job_title": "Senior Product Manager",
     "location": "Eindhoven, North Brabant, Netherlands",
@@ -1789,19 +1802,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-27",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "ASN Bank",
-    "job_title": "Product Manager Business Lending",
-    "location": "Utrecht, Utrecht, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/asn-bank",
-    "job_url": "https://www.linkedin.com/jobs/view/4474293510",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-26",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -2119,19 +2119,6 @@
     "source": "glassdoor"
   },
   {
-    "company": "Blyce",
-    "job_title": "Product Owner",
-    "location": "Netherlands",
-    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE3204575.htm",
-    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010302518709",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-22",
-    "applicant_count": null,
-    "description": "",
-    "source": "glassdoor"
-  },
-  {
     "company": "Caseware",
     "job_title": "Product Owner Cloud",
     "location": "Apeldoorn, Netherlands",
@@ -2140,6 +2127,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-22",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
+  },
+  {
+    "company": "Blyce",
+    "job_title": "Product Owner",
+    "location": "Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE3204575.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010302518709",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-21",
     "applicant_count": null,
     "description": "",
     "source": "glassdoor"
@@ -2228,6 +2228,19 @@
     "location": "Dordrecht, South Holland, Netherlands",
     "careers_url": "https://nl.linkedin.com/company/qls-nl",
     "job_url": "https://www.linkedin.com/jobs/view/4477063904",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-17",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "Vattenfall",
+    "job_title": "Product Owner - Mijn Vattenfall Zakelijk",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://se.linkedin.com/company/vattenfall",
+    "job_url": "https://www.linkedin.com/jobs/view/4491405148",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-17",
@@ -3484,19 +3497,6 @@
     "source": "linkedin"
   },
   {
-    "company": "ANVA",
-    "job_title": "Product Owner Data Platform",
-    "location": "Amersfoort, Utrecht, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/anva",
-    "job_url": "https://www.linkedin.com/jobs/view/4483054691",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-29",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
     "company": "Solera Holdings, LLC.",
     "job_title": "Product Owner III",
     "location": "Utrecht, Utrecht, Netherlands",
@@ -3822,6 +3822,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Billy Grace",
+    "job_title": "Technical Product Manager (Data Platform)",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/billygrace",
+    "job_url": "https://www.linkedin.com/jobs/view/4482573338",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-29",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Wolters Kluwer",
     "job_title": "Senior Product Manager, Data Platform",
     "location": "Alphen aan den Rijn, South Holland, Netherlands",
@@ -3866,19 +3879,6 @@
     "location": "Hoofddorp, North Holland, Netherlands",
     "careers_url": "https://fr.linkedin.com/company/schneider-electric",
     "job_url": "https://www.linkedin.com/jobs/view/4490925212",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-16",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Jobster",
-    "job_title": "Farmaceutische-/voeding industrie: Productmanager & Documentation Enigineer - Uitzendbureau.nl",
-    "location": "Alkmaar, North Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/jobster-com",
-    "job_url": "https://www.linkedin.com/jobs/view/4490626827",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
@@ -4329,6 +4329,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Jobster",
+    "job_title": "Farmaceutische-/voeding industrie: Productmanager & Documentation Enigineer - Uitzendbureau.nl",
+    "location": "Alkmaar, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/jobster-com",
+    "job_url": "https://www.linkedin.com/jobs/view/4490626827",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-16",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "LYNX Beleggen",
     "job_title": "Product Owner Awareness & Lead Acquisition East",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -4446,14 +4459,14 @@
     "source": "linkedin"
   },
   {
-    "company": "MANUS",
-    "job_title": "Product & Development Manager (m/f/d) - Hybrid - Sliedrecht",
-    "location": "Sliedrecht, South Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/manus-software-europe-b.v.",
-    "job_url": "https://www.linkedin.com/jobs/view/4488424147",
+    "company": "ANVA",
+    "job_title": "Product Owner Data Platform",
+    "location": "Amersfoort, Utrecht, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/anva",
+    "job_url": "https://www.linkedin.com/jobs/view/4483054691",
     "visa_support": null,
     "relocation_support": null,
-    "date_posted": "2026-11-07",
+    "date_posted": "2026-10-29",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4480,6 +4493,19 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-09",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
+    "company": "MANUS",
+    "job_title": "Product & Development Manager (m/f/d) - Hybrid - Sliedrecht",
+    "location": "Sliedrecht, South Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/manus-software-europe-b.v.",
+    "job_url": "https://www.linkedin.com/jobs/view/4488424147",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-07",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4580,10 +4606,10 @@
     "job_title": "Country Product Manager - Sweden",
     "location": "Netherlands",
     "careers_url": "https://www.linkedin.com/company/deel",
-    "job_url": "https://www.linkedin.com/jobs/view/4475269422",
+    "job_url": "https://www.linkedin.com/jobs/view/4482542619",
     "visa_support": null,
     "relocation_support": null,
-    "date_posted": "2026-10-31",
+    "date_posted": "2026-10-28",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
@@ -4591,54 +4617,119 @@
   {
     "company": "stichd",
     "job_title": "Product Creation Process Manager",
-    "location": "Den Bosch, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Stichd",
-    "job_url": "https://nl.indeed.com/viewjob?jk=5ce48a22d108b6e5",
+    "location": "Den Bosch, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE5601631.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010327664161",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
     "applicant_count": null,
-    "description": "**The Job**\n\nAs Product Creation Process Manager, you own the seasonal Rolling Program and critical path across all STICHD brands, product categories and regions. You connect the internal teams involved in product creation, ensure clear milestones and accountability, and continuously improve the processes, systems and ways of working that take our products from concept to market.\n  \n  \nYou possess in-depth knowledge of operational processes, think cross-functionally, and proactively seek ways to improve and innovate the Rolling Program and the way we work.\n\n**Your Mission**\n\n* Set up seasonal Rolling Programs for all brands, product categories, and regions.\n\n* Align cross-functionally between international teams and departments involved in the creation and execution of the Rolling Program.\n\n* Monitor progress and ensure stakeholders deliver on their responsibilities to meet critical milestones.\n\n* Continuously assess and improve the Rolling Program and related ways of working.\n\n* Identify and implement improvements in processes, structures, and systems related to product design, development, marketing, and sourcing.\n\n* Collaborate with departments such as Operations and Sales to support product creation and reduce lead time, cost, and effort.\n\n* Support the department with additional relevant activities and projects as needed.\n\n**Your Talent**\n\n* You hold a Bachelor\u2019s degree in Business Administration, Supply Chain, or a related field;\n\n* Experience in process coordination, project management, or operations within a sports-lifestyle industry or international organization with global brands;\n\n* Strong understanding of cross-functional workflows and critical path management;\n\n* Excellent command of English, both written and spoken;\n\n* Proficiency in MS Office (especially Excel and PowerPoint);\n\n* Experience with project management tools is an advantage.\n\nThis role is based in Den Bosch, the Netherlands. Working remotely from other countries is not possible.\n\n  \n  \n\nTo apply for this role, you must already have the legal right to work in the Netherlands. We will not apply for work or residence permits.\n\n  \n\n**We Offer**\n\n* Our salaries are based on 38 hours per week, but fulltime work is 40 hours per week. Instead, you choose between a lot of holidays; 40 per year \u00f3r choose for a 40-hour salary per month with still 27 holidays. You can switch every six months;\n\n* Annual bonus scheme;\n\n* New hires (introduction) days;\n\n* Great offer of e-learnings and a training offer for personal development;\n\n* Enough free fruit for you daily vitamins;\n\n* Provided lunch at a low cost;\n\n* Choose between lease-bike, NS Business Card or travel by car for \u20ac 0,25 per km (>10km).\n\n* 8% holiday allowance, employee insurances and a good pension scheme;\n\n* Employee discount on the PUMA, Levi\u2019s, Fuelforfans and BMW Lifestyle websites;\n\n* Hybrid working. On fulltime basis 3 days in the office and 2 days at home (incl. allowance for home working);\n\n* Flexible working hours, mo",
-    "source": "indeed"
+    "description": "",
+    "source": "glassdoor"
   },
   {
     "company": "LYNX Berlin",
     "job_title": "Product Manager Awareness & Lead Acquisition West",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Lynx-Berlin",
-    "job_url": "https://nl.indeed.com/viewjob?jk=0494dc393ed702b6",
+    "location": "Amsterdam, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE988002.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010327574938",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-16",
     "applicant_count": null,
-    "description": "As **Product Manager Awareness & Lead Acquisition West**, you own the awareness and lead-generation journey across the Netherlands, Belgium, France, Finland and our .com domain.\n\nYou translate our global segmentation and targeting approach into market plans and customer-facing campaigns, and turn that into a roadmap your squad can deliver against.\n\nYou\u2019ll work closely with the East team for one consistent marketing approach, and with Client Acquisition on lead handover through to conversion.\n\n**What you\u2019ll do**\n\n* Define a multi-quarter vision for Awareness & Lead Acquisition in the West markets.\n* Adapt LYNX\u2019s global STP approach into market-specific plans, strategies and tactics.\n* Own and prioritise a living roadmap for acquisition capabilities.\n* Drive initiatives from discovery through implementation.\n* Analyse customer behaviour, campaign performance and competitor activity.\n* Own OKRs measured by brand awareness, MQLs, cost per lead, conversion rate, ROMI and estimated CLV.\n* Ensure marketing and acquisition capabilities comply with privacy and financial promotion requirements.\n\n**Who you are**\n\nYou\u2019re a product professional with genuine marketing craft and a feel for the Dutch/Belgian market.\n\n* 3\u20135 years in product management with proven, measurable business outcomes.\n* Strong experience with digital and brand marketing, acquisition funnels and customer research.\n* Data-driven mindset: marketing analytics, KPI management, self-serve BI or SQL.\n* Strong stakeholder management across Marketing, Engineering, Sales and Operations.\n* Experience operating in regulated contexts (privacy, security, KYC/AML/MiFID).\n* Fluent English and Dutch, spoken and written.\n\n**Nice to have**\n\n* Experience within fintech, brokerage or financial services.\n* Deep SEO, SEA and paid-media expertise.\n* Experience with CRM, marketing automation and attribution modelling.\n\n**What we offer**\n\n* A competitive salary based on experience.\n* Flexible working hours at our office in the heart of the city.\n* A fixed 13th-month salary.\n* Pension scheme for NL/DE/BE.\n* Travel expense reimbursement.\n* An annual training budget of \u20ac2,000, freely allocated to your professional development.\n* Team outings, social drinks, and an annual weekend trip with the entire team.\n\n**Who we are**\n\n*\u201cLYNX helps you invest in yourself.\u201d \u201cWorking at LYNX means joining the LYNX family.\u201d \u201cThe development opportunities make LYNX the best place to work.\u201d*\n\nThis is what our employees say about LYNX, and it reflects exactly what we aim to offer: an environment where you can get the best out of yourself.\n\nFrom our offices in Amsterdam, Ghent, Berlin, and Prague, we work every day to provide private and professional clients with the best trading opportunities through a fast, user-friendly, and reliable platform.\n\nLYNX is an international FinTech company where around 300 colleagues contribute to client success across Europe in an informal, collaborative, and growth-oriented environment.\n\nWe\u2019re an equal-",
-    "source": "indeed"
+    "description": "",
+    "source": "glassdoor"
   },
   {
     "company": "Google",
     "job_title": "Technical Program Manager, Technical Excellence, Physical Security",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Google",
-    "job_url": "https://nl.indeed.com/viewjob?jk=44074bdafbb544ef",
+    "location": "Amsterdam, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE9079.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010325220067",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-13",
     "applicant_count": null,
-    "description": "Note: By applying to this position you will have an opportunity to share your preferred working location from the following: **Dublin, Ireland; Amsterdam, Netherlands; London, UK**.\n\n### **Minimum qualifications:**\n\n* Bachelor's degree in a technical, engineering, security management, or business field, or equivalent practical experience.\n* 5 years of experience managing physical security technology projects (such as enterprise access control, CCTV, intrusion detection systems, and physical barriers) from design through to deployment and commissioning.\n* 3 years of experience in technical program management leading cross-functional teams in a global or regional environment, specifically within logistics, warehousing, or industrial settings.\n\n  \n\n### **Preferred qualifications:**\n\n* 5 years of experience managing cross-functional or cross-team projects.\n* Experience managing security designers and partnering with architects & engineers to drive excellence in the design process.\n\n**About the job**\n-----------------\n\nA problem isn\u2019t truly solved until it\u2019s solved for all. That\u2019s why Googlers build products that help create opportunities for everyone, whether down the street or across the globe. As a Technical Program Manager at Google, you\u2019ll use your technical expertise to lead complex, multi-disciplinary projects from start to finish. You\u2019ll work with stakeholders to plan requirements, identify risks, manage project schedules, and communicate clearly with cross-functional partners across the company. You're equally comfortable explaining your team's analyses and recommendations to executives as you are discussing the technical tradeoffs in product development with engineers.\n\nThe Data Center team designs and operates some of the most sophisticated electrical and HVAC systems in the world. We are an upbeat, creative, team-oriented group of engineers committed to building and operating powerful data centers.\n\nIndividual pay is determined by factors including job-related skills, experience, and relevant education or training.\n  \n  \nIreland: \u20ac118000 - \u20ac120000 (EUR) + 15% bonus target + equity + benefits  \nNetherlands: \u20ac130000 - \u20ac133000 (EUR) + 15% bonus target + equity + benefits  \n  \nLearn more about benefits at Google.\n\n**Responsibilities**\n--------------------\n\n* Own the lifecycle, governance, and regional adaptation of global physical security standards, master specifications and reference design templates across EMEA and APAC regions.\n* Lead technical change management and design-exception governance across EMEA and APAC, ensuring proposed design variances, alternate hardware selections, and phased turnover postures maintain rigorous security and audit baselines.\n* Partner with engineering and tooling teams to deploy and scale digital tracking dashboards, CAD/BIM design-validation workflows, and automated quality-assurance tools.\n* Partner with global program leads and regional operations teams to scope and enable large-scale brownfield security ",
-    "source": "indeed"
+    "description": "",
+    "source": "glassdoor"
+  },
+  {
+    "company": "Prodrive Technologies B.V.",
+    "job_title": "Product Cost Manager- Embedded Computing System",
+    "location": "Eindhoven, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE223495.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010324685210",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-12",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
   },
   {
     "company": "Cronos Group Inc.",
     "job_title": "Product Development Manager (Netherlands)",
-    "location": "Hellevoetsluis, ZH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Cronos-Group-Inc.",
-    "job_url": "https://nl.indeed.com/viewjob?jk=8a2bf620293fc539",
+    "location": "Hellevoetsluis, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE2602973.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010323333633",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-11",
     "applicant_count": null,
-    "description": "Cronos is an innovative global cannabinoid company committed to building disruptive intellectual property by advancing cannabis research, technology, and product development. With a passion to responsibly elevate the consumer experience, Cronos is building an iconic brand portfolio. Cronos\u2019 diverse international brand portfolio includes Spinach\u00ae, PEACE NATURALS\u00ae and Lord Jones\u00ae. For more information about Cronos and its brands, please visit: https://thecronosgroup.com/.\n\nAt Cronos Group, we hire talented people who thrive on solving difficult problems and give them the opportunity to hone new skills and approaches. If you want to play a part in shaping an innovative industry and help build a historically significant company, we want to meet you.\n\nThe Manager, Product Development \u2013 Netherlands will lead the local implementation, adaptation, and validation of products and processes transferred from Cronos Group\u2019s Canadian R&D Center of Excellence to Netherlands operations.\n\nThis role executes approved product localization and technology-transfer projects with local Operations, Quality, Regulatory, and global R&D teams, within established global priorities and Netherlands regulatory and operational requirements.\n\nThe Manager, Product Development will also plan, execute, and analyze Netherlands sensory sessions with the PD Technician and the local Marketing lead, using methods and standards established by global Sensory Sciences.\n\nReporting to the Senior Director, Product Development, the Manager, Product Development will lead and develop the Netherlands PD Technician and own local delivery of R&D priorities, partnering closely with Canadian R&D and local cross-functional teams.The successful candidate is a hands-on technical lead with strong project execution and cross-functional coordination skills, and has experience translating established technologies into locally deployable products and processes.\n\n**This position is based out of Hellevoetsluis, South Holland, Netherlands.**\n\n**Key Responsibilities**\n------------------------\n\nProduct Development Coordination and R&D Integration\n\n* Own the execution of approved product development and technology-transfer projects in the Netherlands, in line with priorities set by global R&D leadership.\n* Serve as the local technical contact between the Canadian R&D Center of Excellence and Netherlands operations for technology transfer, knowledge sharing, and local adaptation.\n* Build and maintain local project plans (activities, timelines, resource needs, and technical dependencies), and coordinate with Operations, Quality, and Engineering to deliver agreed milestones.\n* Lead local cross-functional project meetings. Report progress, risks, and technical issues to global R&D, and escalate any decision outside approved scope or technical standards.Drive deployment of global R&D outputs locally in partnership with Netherlands operational teams.\n\nTechnology Transfer & Local Adaptation\n\n* Assess transferred formulat",
-    "source": "indeed"
+    "description": "",
+    "source": "glassdoor"
+  },
+  {
+    "company": "Signify",
+    "job_title": "Global Product Manager Home Entertainment Philips Hue",
+    "location": "Eindhoven, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE2101263.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010323689928",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-11",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
+  },
+  {
+    "company": "ING",
+    "job_title": "Digital Product Manager \u2013 Reporting Factory",
+    "location": "Amsterdam, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE4264.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010321459122",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-10",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
+  },
+  {
+    "company": "stichd",
+    "job_title": "Creative Director Product",
+    "location": "Den Bosch, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE5601631.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010321191716",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-09",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
+  },
+  {
+    "company": "LYNX Amsterdam",
+    "job_title": "Product Manager Awareness & Lead Acquisition West",
+    "location": "Amsterdam, Netherlands",
+    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE988002.htm",
+    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010315591470",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-03",
+    "applicant_count": null,
+    "description": "",
+    "source": "glassdoor"
   },
   {
     "company": "NIKE",
@@ -4651,58 +4742,6 @@
     "date_posted": "2026-11-11",
     "applicant_count": null,
     "description": "Position Type\n\nFull Time\n\nCareer area\n\nProduct Creation, Development & Management\n\nLocation\n\nColosseum 1, Hilversum, North Holland 1213 NL, Netherlands\n\nJob ID\n\nR-94818\n\nBecome a Part of the NIKE, Inc. Team\n\nNIKE, Inc. does more than outfit the world\u2019s best athletes. It is a place to explore potential, obliterate boundaries and push out the edges of what can be. The company looks for people who can grow, think, dream and create. Its culture thrives by embracing diversity and rewarding imagination. The brand seeks achievers, leaders and visionaries. At NIKE, Inc. it\u2019s about each person bringing skills and passion to a challenging and constantly evolving game.\n\n**WHO YOU\u2019LL WORK WITH**\n\nThis role sits within Nike\u2019s EMEA Local Creation organization, the product creation engine that brings locally relevant product to EMEA consumers with cultural authenticity.\n\n  \n\nYou\u2019ll report to the Senior Manager, Apparel Product Line Management, EMEA Local Creation, based at Nike\u2019s European Headquarters in Hilversum, the Netherlands. As an individual contributor, you will work alongside Senior and Lead Product Line Managers, who will guide your work and your development. You will collaborate with Apparel Design and Development as part of the creation triad, and with Sourcing and Costing, Merchandising, Planning, Sales and Business Integration. Your work helps the team stay aligned and land relevant product for consumers across the EMEA marketplace.\n\n  \n\n**WHO WE ARE LOOKING FOR**\n\nThis is the entry role in Product Management at EMEA Local Creation. We are looking for a Product Line Manager II who brings curiosity, a collaborative mindset and a commitment to learning, with a passion for apparel, color, style, consumer and culture. You enjoy turning data and consumer insight into product ideas, and you bring structure and attention to detail to a fast-paced creation environment.\n\n  \n\nYou will learn the product creation process hands-on, building your skills in briefing, line management and business analysis with the support of experienced Product Line Managers. We look for people who represent our values: authentic, accountable, collaborative and courageous.\n\n  \n\n* Foundational experience in apparel product creation, merchandising, retail or a related field, including internships or graduate programs\n* Foundational understanding of apparel construction, fabrics and product storytelling\n* Interest in apparel, style, sport and street culture, and curiosity about consumer and marketplace trends\n* Understanding of EMEA consumers, the retail landscape and wholesale partners\n* Analytical skills and a foundational understanding of retail KPIs, such as sell-through, units and margin, and the maths behind them\n* Ability to prioritize work and manage multiple workstreams and timelines\n* Ability to build trusted relationships and collaborate across teams\n* Presentation skills, with an interest in continuing to develop them\n* Working knowledge of Excel, PowerPoint or Keynote, ",
-    "source": "indeed"
-  },
-  {
-    "company": "Signify",
-    "job_title": "Global Product Manager Home Entertainment Philips Hue",
-    "location": "Eindhoven, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Signify-4",
-    "job_url": "https://nl.indeed.com/viewjob?jk=a7ffc15b4c5f0e37",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-11",
-    "applicant_count": null,
-    "description": "Eindhoven, Netherlands Category Marketing Posted Date 11/12/2026 Job Id 366971\n\n  \n\n**About Signify**\n\n  \n  \n\nThrough bold discovery and cutting-edge innovation, we lead an industry that is vital for the future of our planet: lighting. Through our leadership in connected lighting and the Internet of Things, we're breaking new ground in data analytics, AI, and smart solutions for homes, offices, cities, and beyond.\n\n  \n  \n\nAt Signify, you can shape tomorrow by building on our incredible 125+ year legacy while working toward even bolder sustainability goals. Our culture of continuous learning, creativity, and commitment to diversity and inclusion empowers you to grow your skills and career.\n\n  \n  \n\nJoin us, and together, we\u2019ll transform our industry, making a lasting difference for brighter lives and a better world.\n\n  \n  \n\n**More about the role**\n\n  \n  \n\nWe\u2019re looking for a Global Product Manager with a passion for Home Entertainment to join our Philips Hue Product Management team in Eindhoven.\n\nWorking for Signify means being creative and adaptive while working in a fast-paced company. Our culture of continuous learning and commitment to diversity and inclusion creates an environment that allows you to build your skills and career while transforming our industry.\n\nAs the world leader in lighting, we are constantly ahead of the curve. Through our leadership in connected lighting and the Internet of Things, we are breaking new grounds in data analytics, AI, and smart homes, offices, cities and more!\n\nSignify is one of the few companies in the world to achieve carbon neutrality and our next sustainability goals are even bolder: doubling our positive impact on the environment and society by 2025.\n\nAs a Global Product Manager for Philips Hue you will be responsible for leading and developing the global offer strategy and roadmap for our Philips Hue hardware portfolio with a strong focus on home entertainment and gaming propositions. You will help building the business by translating consumer insights into propositions that address end user needs with clear benefits. You will work together with an international team to develop a compelling product roadmap and go-to-market strategy to reach consumers homes around the world.\n\nWe are on the lookout for forward-thinking innovators with a passion for sustainability. If you match this description, get in touch!\n\n  \n  \n\n**This position is a 6 month contract, with opportunity to extend.**\n\n**Key areas of Responsibility**\n-------------------------------\n\n* Value Proposition creation and Portfolio Management\n* You are responsible for leading and developing the complete offer strategy and roadmap for the hardware category\n* You gather insights from the market, initiating user studies and research, to address any opportunities in the hardware roadmap.\n* You define and build required capabilities for the product management function\n* You plan and execute successful launches of products jointly with the market and m",
-    "source": "indeed"
-  },
-  {
-    "company": "ING",
-    "job_title": "Digital Product Manager \u2013 Reporting Factory",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Ing",
-    "job_url": "https://nl.indeed.com/viewjob?jk=093897e62112d634",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-09",
-    "applicant_count": null,
-    "description": "* REQ-10123805\n* 09/11/2026\n* Change Execution\n* Amsterdam, Netherlands\n* \u20ac7.761 - \u20ac12.343\n* ING Bank\n\n  \n\nShape the future of management reporting and business intelligence at ING. As **Senior Digital Product Manager \u2013 Reporting Factory**, you will define and drive the vision for a strategic reporting platform that delivers trusted insights, standardized reporting, and a consistent user experience across ING.\n\nYou will bring together business needs, reporting capabilities, data products, and technology platforms to build a scalable Reporting Factory that enables faster decision-making, improves governance, and creates a single source of truth for management reporting. The role spans strategy, product management, stakeholder engagement, and execution. The Reporting Factory vision includes a unified reporting platform, governed data consumption, reporting standards, reusable components, and migration from legacy reporting solutions.\n\n**The team**\n\nThe Data & Reporting expert team is on a transformation journey to establish a modern reporting ecosystem built on trusted data products and standardized reporting capabilities. The Reporting Factory is a strategic initiative that will provide a single reporting experience, reduce duplication across platforms, improve governance, and accelerate delivery of management information and business insights.\n\nWorking closely with business stakeholders, Report Managers, Data Management teams, Architects, Engineers, and Leadership teams, you will help define how reporting products are designed, delivered, governed, and adopted across the organization.\n\nThis is an opportunity to shape a high-visibility strategic product that sits at the intersection of Data, Analytics, Reporting, Governance, and Digital Transformation.\n\nWe value leadership impact and adaptability as much as strict checklist experience. If your background aligns with the core vision of this role, even if you don't tick every single bullet point, we strongly encourage you to apply. Tell us in your application or cover note what unique perspective and track record you\u2019ll bring to the team.\n\n  \n  \n\n**Roles and responsibilities**\n\nYou will own the Reporting Factory vision and roadmap, ensuring it delivers measurable business value while creating a scalable and future-ready reporting ecosystem.\n\n* Define and own the Reporting Factory product vision, strategy, roadmap, and value proposition.\n* Translate business objectives and reporting needs into a prioritized product backlog.\n* Drive stakeholder alignment across business, data, reporting, architecture, and technology domains.\n* Lead the design and adoption of standardized reporting products, processes, and governance frameworks.\n* Partner with Data Factory, Data Management, and Engineering teams to deliver trusted reporting capabilities.\n* Measure product adoption, business value, customer satisfaction, and operational effectiveness.\n* Drive simplification and consolidation of reporting platforms and c",
-    "source": "indeed"
-  },
-  {
-    "company": "stichd",
-    "job_title": "Creative Director Product",
-    "location": "Den Bosch, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Stichd",
-    "job_url": "https://nl.indeed.com/viewjob?jk=d7313c6ed349a4d5",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-09",
-    "applicant_count": null,
-    "description": "**The Job**\n\nWe are looking for a Creative Director Product to lead and shape the future of our product categories across some of the most relevant global A-brands in sport and fashion.\n  \nAs a trusted long-term licensing partner, we have built global brand collaborations over decades \u2014 translating brand DNA into commercially successful, consumer-relevant products at scale. This role sits at the heart of that model: connecting brand vision, creative direction, and exceptional product execution.\n  \nYou will define a clear product vision, inspire your team, and translate global brand strategies into standout category concepts \u2014 from technically advanced first-layer products (socks, bodywear & underwear) to high-impact fanwear collections linked to the world\u2019s leading teams and assets.\n\n**Your Mission**\n\n* Define and drive a creative product strategy and long-term vision across all categories;\n* Translate brand and company strategy into compelling product concepts and seasonal roadmaps;\n* Bring brand DNA and storytelling to life through commercially relevant product design;\n* Lead the development of technically strong, best-in-class first-layer products;\n* Drive product execution at scale, delivering high-volume, commercially successful assortments;\n* Ensure products deliver on best price\u2013value ratio, balancing design, quality and cost;\n* Anticipate and translate consumer needs and trends into relevant assortments;\n* Ensure we are present where the consumer shops, delivering the right product for the right channel;\n\nFanwear (integrated scope):\n  \n\n* Lead the creation of fanwear collections for top-tier teams, translating partnerships into commercially successful products;\n* Operate within a triangle partnership model (brand \u2013 team \u2013 stichd) to ensure strong alignment and execution;\n* Drive fast, responsive product execution around key moments, turning speed into a differentiator ;\n* Translate real-time consumer insights (e.g. trackside, DTC) into scalable products that meet fan expectations;\n* Build focused assortments and capsule drops that drive engagement, conversion and sell-through.\n\n**Your Talent**\n\nYou bring the creative vision, product instinct and commercial sharpness to shape collections that move at the speed of culture \u2014 and perform in the real world.\n\n  \n  \n\n**You have:**  \n\n* 10+ years of experience in a senior creative or product leadership role within sport, fashion, lifestyle or a connected consumer goods environment;\n* A proven track record of working with global brands, preferably within a licensing, partnership or brand-led product environment;\n* Strong experience in building multi-year product visions and translating them into clear seasonal strategies, concepts and roadmaps;\n* A deep understanding of technical product development, ideally within first-layer categories such as socks, bodywear and underwear;\n* Experience creating high-volume, commercially successful product ranges that balance brand heat, consumer relevance, qual",
-    "source": "indeed"
-  },
-  {
-    "company": "LYNX Amsterdam",
-    "job_title": "Product Manager Awareness & Lead Acquisition West",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Lynx-Amsterdam",
-    "job_url": "https://nl.indeed.com/viewjob?jk=6bb5d5e38b5bc003",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "As **Product Manager Awareness & Lead Acquisition West**, you own the awareness and lead-generation journey across the Netherlands, Belgium, France, Finland and our .com domain.\n\nYou translate our global segmentation and targeting approach into market plans and customer-facing campaigns, and turn that into a roadmap your squad can deliver against.\n\nYou\u2019ll work closely with the East team for one consistent marketing approach, and with Client Acquisition on lead handover through to conversion.\n\n**What you\u2019ll do**\n\n* Define a multi-quarter vision for Awareness & Lead Acquisition in the West markets.\n* Adapt LYNX\u2019s global STP approach into market-specific plans, strategies and tactics.\n* Own and prioritise a living roadmap for acquisition capabilities.\n* Drive initiatives from discovery through implementation.\n* Analyse customer behaviour, campaign performance and competitor activity.\n* Own OKRs measured by brand awareness, MQLs, cost per lead, conversion rate, ROMI and estimated CLV.\n* Ensure marketing and acquisition capabilities comply with privacy and financial promotion requirements.\n\n**Who you are**\n\nYou\u2019re a product professional with genuine marketing craft and a feel for the Dutch/Belgian market.\n\n* 3\u20135 years in product management with proven, measurable business outcomes.\n* Strong experience with digital and brand marketing, acquisition funnels and customer research.\n* Data-driven mindset: marketing analytics, KPI management, self-serve BI or SQL.\n* Strong stakeholder management across Marketing, Engineering, Sales and Operations.\n* Experience operating in regulated contexts (privacy, security, KYC/AML/MiFID).\n* Fluent English and Dutch, spoken and written.\n\n**Nice to have**\n\n* Experience within fintech, brokerage or financial services.\n* Deep SEO, SEA and paid-media expertise.\n* Experience with CRM, marketing automation and attribution modelling.\n\n**What we offer**\n\n* A competitive salary based on experience.\n* Flexible working hours at our office in the heart of the city.\n* A fixed 13th-month salary.\n* Pension scheme for NL/DE/BE.\n* Travel expense reimbursement.\n* An annual training budget of \u20ac2,000, freely allocated to your professional development.\n* Team outings, social drinks, and an annual weekend trip with the entire team.\n\n**Who we are**\n\n*\u201cLYNX helps you invest in yourself.\u201d \u201cWorking at LYNX means joining the LYNX family.\u201d \u201cThe development opportunities make LYNX the best place to work.\u201d*\n\nThis is what our employees say about LYNX, and it reflects exactly what we aim to offer: an environment where you can get the best out of yourself.\n\nFrom our offices in Amsterdam, Ghent, Berlin, and Prague, we work every day to provide private and professional clients with the best trading opportunities through a fast, user-friendly, and reliable platform.\n\nLYNX is an international FinTech company where around 300 colleagues contribute to client success across Europe in an informal, collaborative, and growth-oriented environment.\n\nWe\u2019re an equal-",
     "source": "indeed"
   },
   {
@@ -5330,6 +5369,19 @@
     "source": "indeed"
   },
   {
+    "company": "Funzone",
+    "job_title": "Productmanager bij FunZone",
+    "location": "Enschede, OV, Netherlands",
+    "careers_url": "https://nl.indeed.com/cmp/Funzone-7",
+    "job_url": "https://nl.indeed.com/viewjob?jk=cadae2890710f102",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-10-28",
+    "applicant_count": null,
+    "description": "* Hoofdkantoor Enschede\n* 28 tot 40 uur per week\n* Hbo- of wo-werk- en denkniveau\n\n**Ben jij iemand die commerci\u00eble kansen ziet, graag nieuwe idee\u00ebn ontwikkelt en energie krijgt van het verbeteren van producten en concepten? Vind je het leuk om zowel strategisch mee te denken als zelf de handen uit de mouwen te steken? Dan heeft FunZone een veelzijdige uitdaging voor je!**\n\nBij FunZone draait alles om plezier, beleving en samen mooie momenten cre\u00ebren. Achter die ervaring schuilt een dynamische organisatie die continu werkt aan vernieuwing, kwaliteit en groei.\n\nAls Productmanager krijg je de ruimte om mee te bouwen aan de verdere ontwikkeling van FunZone. Je werkt samen met verschillende afdelingen en de mensen op onze locaties. Zo verbind je idee\u00ebn met de dagelijkse praktijk en zie je direct wat jouw werk oplevert.\n\n### **Wat ga je doen?**\n\nJe bent verantwoordelijk voor het ontwikkelen, beheren en verbeteren van het product- en activiteitenaanbod. Daarbij kijk je zowel naar de wensen van gasten als naar de kwaliteit en commerci\u00eble resultaten van FunZone. Je houdt je onder andere bezig met:\n\n**Productontwikkeling & innovatie**\n  \nJe signaleert trends en kansen in de leisuremarkt en onderzoekt wat concurrenten doen. Je verzamelt klantinzichten en vertaalt deze naar nieuwe producten, activiteiten en concepten. Denk aan verrassende merchandise, een aantrekkelijker horeca-assortiment, nieuwe arrangementen of loyaliteitsprogramma\u2019s. Van het eerste idee tot de introductie en evaluatie ben jij betrokken.\n\n**Commerci\u00eble optimalisatie**\n  \nJe analyseert verkoopcijfers, bezoekersaantallen, reviews en klanttevredenheid. Welke producten zijn succesvol? Waar liggen kansen om marges te verbeteren? En hoe zorgen we voor een aantrekkelijke prijsstelling? Je bewaakt de kosten en opbrengsten van activiteiten en gebruikt data en marktinzichten om voorstellen te doen die bijdragen aan het commerci\u00eble resultaat.\n\n**Gastbeleving & procesverbetering**\n  \nJe onderzoekt de volledige klantreis en kijkt waar de gastbeleving beter kan. Bijvoorbeeld door het reserveringsproces en de uitvoering van kinderfeestjes slimmer, eenvoudiger en gastvriendelijker te organiseren. Je vertaalt feedback van gasten naar concrete verbeteringen en houdt daarbij ook rekening met de effici\u00ebntie van de dagelijkse operatie.\n\n**Leveranciers & samenwerkingen**\n  \nJe onderhoudt contacten met leveranciers, onderzoekt nieuwe mogelijkheden en vergelijkt offertes. Je bouwt aan samenwerkingen die bijdragen aan de kwaliteit, innovatie en winstgevendheid van het aanbod.\n\n**Kwaliteit & merkbeleving**\n  \nJe bezoekt FunZone-locaties, voert kwaliteitscontroles en interne audits uit en signaleert verbeterpunten op het gebied van onder andere service, horeca, hygi\u00ebne, veiligheid en uitstraling. Je bewaakt dat het aanbod en de uitvoering passen bij de merkbeleving van FunZone.\n\n**Geen week is hetzelfde**  \nDe ene dag analyseer je de resultaten van het horeca-assortiment en werk je aan een nieuwe menukaart. De vol",
+    "source": "indeed"
+  },
+  {
     "company": "Korver Holland B.V.",
     "job_title": "Productmanager afdeling inkoop",
     "location": "Den Bosch, NB, Netherlands",
@@ -5340,19 +5392,6 @@
     "date_posted": "2026-10-28",
     "applicant_count": null,
     "description": "**Productmanager afdeling inkoop | Fulltime**  \nDe badkamer is d\u00e9 plek waar je dag zowel begint als eindigt. Daarom is het belangrijk dat jouw badkamer niet alleen sfeervol is, maar ook jarenlang plezier biedt. Bij Wiesbaden Sanitair vind je betaalbaar, stijlvol en hoogwaardig sanitair. Ons uitgebreide assortiment bevat alles wat je nodig hebt: van baden en douches tot kranen, toiletten, spiegels en meer.\n\nHet merk Wiesbaden Sanitair wordt op de markt gebracht door Korver Holland, een groothandel in sanitair en installatiematerialen. Wij zijn ambitieus, groeien volop en zijn continu bezig met het ontwikkelen en verbeteren van ons assortiment.\n\nTer versterking van onze inkoopteam zijn wij op zoek naar een **Productmanager|40 uur per week** die samen met ons verder wil bouwen aan het assortiment van Wiesbaden Sanitair.\n\n**Jouw rol**  \nAls Productmanager ben je verantwoordelijk voor \u00e9\u00e9n of meerdere productcategorie\u00ebn. Je zorgt ervoor dat jouw categorie\u00ebn goed aansluiten op de markt, onze klanten en de commerci\u00eble ambities van Wiesbaden Sanitair.\n\nJe bent van A tot Z betrokken bij jouw producten. Je houdt het bestaande assortiment scherp in de gaten, signaleert kansen en werkt aan de ontwikkeling van nieuwe producten. Daarbij werk je nauw samen met leveranciers en collega\u2019s van verschillende afdelingen binnen Korver Holland.\n\nJe werkzaamheden bestaan onder andere uit:\n\n* Beheren en ontwikkelen van \u00e9\u00e9n of meerdere productcategorie\u00ebn\n* Volgen van marktontwikkelingen en trends en deze vertalen naar kansen voor het assortiment\n* Analyseren van verkoopresultaten en beoordelen van commerci\u00eble kansen\n* Beoordelen en optimaliseren van het bestaande assortiment, inclusief uitbreiding en uitfasering\n* Signaleren en ontwikkelen van nieuwe producten en begeleiden van het traject van sample tot introductie\n* Onderhouden en uitbouwen van relaties met binnen- en buitenlandse leveranciers\n* Bewaken van kwaliteit, product specificaties en benodigde documentatie en meedenken over prijzen en marges\n\n**Dit ben jij**\n\n* Je hebt aantoonbare ervaring als Productmanager\n* Je bent commercieel ingesteld en ziet kansen\n* Je bent analytisch en kunt markt- en verkoopinformatie vertalen naar concrete acties\n* Je bent communicatief sterk en kunt goed schakelen met verschillende partijen\n* Je vindt het leuk om met leveranciers samen te werken en te onderhandelen\n* Je werkt zelfstandig, neemt verantwoordelijkheid en bent resultaatgericht\n* Je kunt goed samenwerken met verschillende afdelingen\n* Je hebt een goede beheersing van de Nederlandse en Engelse taal\n* Ervaring of kennis van sanitair en/of tegels is een pr\u00e9\n\n**De voordelen**\n\n* Salaris afgestemd op jouw kennis en ervaring\n* 28 vakantiedagen o.b.v. 40 uur\n* Veel verantwoordelijkheid en ruimte voor eigen initiatief\n* Ruimte voor ontwikkeling en persoonlijke groei\n* Personeelskorting op onze producten\n* Bedrijfsuitjes en borrels\n\n**Over Korver Holland & Wiesbaden Sanitair**  \nHet merk Wiesbaden Sanitair wordt op de markt gebrach",
-    "source": "indeed"
-  },
-  {
-    "company": "Funzone",
-    "job_title": "Productmanager",
-    "location": "Waalwijk, NB, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Funzone-7",
-    "job_url": "https://nl.indeed.com/viewjob?jk=2dcafe7f0d4aeade",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-26",
-    "applicant_count": null,
-    "description": "*Ben jij iemand die commerci\u00eble kansen ziet, graag nieuwe idee\u00ebn ontwikkelt en energie krijgt van het verbeteren van producten en concepten? Vind je het leuk om zowel strategisch mee te denken als zelf de handen uit de mouwen te steken? Dan heeft FunZone een veelzijdige uitdaging voor je!*\n\nBij FunZone draait alles om plezier, beleving en samen mooie momenten cre\u00ebren. Achter die ervaring schuilt een dynamische organisatie die continu werkt aan vernieuwing, kwaliteit en groei.\n\nAls Productmanager krijg je de ruimte om mee te bouwen aan de verdere ontwikkeling van FunZone. Je werkt samen met verschillende afdelingen en de mensen op onze locaties. Zo verbind je idee\u00ebn met de dagelijkse praktijk en zie je direct wat jouw werk oplevert.\n\n### **Wat ga je doen?**\n\nJe bent verantwoordelijk voor het ontwikkelen, beheren en verbeteren van het product- en activiteitenaanbod. Daarbij kijk je zowel naar de wensen van gasten als naar de kwaliteit en commerci\u00eble resultaten van FunZone.\n\n**Je houdt je onder andere bezig met:**\n\n**Productontwikkeling & innovatie**\n\nJe signaleert trends en kansen in de leisuremarkt en onderzoekt wat concurrenten doen. Je verzamelt klantinzichten en vertaalt deze naar nieuwe producten, activiteiten en concepten. Denk aan verrassende merchandise, een aantrekkelijker horeca-assortiment, nieuwe arrangementen of loyaliteitsprogramma's. Van het eerste idee tot de introductie en evaluatie ben jij betrokken.\n\n**Commerci\u00eble optimalisatie**\n\nJe analyseert verkoopcijfers, bezoekersaantallen, reviews en klanttevredenheid. Welke producten zijn succesvol? Waar liggen kansen om marges te verbeteren? En hoe zorgen we voor een aantrekkelijke prijsstelling? Je bewaakt de kosten en opbrengsten van activiteiten en gebruikt data en marktinzichten om voorstellen te doen die bijdragen aan het commerci\u00eble resultaat.\n\n**Gastbeleving & procesverbetering**\n\nJe onderzoekt de volledige klantreis en kijkt waar de gastbeleving beter kan. Bijvoorbeeld door het reserveringsproces en de uitvoering van kinderfeestjes slimmer, eenvoudiger en gastvriendelijker te organiseren. Je vertaalt feedback van gasten naar concrete verbeteringen en houdt daarbij ook rekening met de effici\u00ebntie van de dagelijkse operatie.\n\n**Leveranciers & samenwerkingen**\n\nJe onderhoudt contacten met leveranciers, onderzoekt nieuwe mogelijkheden en vergelijkt offertes. Je bouwt aan samenwerkingen die bijdragen aan de kwaliteit, innovatie en winstgevendheid van het aanbod.\n\n**Kwaliteit & merkbeleving**\n\nJe bezoekt FunZone-locaties, voert kwaliteitscontroles en interne audits uit en signaleert verbeterpunten op het gebied van onder andere service, horeca, hygi\u00ebne, veiligheid en uitstraling. Je bewaakt dat het aanbod en de uitvoering passen bij de merkbeleving van FunZone.\n\n**Geen week is hetzelfde**\n\nDe ene dag analyseer je de resultaten van het horeca-assortiment en werk je aan een nieuwe menukaart. De volgende dag bespreek je met leveranciers de ontwikkeling van nieuwe merchandise of bezoek je ",
     "source": "indeed"
   },
   {
@@ -5486,6 +5525,19 @@
     "source": "linkedin"
   },
   {
+    "company": "Kiwa Nederland",
+    "job_title": "Productmanager Vergunningen en Bevoegdheden",
+    "location": "Rijswijk, South Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/kiwa-nederland-b.v.",
+    "job_url": "https://www.linkedin.com/jobs/view/4486432141",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-02",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "GlobalOrange",
     "job_title": "Product Manager",
     "location": "Amsterdam, Netherlands",
@@ -5525,19 +5577,6 @@
     "source": "glassdoor"
   },
   {
-    "company": "Vattenfall",
-    "job_title": "Product Owner - Mijn Vattenfall Zakelijk",
-    "location": "Amsterdam, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Vattenfall",
-    "job_url": "https://nl.indeed.com/viewjob?jk=6238888687503d2e",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-17",
-    "applicant_count": null,
-    "description": "**Bedrijfsomschrijving**\n\nVattenfall is \u00e9\u00e9n van de grootste energiebedrijven in Europa. We maken stroom en warmte en leveren energie aan miljoenen klanten. Dat doen we in Zweden, Duitsland, het Verenigd Koninkrijk, Frankrijk, Denemarken, Finland \u00e9n Nederland.\n\nMet zo\u2019n 21.000 werknemers maken we een toekomst mogelijk waarin we voor onze energie minder afhankelijk zijn van het gebruik van fossiele brandstoffen. We lopen voorop in de transitie naar een duurzaam energiesysteem. Om dit ambitieuze doel te kunnen bereiken zijn wij op zoek naar getalenteerde personen die naast hun passie voor hun eigen rol ook een sterke teamspirit hebben en willen bijdragen aan het ondersteunen van een betekenisvolle bedrijfsmissie.\n\n **Vacatureomschrijving**\n\n***Met eigenaarschap en initiatief is er altijd een weg.***\n\nWil jij bepalen hoe onze grootzakelijke klanten hun energiezaken digitaal regelen? Als Product Owner Mijn Vattenfall Zakelijk vertaal je klantbehoeften en bedrijfsdoelstellingen naar digitale oplossingen die onze dienstverlening toegankelijker, slimmer en eenvoudiger maken.\n\n**Over de rol**\n\nMijn Vattenfall Zakelijk is de digitale omgeving voor onze grootzakelijke klanten. Zij krijgen hier inzicht in hun energieverbruik en contractgegevens en kunnen zelf contractzaken regelen, zoals het aanpassen of verlengen van een contract. Ook ontwikkelen we online verkoopmogelijkheden en API\u2019s waarmee klanten gegevens kunnen uitwisselen met hun eigen systemen.\n\nAls Product Owner ben je verantwoordelijk voor de verdere ontwikkeling van deze digitale omgeving. Je werkt nauw samen met developers, testers, UX-specialisten, andere Product Owners en collega\u2019s uit onder meer product- en procesmanagement. Samen bepalen jullie wat wordt ontwikkeld, waarom dit belangrijk is en in welke volgorde het wordt gerealiseerd.\n\nJe maakt deel uit van het Digital Expert Team binnen de zakelijke markt en rapporteert aan de Manager Digital Expert Team. In deze rol combineer je klantgericht denken met commerci\u00eble kansen en technische uitvoerbaarheid. Daarmee help je zakelijke klanten hun energiezaken steeds makkelijker en zelfstandiger te organiseren.\n\n**Jouw taken en verantwoordelijkheden**\n\n* Je ontwikkelt en communiceert een heldere productvisie en vertaalt deze naar een roadmap en geprioriteerde backlog.\n* Je houdt overzicht over de roadmap en lopende sprints en duikt waar nodig in de inhoudelijke details.\n* Je beoordeelt nieuwe verzoeken, bewaakt de focus van het team en maakt duidelijke keuzes over prioriteiten.\n* Je geeft vorm aan de inzet van AI binnen het product en in de manier waarop het team analyseert, ontwikkelt en test.\n* Je versterkt samen met het team de agile manier van werken, zowel binnen het team als in de samenwerking met andere afdelingen.\n* Je werkt dagelijks samen met developers, testers, UX-specialisten, stakeholders en andere Product Owners aan de voorbereiding en implementatie van epics, features en user stories.\n* Je brengt wensen en requirements vanuit de org",
-    "source": "indeed"
-  },
-  {
     "company": "ClickHouse",
     "job_title": "Langfuse - Product Manager",
     "location": "Amsterdam Area",
@@ -5549,19 +5588,6 @@
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
-  },
-  {
-    "company": "Funzone",
-    "job_title": "Productmanager bij FunZone",
-    "location": "Enschede, OV, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Funzone-7",
-    "job_url": "https://nl.indeed.com/viewjob?jk=cadae2890710f102",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-28",
-    "applicant_count": null,
-    "description": "* Hoofdkantoor Enschede\n* 28 tot 40 uur per week\n* Hbo- of wo-werk- en denkniveau\n\n**Ben jij iemand die commerci\u00eble kansen ziet, graag nieuwe idee\u00ebn ontwikkelt en energie krijgt van het verbeteren van producten en concepten? Vind je het leuk om zowel strategisch mee te denken als zelf de handen uit de mouwen te steken? Dan heeft FunZone een veelzijdige uitdaging voor je!**\n\nBij FunZone draait alles om plezier, beleving en samen mooie momenten cre\u00ebren. Achter die ervaring schuilt een dynamische organisatie die continu werkt aan vernieuwing, kwaliteit en groei.\n\nAls Productmanager krijg je de ruimte om mee te bouwen aan de verdere ontwikkeling van FunZone. Je werkt samen met verschillende afdelingen en de mensen op onze locaties. Zo verbind je idee\u00ebn met de dagelijkse praktijk en zie je direct wat jouw werk oplevert.\n\n### **Wat ga je doen?**\n\nJe bent verantwoordelijk voor het ontwikkelen, beheren en verbeteren van het product- en activiteitenaanbod. Daarbij kijk je zowel naar de wensen van gasten als naar de kwaliteit en commerci\u00eble resultaten van FunZone. Je houdt je onder andere bezig met:\n\n**Productontwikkeling & innovatie**\n  \nJe signaleert trends en kansen in de leisuremarkt en onderzoekt wat concurrenten doen. Je verzamelt klantinzichten en vertaalt deze naar nieuwe producten, activiteiten en concepten. Denk aan verrassende merchandise, een aantrekkelijker horeca-assortiment, nieuwe arrangementen of loyaliteitsprogramma\u2019s. Van het eerste idee tot de introductie en evaluatie ben jij betrokken.\n\n**Commerci\u00eble optimalisatie**\n  \nJe analyseert verkoopcijfers, bezoekersaantallen, reviews en klanttevredenheid. Welke producten zijn succesvol? Waar liggen kansen om marges te verbeteren? En hoe zorgen we voor een aantrekkelijke prijsstelling? Je bewaakt de kosten en opbrengsten van activiteiten en gebruikt data en marktinzichten om voorstellen te doen die bijdragen aan het commerci\u00eble resultaat.\n\n**Gastbeleving & procesverbetering**\n  \nJe onderzoekt de volledige klantreis en kijkt waar de gastbeleving beter kan. Bijvoorbeeld door het reserveringsproces en de uitvoering van kinderfeestjes slimmer, eenvoudiger en gastvriendelijker te organiseren. Je vertaalt feedback van gasten naar concrete verbeteringen en houdt daarbij ook rekening met de effici\u00ebntie van de dagelijkse operatie.\n\n**Leveranciers & samenwerkingen**\n  \nJe onderhoudt contacten met leveranciers, onderzoekt nieuwe mogelijkheden en vergelijkt offertes. Je bouwt aan samenwerkingen die bijdragen aan de kwaliteit, innovatie en winstgevendheid van het aanbod.\n\n**Kwaliteit & merkbeleving**\n  \nJe bezoekt FunZone-locaties, voert kwaliteitscontroles en interne audits uit en signaleert verbeterpunten op het gebied van onder andere service, horeca, hygi\u00ebne, veiligheid en uitstraling. Je bewaakt dat het aanbod en de uitvoering passen bij de merkbeleving van FunZone.\n\n**Geen week is hetzelfde**  \nDe ene dag analyseer je de resultaten van het horeca-assortiment en werk je aan een nieuwe menukaart. De vol",
-    "source": "indeed"
   },
   {
     "company": "T\u00dcV NORD GROUP",
@@ -5616,6 +5642,19 @@
     "source": "indeed"
   },
   {
+    "company": "Vision Products BV",
+    "job_title": "Product Manager",
+    "location": "Hilversum, North Holland, Netherlands",
+    "careers_url": "https://www.linkedin.com/company/vision-products-bv",
+    "job_url": "https://www.linkedin.com/jobs/view/4489266558",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-12",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Scholt Energy",
     "job_title": "Product Manager",
     "location": "Eindhoven, North Brabant, Netherlands",
@@ -5666,6 +5705,19 @@
     "applicant_count": null,
     "description": "",
     "source": "glassdoor"
+  },
+  {
+    "company": "stichd",
+    "job_title": "Product Manager Essentials",
+    "location": "Den Bosch, NB, Netherlands",
+    "careers_url": "https://nl.indeed.com/cmp/Stichd",
+    "job_url": "https://nl.indeed.com/viewjob?jk=81f353ce61f149d6",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-03",
+    "applicant_count": null,
+    "description": "**The Job**\n\nThe Product Management department oversees the end-to-end product process, ensuring the full collection is delivered on time. As Product Manager, you align the collection with market needs and the stichd strategy by connecting internal processes and creative teams. You act as the central coordinator across Product Development, Product Design, Operations, Marketing, and Sales.\n  \n  \nWorking with a brand focus across several product groups, you translate product needs for different distribution channels and manage key account requests.\n\n**Your Mission**\n\n* Execute and manage the product process from clear briefs to range launch;\n\n* Create a lineplan and planning and translate this effectively into a clear product briefing for the creative team and coordinate the tasks and responsibilities of the teams;\n\n* Develop short- and long-term collection strategies, tactical product executions and innovations that position our brands as the leaders in the assigned categories;\n\n* Prepare market- and competitor studies on an international level as well as analyzing forecasts and sales data;\n\n* Cooperate with design, development, and sales to ensure final collections reflect market needs;\n\n* Collaborate with stakeholders and drive the product creation process based on the Go-to-Market calendar milestones;\n\n* Understand sales, margin, and merchandising requirements to deliver market / account fitting product concepts;\n\n* Meet category financial targets as set by the organization;\n\n* Manage, maintain, and distribute all information of assigned product lines. Ensuring correct and on time input in PLM (Product Lifecycle Management) and ERP system;\n\n* Present product lines to internal and external teams in a comprehensive, clear, tactical manner.\n\n**Your Talent**\n\n* Bachelor\u2019s degree in Business, Marketing, Fashion Management, or a related field;\n\n* At least four years of product management experience, preferably in sports lifestyle, sporting goods, or an international organization working with global brands;\n\n* Strong knowledge of the lifestyle, fashion, and/or sporting goods markets, with a sharp commercial mindset and a solid understanding of sales drivers, retail dynamics, and competitor activity;\n\n* Experience in close-to-body product categories is preferred;\n\n* Flexible and open-minded team player with strong organizational, analytical, and prioritization skills;\n\n* Clear and confident communicator with excellent written and spoken English;\n\n* Advanced proficiency in Microsoft Office, particularly Excel, Word, and PowerPoint.\n\n  \n  \n\nThis role is based in Den Bosch, the Netherlands. Working remotely from other countries is not possible.\n\nTo apply for this role, you must already have the legal right to work in the Netherlands. We will not apply for work or residence permits.\n\n  \n  \n  \n\n**We Offer**\n\n  \n  \n\n* Our salaries are based on 38 hours per week, but full-time work is 40 hours per week. Instead, you choose between a lot of holidays; 40 per ye",
+    "source": "indeed"
   },
   {
     "company": "Little Dutch",
@@ -5809,45 +5861,6 @@
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
-  },
-  {
-    "company": "Prodrive Technologies B.V.",
-    "job_title": "Product Cost Manager- Embedded Computing System",
-    "location": "Eindhoven, Netherlands",
-    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE223495.htm",
-    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010324685210",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-12",
-    "applicant_count": null,
-    "description": "",
-    "source": "glassdoor"
-  },
-  {
-    "company": "stichd",
-    "job_title": "Product Manager Essentials",
-    "location": "Den Bosch, Netherlands",
-    "careers_url": "https://www.glassdoor.nl/Overview/W-EI_IE5601631.htm",
-    "job_url": "https://www.glassdoor.nl/job-listing/j?jl=1010315318610",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-03",
-    "applicant_count": null,
-    "description": "",
-    "source": "glassdoor"
-  },
-  {
-    "company": "Stryker",
-    "job_title": "Senior Product (Marketing) Manager, Sports Medicine | Northern Europe",
-    "location": "Amsterdam Centrum, NH, Netherlands",
-    "careers_url": "https://nl.indeed.com/cmp/Stryker-3",
-    "job_url": "https://nl.indeed.com/viewjob?jk=5d7f504bd0cee8c8",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-16",
-    "applicant_count": null,
-    "description": "### **Why join Stryker?**\n\nLooking for a place that values your unique talents? Discover Stryker's award-winning culture.  \nWe are proud to offer you our total rewards package which includes bonuses, healthcare, insurance benefits, retirement programs, wellness programs, as well as service and performance awards \u2013 not to mention various social and recreational activities, all of which are location specific.\n\n### **Job description**\n\nWe are excited to be named one of the World\u2019s Best Workplaces by Fortune Magazine!\n  \nWe are proud to offer you our total rewards package which includes bonuses, healthcare, insurance benefits, retirement programs, wellness programs, as well as service and performance awards \u2013 not to mention various social and recreational activities, all of which are location specific.\n\n**The Job\u2019s Mission:**\n\nAs **Senior Product Manager**, will drive market share growth for Stryker\u2019s **Sports Medicine** business in **Northern Europe (Benelux & Nordics)** \u2013 through the formulation and execution of effective, strategic, marketing plans and by collaborating closely with our regional sales teams.\n\nStryker delivers an integrated **Sports Medicine** product portfolio inclusive of the latest technology for arthroscopic and open shoulder, hip, knee and small joint procedures. Find out more about our Sports Medicine business via: https://www.stryker.com/us/en/sports-medicine.html\n\nThis role can be based **across Northern Europe** \u2013 and it is an exciting opportunity to **join one of the world's leading medical technology organizations in our mission of making healthcare better**!\n\n**What you will do:**\n\n* In your new role, you will start with a familiarization phase to learn about our portfolio and build relationships with internal/external stakeholders.\n* With the product/clinical knowledge you\u2019ll build up, you will articulate the value proposition and different product features to different customers/stakeholders as appropriate to their needs.\n* Understand the market dynamics and competitive landscape.\n* Play a key role in the development and execution of the strategic plan, Annual Marketing Plan, product launch plans, etc. \u2013 towards the achievement of growth, profit and market share targets.\n\n* Drive segmentation and targeting methods to improve commercial efficiency.\n* Create marketing strategies to understand, develop and enhance the relationship between the customer and the product or portfolio.\n* Translate the marketing plans into specific marketing activates. Drive local strategies, action plans and campaigns towards business results \u2013 in alignment with internal stakeholders.\n* Manage PLCM activities for the product or portfolio.\n* Collaborate with sales training/sales enablement to develop and execute education plans, sales trainings and to drive new product launches at local level.\n* Develop sales tools, customer engagement programs, events and communication plans for the product or portfolio.\n* Demonstrate financial acumen and prov",
-    "source": "indeed"
   },
   {
     "company": "Lemonade Insurance Company",
@@ -6188,6 +6201,19 @@
     "source": "linkedin"
   },
   {
+    "company": "DEPT\u00ae",
+    "job_title": "Senior Programme Manager",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://nl.linkedin.com/company/dept.global",
+    "job_url": "https://www.linkedin.com/jobs/view/4420972783",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-17",
+    "applicant_count": null,
+    "description": "",
+    "source": "linkedin"
+  },
+  {
     "company": "Nebius",
     "job_title": "Senior Technical Program Manager - New Data Center Launches",
     "location": "Amsterdam Area",
@@ -6336,19 +6362,6 @@
     "location": "Rotterdam, South Holland, Netherlands",
     "careers_url": "https://www.linkedin.com/company/rockwell-automation",
     "job_url": "https://www.linkedin.com/jobs/view/4479885533",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-06",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "Stoneridge",
-    "job_title": "Program Manager",
-    "location": "Barneveld, Gelderland, Netherlands",
-    "careers_url": "https://www.linkedin.com/company/stoneridgeglobal",
-    "job_url": "https://www.linkedin.com/jobs/view/4461142258",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-11-06",
@@ -6547,19 +6560,6 @@
     "visa_support": null,
     "relocation_support": null,
     "date_posted": "2026-10-28",
-    "applicant_count": null,
-    "description": "",
-    "source": "linkedin"
-  },
-  {
-    "company": "DEPT\u00ae",
-    "job_title": "Senior Programme Manager",
-    "location": "Rotterdam, South Holland, Netherlands",
-    "careers_url": "https://nl.linkedin.com/company/dept.global",
-    "job_url": "https://www.linkedin.com/jobs/view/4420972781",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-27",
     "applicant_count": null,
     "description": "",
     "source": "linkedin"
