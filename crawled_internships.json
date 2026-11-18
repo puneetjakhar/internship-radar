@@ -168,61 +168,6 @@
     "notes": "Via Ashby API."
   },
   {
-    "company": "Signify Netherlands B.V.",
-    "job_title": "Global Product Manager Home Entertainment Philips Hue",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Home-Entertainment-Philips-Hue_366971-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Signify Netherlands B.V.",
-    "job_title": "Global Product Manager Philips Hue",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Philips-Hue_366989-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Associate Product Director",
-    "location": "NLD - Hoevelaken",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Associate-Product-Director_R0056896-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Senior Product Manager \u2013 Integrations & Data Connectivity",
-    "location": "NLD - Alphen Aan Den Rijn",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Lead-Product-Manager---Integrations---Data-Connectivity_R0060068-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Director, Product Platform",
-    "location": "NLD - Alphen Aan Den Rijn",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Director--Product-Platform_R0060056",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "BCG Amsterdam",
     "job_title": "Product Management",
     "location": "Netherlands",
@@ -305,30 +250,6 @@
     "date_posted": null,
     "description": "",
     "notes": "Via KPMG lunr JSON."
-  },
-  {
-    "company": "SBM Offshore N.V.",
-    "job_title": "Product Development Lead (S)",
-    "location": "Netherlands",
-    "careers_url": "https://careers.sbmoffshore.com/go/The-Netherlands/8785302/",
-    "job_url": "https://careers.sbmoffshore.com/job/Rotterdam-Office-Product-Development-Lead-%28S%29/1375265757/",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "SBM Offshore N.V.",
-    "job_title": "Product Development Lead (S)",
-    "location": "Netherlands",
-    "careers_url": "https://careers.sbmoffshore.com/go/The-Netherlands/8785302/",
-    "job_url": "https://careers.sbmoffshore.com/job/Rotterdam-Office-Product-Development-Lead-%28S%29/1375265757/",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "Fugro N.V.",
