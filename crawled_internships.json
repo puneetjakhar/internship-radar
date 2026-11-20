@@ -384,30 +384,6 @@
     "notes": "Via Picnic RSC slug extraction."
   },
   {
-    "company": "Bending Spoons",
-    "job_title": "Graduate product communications manager\n\nMilan (Italy), Madrid (Spain), or Warsaw (Poland)",
-    "location": "Netherlands",
-    "careers_url": "https://jobs.bendingspoons.com/",
-    "job_url": "https://jobs.bendingspoons.com/positions/6a3b8f3d6482acd354f87bc1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "Bending Spoons",
-    "job_title": "Product communications manager\n\nMilan (Italy), Madrid (Spain), or Warsaw (Poland)",
-    "location": "Netherlands",
-    "careers_url": "https://jobs.bendingspoons.com/",
-    "job_url": "https://jobs.bendingspoons.com/positions/6a3b8ee6f139900075a43dcc",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
     "company": "Netlight",
     "job_title": "Sales & Growth Manager",
     "location": "Amsterdam",
@@ -537,17 +513,6 @@
     "date_posted": null,
     "description": "",
     "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "Rockwell Automation B.V.",
-    "job_title": "Business Operations Program Manager - IPP",
-    "location": "3 Locations",
-    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
-    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
   },
   {
     "company": "HelloFresh Netherlands B.V.",
