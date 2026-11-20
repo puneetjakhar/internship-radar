@@ -324,6 +324,18 @@
     "notes": "Dept: Product. Via Greenhouse board."
   },
   {
+    "company": "Just Eat Takeaway.com",
+    "job_title": "Senior Product Manager - Partner Algorithms",
+    "location": "Netherlands",
+    "careers_url": "https://careers.justeattakeaway.com/global/en/the-netherlands",
+    "job_url": "https://careers.justeattakeaway.com/global/en/job/R_052986/Senior-Product-Manager-Partner-Algorithms",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
     "company": "Picnic Technologies B.V.",
     "job_title": "Product Manager Consumer App",
     "location": "Amsterdam, Netherlands",
