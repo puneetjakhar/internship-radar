@@ -192,83 +192,6 @@
     "notes": "Via Ashby API."
   },
   {
-    "company": "ING Bank N.V.",
-    "job_title": "BMG Head of Commercial Product Management",
-    "location": "BMG (Amsterdam - Mendes Gans 1)",
-    "careers_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN",
-    "job_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN/job/BMG-Amsterdam---Mendes-Gans-1/BMG-Head-of-Commercial-Product-Management_REQ-10124205-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Associate Product Director",
-    "location": "NLD - Hoevelaken",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Associate-Product-Director_R0056896-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Senior Product Manager \u2013 Integrations & Data Connectivity",
-    "location": "NLD - Alphen Aan Den Rijn",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Lead-Product-Manager---Integrations---Data-Connectivity_R0060068-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Director, Product Platform",
-    "location": "NLD - Alphen Aan Den Rijn",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Director--Product-Platform_R0060056",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Lead Product Manager for PHA",
-    "location": "NLD - Alphen Aan Den Rijn",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Lead-Product-Manager-for-PHA_R0060713-2",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Senior Product Manager, Data Platform",
-    "location": "2 Locations",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Senior-Product-Manager--Data-Platform_R0059110",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Lead Technology Product manager",
-    "location": "NLD - Alphen Aan Den Rijn",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Alphen-Aan-Den-Rijn/Lead-Technology-Product-manager_R0061028",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "BCG Amsterdam",
     "job_title": "Product Management",
     "location": "Netherlands",
@@ -590,6 +513,29 @@
     "date_posted": null,
     "description": "",
     "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
+    "company": "Rockwell Automation B.V.",
+    "job_title": "Business Operations Program Manager - IPP",
+    "location": "3 Locations",
+    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
+    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "HelloFresh Netherlands B.V.",
+    "job_title": "Director, Product (physical) (f/m/x)",
+    "location": "Amsterdam, North Holland, Netherlands",
+    "careers_url": "https://job-boards.greenhouse.io/hellofresh",
+    "job_url": "https://careers.hellofresh.com/global/en/job/8141268?gh_jid=8141268",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-08-20",
+    "description": "Reporting Relationships &nbsp; &nbsp; Primary Manager: COO and Co-MD &nbsp; &nbsp; Dotted Line: CMO and Co-MD&nbsp; &nbsp; &nbsp; Direct Reports: ~10 people spanning Culinary, Product Innovation, Product Strategy, Product Operations, and Product Analytics The Opportunity Factor is a healthy, ready-to-heat meal delivery service that has built a category-defining business in the US and Canada. Now we're building Factor in Europe \u2014 and although we have strong blueprints from North America, we have the opportunity to leverage the very rich multi-cultural environment in Europe to tailor both our physical and digital products to five different markets. As our Director, Product , you will own the full product vision and execution for Factor Europe. You will lead a multi-layered team of ~10 people, sit on the Factor Europe leadership team, and maintain a close dotted-line relationship with our CMO to ensure product and marketing move as one. This is a rare kind of role: senior strategic ownership and real infrastructure, with the pace and ambition of an early-stage scale up. If you are a visionary builder who leads with curiosity, earns conviction through data, and holds your team to the same high standard you hold yourself \u2014 we'd love to hear from you. What You'll Do Lead and Develop a High-Performance Product Team &nbsp; &nbsp; Build, inspire, and manage a multi-disciplinary team \u2014 setting a clear vision, establishing the operating rhythms that allow the team to move fast, and investing in the people who will drive Factor Europe's next chapter. Own and Challenge the Product Vision &nbsp; &nbsp; Define a clear and compelling vision for what Factor's physical product must become in Europe \u2014 grounded in customer insight, commercially rigorous, and differentiated enough to win. Develop a deep, independent point of view on where the North American model translates and where European markets demand something different. &nbsp; &nbsp; Push the team and the business to think beyond the current roadmap \u2014 challenging assumptions, interrogating trade-offs, and ensuring we are always working on the highest-leverage version of the product. &nbsp; &nbsp; Act as the liaison to our global Digital Product team \u2014 representing Factor Europe's priorities in the feature roadmap and collaborating on shared global initiatives that benefit the wider business. Drive Customer Retention and Commercial Performance &nbsp; &nbsp; Own customer retention levers as your north star. Build a rigorous, evidence-based view of what drives it and rally the team around interventions that move the needle. &nbsp; &nbsp; Make product decisions with full awareness of their P&amp;L implications. Take calculated risks, track outcomes honestly, and move quickly to learn and adjust when bets don't pay off. Build for Multiple European Markets &nbsp; &nbsp; Lead our effort to find product-market fit across five distinct markets \u2014 understanding how consumer preferences vary by culture, and building a pr",
+    "notes": "Dept: Strategy. Via Greenhouse board."
   },
   {
     "company": "Axon Netherlands B.V.",
