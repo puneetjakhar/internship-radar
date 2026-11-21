@@ -503,6 +503,17 @@
     "notes": "Via DOM link heuristic (Playwright)."
   },
   {
+    "company": "Rockwell Automation B.V.",
+    "job_title": "Business Operations Program Manager - IPP",
+    "location": "3 Locations",
+    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
+    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
     "company": "HelloFresh Netherlands B.V.",
     "job_title": "Director, Product (physical) (f/m/x)",
     "location": "Amsterdam, North Holland, Netherlands",
