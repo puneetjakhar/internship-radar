@@ -192,28 +192,6 @@
     "notes": "Via Ashby API."
   },
   {
-    "company": "Signify Netherlands B.V.",
-    "job_title": "Global Product Manager Home Entertainment Philips Hue",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Home-Entertainment-Philips-Hue_366971-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Signify Netherlands B.V.",
-    "job_title": "Global Product Manager Philips Hue",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Philips-Hue_366989-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "BCG Amsterdam",
     "job_title": "Product Management",
     "location": "Netherlands",
@@ -489,6 +467,30 @@
     "notes": "Via Recruitee API."
   },
   {
+    "company": "Vinted Netherlands B.V.",
+    "job_title": "Director of Product, Order",
+    "location": "Amsterdam",
+    "careers_url": "https://careers.vinted.com/jobs?department=Engineering&location=Amsterdam",
+    "job_url": "https://careers.vinted.com/jobs/5034631101?gh_jid=5034631101",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "Brief info about Vinted&nbsp; Our mission is to make second-hand the first choice, and we're looking for people who want to help us get there. Every day, we work together to help our members buy and sell pre-loved clothing and lifestyle items, giving each piece a second life \u2013 or even a third. The Vinted Group is made up of three business units that support this mission: Vinted Marketplace is Europe\u2019s leading platform for second-hand fashion and a go-to destination for all kinds of pre-loved items, with a growing range of categories. Our platform connects millions of members across 20+ markets, helping great items find a new life. Vinted Go enhances the shipping experience with a vast network of over 500,000 pick-up and drop-off points, partnering with more than 60 carriers across Europe, with added services like item verification for peace of mind on high-value pieces. Vinted Pay is the newest part of the Vinted Group, dedicated to bringing secure, reliable payments to buyers and sellers across Europe. Seamlessly integrated into the Vinted app, it helps keep every transaction safe, efficient, and easy for our members. Founded in 2008 in Lithuania, Vinted began as a way for friends to find new homes for clothes they no longer needed. In 2019, we became Lithuania's first unicorn! Today, our headquarters remain in Vilnius, and we've grown with offices across Europe, supported by a team of over 2,000 people.&nbsp; Information about the position Vinted is Europe's largest online C2C marketplace for second-hand fashion. Every purchase starts a journey: a seller prepares a parcel, a carrier moves it across Europe, and a buyer waits for it. Sometimes something goes wrong along the way. The Order domain owns everything that happens after a member pays: shipment preparation, the parcel's journey, problems and disputes, and refunds and compensation. Our ambition is simple to say and hard to do: members should be certain about every order, and when something goes wrong it should be resolved fast and fairly, ideally without anyone having to contact support. As Director of Product, Order , you will lead this. You will set the product strategy for the post-purchase experience and lead a product organisation of five teams. Order is one of the most interconnected domains at Vinted, so you will also drive outcomes that depend on logistics, member support and payments partners. In this position, you'll Set the Order strategy: Own the multi-year vision and roadmap for the post-purchase experience. Turn certainty and fast, fair resolution into product priorities that members notice and that keep them coming back. Own the trade-offs: Balance member experience, support and compensation costs, fairness between buyers and sellers, and consumer-protection expectations across many markets. Lead across boundaries: Many of Order's outcomes start with logistics (Vinted Go), member support, payments or trust. Align roadmaps with these partners and win priority for the things ",
+    "notes": "Via __NEXT_DATA__ (Playwright)."
+  },
+  {
+    "company": "Vinted Netherlands B.V.",
+    "job_title": "Senior Product Manager, Vinted Go",
+    "location": "Amsterdam",
+    "careers_url": "https://careers.vinted.com/jobs?department=Engineering&location=Amsterdam",
+    "job_url": "https://careers.vinted.com/jobs/4429199101?gh_jid=4429199101",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "Brief info about Vinted&nbsp; Our mission is to make second-hand the first choice, and we're looking for people who want to help us get there. Every day, we work together to help our members buy and sell pre-loved clothing and lifestyle items, giving each piece a second life \u2013 or even a third. The Vinted Group is made up of three business units that support this mission: Vinted Marketplace is Europe\u2019s leading platform for second-hand fashion and a go-to destination for all kinds of pre-loved items, with a growing range of categories. Our platform connects millions of members across 20+ markets, helping great items find a new life. Vinted Go enhances the shipping experience with a vast network of over 500,000 pick-up and drop-off points, partnering with more than 60 carriers across Europe, with added services like item verification for peace of mind on high-value pieces. Vinted Pay is the newest part of the Vinted Group, dedicated to bringing secure, reliable payments to buyers and sellers across Europe. Seamlessly integrated into the Vinted app, it helps keep every transaction safe, efficient, and easy for our members. Founded in 2008 in Lithuania, Vinted began as a way for friends to find new homes for clothes they no longer needed. In 2019, we became Lithuania's first unicorn! Today, our headquarters remain in Vilnius, and we've grown with offices across Europe, supported by a team of over 2,000 people.&nbsp; Information about the position&nbsp; Vinted Go is the delivery arm of Vinted, focused on developing products and solutions for seamless shipping and delivery across Europe and the US. Our delivery network includes more than 30,000 pick-up and drop-off (PUDO), thousands of delivery drivers and cutting-edge sorting tech. Our product portfolio spans mobile apps, IoT devices, and autonomous robots. We operate right where high-scale software meets physical hardware, storefront partner operations, and complex logistics. In this high-visibility, high-impact role, you\u2019ll join a dedicated cross-functional product team working in close partnership with Engineering, Product Design, Decision Science, Operations, and external partners, you\u2019ll drive the product roadmap, lead discovery, and build scalable solutions that power physical operations across our network. In this position, you\u2019ll&nbsp; Drive the product strategy and roadmap for your ownership area. Lead the end-to-end discovery, design, development, and launch of products. Collaborate closely with cross-functional partners, including product, business, operations, and external teams. Enable the team to create fast impact, prioritising working software, rapid feedback loops, and live experiments over heavy PRDs. About you&nbsp; Several years of proven product management experience in a fast-paced environment, working effectively with cross-functional teams in a matrix organisation. Strong ownership mindset: a self-starter comfortable driving alignment amid ambiguity, making decisions with incomp",
+    "notes": "Via __NEXT_DATA__ (Playwright)."
+  },
+  {
     "company": "Sigma Software Group",
     "job_title": "PRODUCT MANAGER (ADTECH)\nEurope\nUkraine\nManagement\nProduct Management\nAPPLY",
     "location": "Netherlands",
@@ -525,6 +527,17 @@
     "notes": "Via DOM link heuristic (Playwright)."
   },
   {
+    "company": "Rockwell Automation B.V.",
+    "job_title": "Business Operations Program Manager - IPP",
+    "location": "3 Locations",
+    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
+    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
     "company": "HelloFresh Netherlands B.V.",
     "job_title": "Director, Product (physical) (f/m/x)",
     "location": "Amsterdam, North Holland, Netherlands",
@@ -535,6 +548,18 @@
     "date_posted": "2026-08-20",
     "description": "Reporting Relationships &nbsp; &nbsp; Primary Manager: COO and Co-MD &nbsp; &nbsp; Dotted Line: CMO and Co-MD&nbsp; &nbsp; &nbsp; Direct Reports: ~10 people spanning Culinary, Product Innovation, Product Strategy, Product Operations, and Product Analytics The Opportunity Factor is a healthy, ready-to-heat meal delivery service that has built a category-defining business in the US and Canada. Now we're building Factor in Europe \u2014 and although we have strong blueprints from North America, we have the opportunity to leverage the very rich multi-cultural environment in Europe to tailor both our physical and digital products to five different markets. As our Director, Product , you will own the full product vision and execution for Factor Europe. You will lead a multi-layered team of ~10 people, sit on the Factor Europe leadership team, and maintain a close dotted-line relationship with our CMO to ensure product and marketing move as one. This is a rare kind of role: senior strategic ownership and real infrastructure, with the pace and ambition of an early-stage scale up. If you are a visionary builder who leads with curiosity, earns conviction through data, and holds your team to the same high standard you hold yourself \u2014 we'd love to hear from you. What You'll Do Lead and Develop a High-Performance Product Team &nbsp; &nbsp; Build, inspire, and manage a multi-disciplinary team \u2014 setting a clear vision, establishing the operating rhythms that allow the team to move fast, and investing in the people who will drive Factor Europe's next chapter. Own and Challenge the Product Vision &nbsp; &nbsp; Define a clear and compelling vision for what Factor's physical product must become in Europe \u2014 grounded in customer insight, commercially rigorous, and differentiated enough to win. Develop a deep, independent point of view on where the North American model translates and where European markets demand something different. &nbsp; &nbsp; Push the team and the business to think beyond the current roadmap \u2014 challenging assumptions, interrogating trade-offs, and ensuring we are always working on the highest-leverage version of the product. &nbsp; &nbsp; Act as the liaison to our global Digital Product team \u2014 representing Factor Europe's priorities in the feature roadmap and collaborating on shared global initiatives that benefit the wider business. Drive Customer Retention and Commercial Performance &nbsp; &nbsp; Own customer retention levers as your north star. Build a rigorous, evidence-based view of what drives it and rally the team around interventions that move the needle. &nbsp; &nbsp; Make product decisions with full awareness of their P&amp;L implications. Take calculated risks, track outcomes honestly, and move quickly to learn and adjust when bets don't pay off. Build for Multiple European Markets &nbsp; &nbsp; Lead our effort to find product-market fit across five distinct markets \u2014 understanding how consumer preferences vary by culture, and building a pr",
     "notes": "Dept: Strategy. Via Greenhouse board."
+  },
+  {
+    "company": "Axon Netherlands B.V.",
+    "job_title": "Senior Technical Program Manager I",
+    "location": "Amsterdam, North Holland, Netherlands; Germany-Remote",
+    "careers_url": "https://job-boards.greenhouse.io/axon",
+    "job_url": "https://job-boards.greenhouse.io/axon/jobs/7576369003",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-09-08",
+    "description": "Join Axon and be a Force for Good. At Axon, we\u2019re on a mission to Protect Life. We\u2019re explorers, pursuing society\u2019s most critical safety and justice issues with our ecosystem of devices and cloud software. Like our products, we work better together. We connect with candor and care, seeking out diverse perspectives from our customers, communities and each other. Life at Axon is fast-paced, challenging and meaningful. Here, you\u2019ll take ownership and drive real change. Constantly grow as you work hard for a mission that matters at a company where you matter. Location: Amsterdam, Netherlands OR Germany - Remote Travel: up to 40% within DACH, Benelux, Nordics (an other European countries as needed) Reports to: Director, Professional Services, EMEA &nbsp; Your Impact As a Senior Technical Project Manager, you\u2019ll lead high-visibility projects, directly contributing to the development and implementation of solutions that truly make a difference. In this role, you\u2019ll tackle complex challenges, working with some of the most advanced technologies in the industry, including cloud and on-prem platforms, and mission-critical systems. You\u2019ll have the opportunity to collaborate with brilliant minds across professional services, sales, engineering, product, and customer teams to deliver solutions that save lives and enhance public trust. At Axon, we\u2019re driven by a powerful mission: to protect life, capture truth, and accelerate justice. We\u2019re growing rapidly, and this is your chance to make a lasting impact at a company where innovation meets purpose. What You\u2019ll Do Program &amp; Project Management Manage all aspects of complex enterprise-grade product deployments Oversee project milestones, resource planning, scope, timeline, and risk management. Manage cross-functional stakeholders to ensure alignment, transparency, and on-time delivery. Ensures project milestones and deadlines are met and associated documentation supports customer acceptance for purposes of revenue recognition Support pre-sales scoping and post-sales implementation handoff. Operates with a sense of urgency, accuracy, and detail-orientation, while maintaining consistent lines of communication with all teams involved in each project Maintain customer confidence, especially in high-pressure situations Remain organized and focused on removing obstacles through creativity and adaptation to rapidly changing circumstances Partner Management Own the relationship with 3rd party integrator and the client throughout the length of the contract Stakeholder Collaboration Work closely with Professional Services, Product Managers, and Engineers to align program execution with business goals. Act as a liaison between customers and internal teams to manage change requests, solution feasibility, and roadmap alignment. Process Improvement Identify process inefficiencies and propose improvements to increase deployment speed, quality, and customer satisfaction. Contribute to internal SOPs, implementation playbooks,",
+    "notes": "Dept: 1559 GSS International PSO. Via Greenhouse board."
   },
   {
     "company": "Mews Systems B.V.",
