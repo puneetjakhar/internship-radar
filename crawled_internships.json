@@ -228,6 +228,30 @@
     "notes": "Via DOM link heuristic (Playwright)."
   },
   {
+    "company": "Bain & Company Amsterdam",
+    "job_title": "Analyst, TSG Product Management",
+    "location": "Netherlands",
+    "careers_url": "https://careers.bain.com/jobs/SearchJobs/?3_56_3=2892",
+    "job_url": "https://careers.bain.com/jobs/FolderDetail/Analyst-TSG-Product-Management/111257",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
+    "company": "Bain & Company Amsterdam",
+    "job_title": "Share Analyst, TSG Product Management on LinkedIn",
+    "location": "Netherlands",
+    "careers_url": "https://careers.bain.com/jobs/SearchJobs/?3_56_3=2892",
+    "job_url": "https://careers.bain.com/_linkedinApiv2?portalUrl=https%3A%2F%2Fcareers.bain.com%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fcareers.bain.com%2Fjobs%2FFolderDetail%2FAnalyst-TSG-Product-Management%2F111257",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
     "company": "KPMG Netherlands",
     "job_title": "KPMGI - Senior Program Manager - Global People &amp; Digital HR",
     "location": "Netherlands",
