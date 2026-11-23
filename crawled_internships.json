@@ -192,6 +192,28 @@
     "notes": "Via Ashby API."
   },
   {
+    "company": "Signify Netherlands B.V.",
+    "job_title": "Global Product Manager Home Entertainment Philips Hue",
+    "location": "Eindhoven",
+    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Home-Entertainment-Philips-Hue_366971-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Signify Netherlands B.V.",
+    "job_title": "Global Product Manager Philips Hue",
+    "location": "Eindhoven",
+    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
+    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Philips-Hue_366989-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
     "company": "BCG Amsterdam",
     "job_title": "Product Management",
     "location": "Netherlands",
@@ -382,18 +404,6 @@
     "date_posted": null,
     "description": "",
     "notes": "Via Picnic RSC slug extraction."
-  },
-  {
-    "company": "Goldman Sachs Bank Europe SE, Amsterdam Branch",
-    "job_title": "Program Manager \u2013 Foundational Engineering Leadership \u2013 Associate\nDallas\u00b7United States\n\u00b7Associate",
-    "location": "Netherlands",
-    "careers_url": "https://higher.gs.com/roles",
-    "job_url": "https://higher.gs.com/roles/189402",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "Netlight",
