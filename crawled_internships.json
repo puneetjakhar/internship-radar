@@ -228,6 +228,39 @@
     "notes": "Via Ashby API."
   },
   {
+    "company": "ING Bank N.V.",
+    "job_title": "Product Domain Lead Payments",
+    "location": "BMG (Amsterdam - Mendes Gans 1)",
+    "careers_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN",
+    "job_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN/job/BMG-Amsterdam---Mendes-Gans-1/Product-Domain-Lead-Payments_REQ-10124608",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "ING Bank N.V.",
+    "job_title": "Senior Product Manager ING Wonen",
+    "location": "HBP (Amsterdam - Haarlerbergpark)",
+    "careers_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN",
+    "job_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN/job/HBP-Amsterdam---Haarlerbergpark/Senior-Product-Manager-ING-Wonen_REQ-10124287-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "ING Bank N.V.",
+    "job_title": "BMG Head of Commercial Product Management",
+    "location": "BMG (Amsterdam - Mendes Gans 1)",
+    "careers_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN",
+    "job_url": "https://ing.wd3.myworkdayjobs.com/ICSNLDGEN/job/BMG-Amsterdam---Mendes-Gans-1/BMG-Head-of-Commercial-Product-Management_REQ-10124205-1",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
     "company": "BCG Amsterdam",
     "job_title": "Product Management",
     "location": "Netherlands",
@@ -382,6 +415,18 @@
     "date_posted": null,
     "description": "",
     "notes": "Via Picnic RSC slug extraction."
+  },
+  {
+    "company": "Goldman Sachs Bank Europe SE, Amsterdam Branch",
+    "job_title": "The Core Engineering-L2-Dallas-Associate-Legal Product Management\nDallas\u00b7United States\n\u00b7Associate",
+    "location": "Netherlands",
+    "careers_url": "https://higher.gs.com/roles",
+    "job_url": "https://higher.gs.com/roles/183034",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "Netlight",
