@@ -360,6 +360,18 @@
     "notes": "Via Picnic RSC slug extraction."
   },
   {
+    "company": "Goldman Sachs Bank Europe SE, Amsterdam Branch",
+    "job_title": "Transaction Banking, Payments Product Manager, Vice President\nDallas\u00b7United States\n\u00b7Vice President",
+    "location": "Netherlands",
+    "careers_url": "https://higher.gs.com/roles",
+    "job_url": "https://higher.gs.com/roles/184170",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
     "company": "Netlight",
     "job_title": "Sales & Growth Manager",
     "location": "Amsterdam",
@@ -477,6 +489,17 @@
     "date_posted": null,
     "description": "",
     "notes": "Via DOM link heuristic (Playwright)."
+  },
+  {
+    "company": "Rockwell Automation B.V.",
+    "job_title": "Business Operations Program Manager - IPP",
+    "location": "3 Locations",
+    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
+    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
   },
   {
     "company": "HelloFresh Netherlands B.V.",
