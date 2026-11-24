@@ -121,6 +121,18 @@
   },
   {
     "company": "Adyen N.V.",
+    "job_title": "Tech Strategy & Program Manager",
+    "location": "Amsterdam; Chicago, Netherlands",
+    "careers_url": "https://careers.adyen.com",
+    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/8276792",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": "2026-11-24",
+    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Tech Strategy &amp; Program Manager Adyen is looking for a forward-thinking Tech Strategy &amp; Program Manager to help drive cross-domain initiatives across our Tech organisation. You will join the Tech Strategy &amp; Execution team, serving as an upstream tech function focused on driving strategic priorities across the organization. You are the bridge between commercial ambition and technical reality, ensuring that Adyen identifies the right strategic bets and defines the path to deliver them. You will work closely with senior leadership across Tech, Commercial and partner functions to ensure our growth ambition is technically feasible, aligned with our customers' evolving needs and executed in a timely manner. In this role you will: Bridge Tech, Commercial, Operations and Compliance: Act as the Tech counterpart to stakeholder teams, ensuring a balanced perspective between business goals and technical reality moves towards the Tech organization Act as Upstream Tech Lead: Act as the initial product and technical strategy lead for cross-solution initiatives\u2014structuring the opportunity space, defining the problem, shaping the technical direction, and validating feasibility\u2014before transitioning mature initiatives into dedicated solution teams. Solve Holistic Merchant Problems: Look beyond individual products to synthesize merchant problems across solutions, identifying collective \"blind spots\" in the merchant experience and building frameworks to track improvements. Drive Strategic Coordination: Shape and align strategic initiatives that cut across multiple solutions by clarifying trade-offs, surfacing system-level risks, and ensuring the technical direction remains coherent across the platform. Product Execution: Creating mechanisms to track progress towards execution, between the Tech teams (for example on improving dependencies) and between Tech and our stakeholders (Commercial, Ops &amp; Compliance) Who you are: Product Strategy: You have 5-7 years of experience in Product Management or Tech Strategy, specifically focused on shaping long-term product direction and future-scoping Systems Thinker: You think in systems, not features\u2014understanding platform dependencies, architectural trade-offs, and how decisions in one solution affect the broader merchant experience. Commercial-Tech Translator: You excel at bridgi",
+    "notes": "Dept: Strategy & Execution. Via Greenhouse board."
+  },
+  {
+    "company": "Adyen N.V.",
     "job_title": "Vice President of Product Management, In Store Experience",
     "location": "Amsterdam, Netherlands",
     "careers_url": "https://careers.adyen.com",
@@ -443,6 +455,30 @@
     "notes": "Via Recruitee API."
   },
   {
+    "company": "Vinted Netherlands B.V.",
+    "job_title": "Director of Product, Order",
+    "location": "Amsterdam",
+    "careers_url": "https://careers.vinted.com/jobs?department=Engineering&location=Amsterdam",
+    "job_url": "https://careers.vinted.com/jobs/5034631101?gh_jid=5034631101",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "Brief info about Vinted&nbsp; Our mission is to make second-hand the first choice, and we're looking for people who want to help us get there. Every day, we work together to help our members buy and sell pre-loved clothing and lifestyle items, giving each piece a second life \u2013 or even a third. The Vinted Group is made up of three business units that support this mission: Vinted Marketplace is Europe\u2019s leading platform for second-hand fashion and a go-to destination for all kinds of pre-loved items, with a growing range of categories. Our platform connects millions of members across 20+ markets, helping great items find a new life. Vinted Go enhances the shipping experience with a vast network of over 500,000 pick-up and drop-off points, partnering with more than 60 carriers across Europe, with added services like item verification for peace of mind on high-value pieces. Vinted Pay is the newest part of the Vinted Group, dedicated to bringing secure, reliable payments to buyers and sellers across Europe. Seamlessly integrated into the Vinted app, it helps keep every transaction safe, efficient, and easy for our members. Founded in 2008 in Lithuania, Vinted began as a way for friends to find new homes for clothes they no longer needed. In 2019, we became Lithuania's first unicorn! Today, our headquarters remain in Vilnius, and we've grown with offices across Europe, supported by a team of over 2,000 people.&nbsp; Information about the position Vinted is Europe's largest online C2C marketplace for second-hand fashion. Every purchase starts a journey: a seller prepares a parcel, a carrier moves it across Europe, and a buyer waits for it. Sometimes something goes wrong along the way. The Order domain owns everything that happens after a member pays: shipment preparation, the parcel's journey, problems and disputes, and refunds and compensation. Our ambition is simple to say and hard to do: members should be certain about every order, and when something goes wrong it should be resolved fast and fairly, ideally without anyone having to contact support. As Director of Product, Order , you will lead this. You will set the product strategy for the post-purchase experience and lead a product organisation of five teams. Order is one of the most interconnected domains at Vinted, so you will also drive outcomes that depend on logistics, member support and payments partners. In this position, you'll Set the Order strategy: Own the multi-year vision and roadmap for the post-purchase experience. Turn certainty and fast, fair resolution into product priorities that members notice and that keep them coming back. Own the trade-offs: Balance member experience, support and compensation costs, fairness between buyers and sellers, and consumer-protection expectations across many markets. Lead across boundaries: Many of Order's outcomes start with logistics (Vinted Go), member support, payments or trust. Align roadmaps with these partners and win priority for the things ",
+    "notes": "Via __NEXT_DATA__ (Playwright)."
+  },
+  {
+    "company": "Vinted Netherlands B.V.",
+    "job_title": "Product Manager, Marketplace",
+    "location": "Amsterdam",
+    "careers_url": "https://careers.vinted.com/jobs?department=Engineering&location=Amsterdam",
+    "job_url": "https://careers.vinted.com/jobs/4777781101?gh_jid=4777781101",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "Brief info about Vinted&nbsp; Our mission is to make second-hand the first choice, and we're looking for people who want to help us get there. Every day, we work together to help our members buy and sell pre-loved clothing and lifestyle items, giving each piece a second life \u2013 or even a third. The Vinted Group is made up of three business units that support this mission: Vinted Marketplace is Europe\u2019s leading platform for second-hand fashion and a go-to destination for all kinds of pre-loved items, with a growing range of categories. Our platform connects millions of members across 20+ markets, helping great items find a new life. Vinted Go enhances the shipping experience with a vast network of over 500,000 pick-up and drop-off points, partnering with more than 60 carriers across Europe, with added services like item verification for peace of mind on high-value pieces. Vinted Pay is the newest part of the Vinted Group, dedicated to bringing secure, reliable payments to buyers and sellers across Europe. Seamlessly integrated into the Vinted app, it helps keep every transaction safe, efficient, and easy for our members. Founded in 2008 in Lithuania, Vinted began as a way for friends to find new homes for clothes they no longer needed. In 2019, we became Lithuania's first unicorn! Today, our headquarters remain in Vilnius, and we've grown with offices across Europe, supported by a team of over 2,000 people.&nbsp; Information about the position&nbsp; We\u2019re looking for Product Managers to join Vinted Marketplace. You\u2019ll own a key area, tackling meaningful problems for our business and members. In close partnership with teams across your domain and neighbouring areas, you\u2019ll collaborate with Product Design, Product Analytics, and Engineering - while becoming part of Vinted\u2019s highly driven, fast-moving product leadership group. In this position, you\u2019ll&nbsp; Drive and align the vision and product strategy for your ownership area. Create and set team objectives for the short and long term. Work with peers and stakeholders across functions and product teams to identify and prioritise opportunities to improve user experience, success metrics, and enabling capabilities. Plan and oversee the product development cycle, and be accountable for delivering impactful, high-quality products. Tackle complex product problems, conduct rigorous product discovery, and scope solutions with clear requirements and trade-off analysis. Collaborate with Design and Research to identify and prioritise customer needs, market trends, and the competitive landscape; use insights to inform product strategy and feature development. Collaborate with Engineering to manage product roadmaps and delivery planning, continuously executing the strategy and achieving agreed objectives. Collaborate with Data Science and Analytics to set success criteria; define, track, and interpret product usage metrics; and iterate on A/B testing learnings and the process itself to ensure actionable, data-d",
+    "notes": "Via __NEXT_DATA__ (Playwright)."
+  },
+  {
     "company": "Sigma Software Group",
     "job_title": "PRODUCT MANAGER (ADTECH)\nEurope\nUkraine\nManagement\nProduct Management\nAPPLY",
     "location": "Netherlands",
@@ -477,17 +513,6 @@
     "date_posted": null,
     "description": "",
     "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "Rockwell Automation B.V.",
-    "job_title": "Business Operations Program Manager - IPP",
-    "location": "3 Locations",
-    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
-    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
   },
   {
     "company": "HelloFresh Netherlands B.V.",
