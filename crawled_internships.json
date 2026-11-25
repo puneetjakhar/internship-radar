@@ -61,18 +61,6 @@
   },
   {
     "company": "Adyen N.V.",
-    "job_title": "Senior Product Manager - Developer Experience",
-    "location": "Amsterdam, Netherlands",
-    "careers_url": "https://careers.adyen.com",
-    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/7941728",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-06-19",
-    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Senior Product Manager - Developer Experience The Internal Developer Platform (IDP) cluster is on a mission to create standardized, scalable, and delightful experiences across the software development life cycle (SDLC) so Adyen engineers are empowered to deliver value more efficiently and reliably for our customers. As a Senior Product Manager within the IDP cluster, you will manage a key stream of our platform evolution. Your goal is to transition our engineering organization from fragmented, \"tribal knowledge\" based flows to a cohesive, automated ecosystem that reduces cognitive load, minimizes manual toil, and ensures our platform scales with our global engineering footprint. 2026 is our year of deep optimization and resilience; you are a product leader who understands that scaling a platform requires balancing innovation with mandatory reliability and stability mandates What you\u2019ll do: Optimize the SDLC: Drive initiatives to reduce SDLC friction, such as reducing CI flakiness and improving build insights, to help teams shift from centralized, manual processes to systemic, automated \"golden paths\". Drive Product Maturity: Take ownership of product lifecycle management by assessing the maturity of our toolset, executing on necessary deprecations, and ensuring our core products have clear adoption paths and value propositions. Build Technical Context: Partner with IDP engineering to bridge the gap between generic AI models and Adyen\u2019s complex architecture. You will prioritize the rollout of AGENTS.md standards, internal RAG pipelines, and Model Context Protocol (MCP) servers for tools like GitLab and Jira. Foster Developer Autonomy: Work across the organization to bridge the gap between infrastructure and developer needs, building \"LEGO-block\" style abstractions that allow teams to own their pipelines and release cycles while maintaining secure, compliant guardrails. Validate ROI &amp; Manage Vendors: Implement data-driven feedback loops to track adoption and measure SDLC improvements against core metrics like DXI, Change Failure Rate, and developer velocity Who you are: 10+ years of product experience ideally within Platform Engineering, Developer Experience (DevEx), or AI-enabled technical products. You are technically credible. You can confidently spar with engineers about system architecture, CI/CD pipeline ",
-    "notes": "Dept: Product Management. Via Greenhouse board."
-  },
-  {
-    "company": "Adyen N.V.",
     "job_title": "Senior Product Manager - Domestic Card Schemes",
     "location": "Amsterdam, Netherlands",
     "careers_url": "https://careers.adyen.com",
@@ -441,6 +429,18 @@
     "date_posted": "2026-10-23",
     "description": "At bunq, we're not just building a banking app; we're reshaping how people around the world experience financial freedom. As a Product Lead - Credit, you\u2019ll be instrumental in empowering our users with the flexible credit they need to support their lifestyle. You'll spearhead the entire credit domain, from ideation to international launch, building innovative solutions that are simple, transparent, and instantly accessible. Take Ownership As Product Lead - Credit, you\u2019ll play a critical role in building a product that truly supports our users' lifestyles. You'll be the driving force behind the mission: \"Give me a credit line to support my lifestyle.\" Own the entire product lifecycle for our credit offerings, from designing and implementing the product and its underlying infrastructure to continuous maintenance and improvement. Drive the strategic launch and expansion of our credit products into our current and new markets, navigating the unique complexities of each region. Obsess over the user journey, collaborating with design and engineering teams to craft a world-class, seamless, and bug-free credit experience. Work hand-in-hand with legal, risk, and compliance teams to ensure our credit products are not only innovative but also fully compliant with all regulatory requirements.",
     "notes": "Via Recruitee API."
+  },
+  {
+    "company": "Cooperative VGZ U.A.",
+    "job_title": "Senior Communicatiestrateeg (Product Owner)\nArnhem\nStaf & support\nHBO/WO\nBekijk vacature\nSenior Communicatiestrateeg (Pr",
+    "location": "Netherlands",
+    "careers_url": "https://werkenbijvgz.nl/vacature-overzicht/",
+    "job_url": "https://werkenbijvgz.nl/vacature/cooperatie-vgz/senior-communicatiestrateeg-product-owner-3/?jobid=1995&pubid=4299",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "description": "",
+    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "Nationale Postcode Loterij N.V.",
