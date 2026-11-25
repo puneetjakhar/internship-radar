@@ -145,18 +145,6 @@
   },
   {
     "company": "Adyen N.V.",
-    "job_title": "Tech Strategy & Program Manager",
-    "location": "Amsterdam; Chicago, Netherlands",
-    "careers_url": "https://careers.adyen.com",
-    "job_url": "https://job-boards.greenhouse.io/adyen/jobs/8276792",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-11-24",
-    "description": "This is Adyen Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&amp;M, and Microsoft - making us the financial technology platform of choice. At Adyen, everything we do is engineered for ambition.&nbsp; For our teams, we create an environment with opportunities for our people to succeed, backed by the culture and support to ensure they are enabled to truly own their careers. We are motivated individuals who tackle unique technical challenges at scale and solve them as a team. Together, we deliver innovative and ethical solutions that help businesses achieve their ambitions faster. Tech Strategy &amp; Program Manager Adyen is looking for a forward-thinking Tech Strategy &amp; Program Manager to help drive cross-domain initiatives across our Tech organisation. You will join the Tech Strategy &amp; Execution team, serving as an upstream tech function focused on driving strategic priorities across the organization. You are the bridge between commercial ambition and technical reality, ensuring that Adyen identifies the right strategic bets and defines the path to deliver them. You will work closely with senior leadership across Tech, Commercial and partner functions to ensure our growth ambition is technically feasible, aligned with our customers' evolving needs and executed in a timely manner. In this role you will: Bridge Tech, Commercial, Operations and Compliance: Act as the Tech counterpart to stakeholder teams, ensuring a balanced perspective between business goals and technical reality moves towards the Tech organization Act as Upstream Tech Lead: Act as the initial product and technical strategy lead for cross-solution initiatives\u2014structuring the opportunity space, defining the problem, shaping the technical direction, and validating feasibility\u2014before transitioning mature initiatives into dedicated solution teams. Solve Holistic Merchant Problems: Look beyond individual products to synthesize merchant problems across solutions, identifying collective \"blind spots\" in the merchant experience and building frameworks to track improvements. Drive Strategic Coordination: Shape and align strategic initiatives that cut across multiple solutions by clarifying trade-offs, surfacing system-level risks, and ensuring the technical direction remains coherent across the platform. Product Execution: Creating mechanisms to track progress towards execution, between the Tech teams (for example on improving dependencies) and between Tech and our stakeholders (Commercial, Ops &amp; Compliance) Who you are: Product Strategy: You have 5-7 years of experience in Product Management or Tech Strategy, specifically focused on shaping long-term product direction and future-scoping Systems Thinker: You think in systems, not features\u2014understanding platform dependencies, architectural trade-offs, and how decisions in one solution affect the broader merchant experience. Commercial-Tech Translator: You excel at bridgi",
-    "notes": "Dept: Strategy & Execution. Via Greenhouse board."
-  },
-  {
-    "company": "Adyen N.V.",
     "job_title": "Vice President of Product Management, In Store Experience",
     "location": "Amsterdam, Netherlands",
     "careers_url": "https://careers.adyen.com",
@@ -301,18 +289,6 @@
   },
   {
     "company": "KPMG Netherlands",
-    "job_title": "KPMGI - Senior Program Manager - Global People &amp; Digital HR",
-    "location": "Netherlands",
-    "careers_url": "https://www.werkenbijkpmg.nl/en/internships-theses",
-    "job_url": "https://www.werkenbijkpmg.nl/en/internships-theses",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via KPMG lunr JSON."
-  },
-  {
-    "company": "KPMG Netherlands",
     "job_title": "Product Owner / Manager Innovation Audit",
     "location": "Netherlands",
     "careers_url": "https://www.werkenbijkpmg.nl/en/internships-theses",
@@ -394,18 +370,6 @@
     "date_posted": null,
     "description": "",
     "notes": "Via Picnic RSC slug extraction."
-  },
-  {
-    "company": "Goldman Sachs Bank Europe SE, Amsterdam Branch",
-    "job_title": "Controllers-Product Controllers- Snr Analyst- Bengaluru\nBengaluru\u00b7India\n\u00b7Senior Analyst",
-    "location": "Netherlands",
-    "careers_url": "https://higher.gs.com/roles",
-    "job_url": "https://higher.gs.com/roles/185869",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
   },
   {
     "company": "Netlight",
