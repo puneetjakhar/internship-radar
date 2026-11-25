@@ -261,72 +261,6 @@
     "notes": "Via Workday API."
   },
   {
-    "company": "Signify Netherlands B.V.",
-    "job_title": "Global Product Manager Home Entertainment Philips Hue",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Home-Entertainment-Philips-Hue_366971-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Signify Netherlands B.V.",
-    "job_title": "Global Product Manager Philips Hue",
-    "location": "Eindhoven",
-    "careers_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers",
-    "job_url": "https://lighting.wd3.myworkdayjobs.com/jobs-and-careers/job/Eindhoven/Global-Product-Manager-Philips-Hue_366989-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Wolters Kluwer N.V.",
-    "job_title": "Associate Product Director",
-    "location": "NLD - Hoevelaken",
-    "careers_url": "https://wk.wd3.myworkdayjobs.com/External",
-    "job_url": "https://wk.wd3.myworkdayjobs.com/External/job/NLD---Hoevelaken/Associate-Product-Director_R0056896-1",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Rabobank Nederland",
-    "job_title": "Product Manager Quality Engineering",
-    "location": "Utrecht Croeselaan 18",
-    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Owner-Secure-Software-Quality---Scanning_JR_00145682",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Rabobank Nederland",
-    "job_title": "Product Manager - Software Delivery Platform",
-    "location": "Utrecht Croeselaan 18",
-    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Manager---Software-Delivery-Platform_JR_00146722",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
-    "company": "Rabobank Nederland",
-    "job_title": "Product Owner Tech4Ops",
-    "location": "Utrecht Croeselaan 18",
-    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
-    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Owner-Tech4Ops_JR_00148366",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
-  },
-  {
     "company": "BCG Amsterdam",
     "job_title": "Product Management",
     "location": "Netherlands",
@@ -483,30 +417,6 @@
     "notes": "Via Picnic RSC slug extraction."
   },
   {
-    "company": "Goldman Sachs Bank Europe SE, Amsterdam Branch",
-    "job_title": "Controllers-Product Controllers- Snr Analyst- Bengaluru\nBengaluru\u00b7India\n\u00b7Senior Analyst",
-    "location": "Netherlands",
-    "careers_url": "https://higher.gs.com/roles",
-    "job_url": "https://higher.gs.com/roles/185869",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
-    "company": "Goldman Sachs Bank Europe SE, Amsterdam Branch",
-    "job_title": "The Core Engineering-L2-Dallas-Associate-Legal Product Management\nDallas\u00b7United States\n\u00b7Associate",
-    "location": "Netherlands",
-    "careers_url": "https://higher.gs.com/roles",
-    "job_url": "https://higher.gs.com/roles/183034",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
     "company": "Netlight",
     "job_title": "Sales & Growth Manager",
     "location": "Amsterdam",
@@ -603,10 +513,10 @@
   },
   {
     "company": "Simple Life App",
-    "job_title": "Senior Product Manager, DayClass",
+    "job_title": "Senior Product Manager",
     "location": "Netherlands",
     "careers_url": "https://jobs.simple.life/jobs",
-    "job_url": "https://jobs.simple.life/jobs/8788719-senior-product-manager-dayclass",
+    "job_url": "https://jobs.simple.life/jobs/8788719-senior-product-manager",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
