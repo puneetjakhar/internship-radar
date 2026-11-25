@@ -306,9 +306,12 @@ function scoreJob(j) {{
   const ROLES = [
     [50, ['technical product manager','product manager','productmanager','product management']],
     [48, ['associate product manager','apm']],
-    [44, ['product owner','product lead']],
-    [42, ['product operations','product ops','product strategy','growth product','growth manager']],
+    [44, ['product owner','product lead','product builder']],
+    [42, ['product operations','product ops','product strategy','product strategist','growth product','growth manager','growth lead']],
+    [38, ['product analyst','go-to-market','gtm']],
     [36, ['technical program manager','program manager','programme manager','tpm']],
+    [32, ['business analyst','product specialist']],
+    [20, ['forward deployed']],
     [25, ['head of product','director of product','vp of product']],
   ];
   for (const [pts, kws] of ROLES) {{
@@ -414,6 +417,8 @@ TARGET ROLES (in priority order)
 2. Product Owner
 3. Product operations / Product strategy / Growth product roles
 4. Program Manager / Technical Program Manager in a product or engineering organisation
+5. Adjacent: AI Product Builder, Product Analyst, Growth / Go-to-Market (GTM) Lead, Business Analyst, Product Specialist
+6. Forward Deployed Engineer only when non-coding and customer facing (she does not code)
 She has no full-time PM job yet: realistic for APM, PM and some mid-level PM roles, a stretch for Senior, not realistic for Principal/Head/Director.
 
 CV VARIANTS

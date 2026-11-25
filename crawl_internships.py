@@ -45,13 +45,18 @@ _ROLE_RE = re.compile(
     r'|\bproposition\s+(manager|owner|lead)\b'
     r'|\bgrowth\s+(product\s+)?(manager|lead)\b'
     r'|\b(program|programme)\s+(manager|lead)\b'
-    r'|\b(apm|tpm)\b',
+    r'|\b(apm|tpm)\b'
+    # Adjacent titles ("don't search only for Product Manager" list)
+    r'|\bproduct\s+(builder|specialist)\b'
+    r'|\bforward[\s-]+deployed\b'
+    r'|\bbusiness\s+analyst\b'
+    r'|\b(go[\s-]+to[\s-]+market|gtm)\b.{0,20}?\b(lead|manager|strategist|strategy)\b',
     re.IGNORECASE,
 )
 # "Product ..." titles that are not product management.
 _NOT_PM_RE = re.compile(
     r'\bproduct\s+(marketing|sales|design|designer|engineer|engineering|security|compliance|support|quality'
-    r'|counsel|legal|safety|specialist|photographer|content)\b'
+    r'|counsel|legal|safety|photographer|content)\b'
     r'|\bproduction\b',
     re.IGNORECASE,
 )
@@ -1127,7 +1132,8 @@ def fetch_workday(company: dict) -> list[dict]:
     all_jobs = []  # list of (job_dict, found_via_nl_term)
     # Search multiple terms to catch NL product management and adjacent roles
     for search_term in ['netherlands', 'amsterdam', 'product', 'proposition', 'program manager',
-                        'programme manager', 'growth']:
+                        'programme manager', 'growth',
+                        'business analyst', 'go-to-market', 'forward deployed']:
         nl_search = search_term in NL_TERMS
         offset = 0
         limit = 20

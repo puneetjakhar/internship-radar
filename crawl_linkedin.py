@@ -74,6 +74,14 @@ SEARCH_QUERIES = [
     ("growth manager Netherlands",             50),
     ("program manager Netherlands",            75),
     ("technical program manager Netherlands",  50),
+    ("product strategist Netherlands",         50),
+    ("product operations manager Netherlands", 50),
+    ("growth lead Netherlands",                50),
+    ("AI product builder Netherlands",         50),
+    ("product specialist Netherlands",         50),
+    ("business analyst Netherlands",           75),
+    ("go-to-market lead Netherlands",          50),
+    ("forward deployed engineer Netherlands",  50),
     # Domains that fit her background
     ("product manager energy Netherlands",     50),
     ("product manager mobility Netherlands",   50),
@@ -122,13 +130,18 @@ _ROLE_RE = re.compile(
     r'|\bproposition\s+(manager|owner|lead)\b'
     r'|\bgrowth\s+(product\s+)?(manager|lead)\b'
     r'|\b(program|programme)\s+(manager|lead)\b'
-    r'|\b(apm|tpm)\b',
+    r'|\b(apm|tpm)\b'
+    # Adjacent titles ("don't search only for Product Manager" list)
+    r'|\bproduct\s+(builder|specialist)\b'
+    r'|\bforward[\s-]+deployed\b'
+    r'|\bbusiness\s+analyst\b'
+    r'|\b(go[\s-]+to[\s-]+market|gtm)\b.{0,20}?\b(lead|manager|strategist|strategy)\b',
     re.IGNORECASE,
 )
 # "Product ..." titles that are not product management.
 _NOT_PM_RE = re.compile(
     r'\bproduct\s+(marketing|sales|design|designer|engineer|engineering|security|compliance|support|quality'
-    r'|counsel|legal|safety|specialist|photographer|content)\b'
+    r'|counsel|legal|safety|photographer|content)\b'
     r'|\bproduction\b',
     re.IGNORECASE,
 )

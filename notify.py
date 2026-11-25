@@ -64,9 +64,12 @@ COMPANY_BONUS = [
 ROLES = [
     (50, ['technical product manager','product manager','productmanager','product management']),
     (48, ['associate product manager','apm']),
-    (44, ['product owner','product lead']),
-    (42, ['product operations','product ops','product strategy','growth product','growth manager']),
+    (44, ['product owner','product lead','product builder']),
+    (42, ['product operations','product ops','product strategy','product strategist','growth product','growth manager','growth lead']),
+    (38, ['product analyst','go-to-market','gtm']),
     (36, ['technical program manager','program manager','programme manager','tpm']),
+    (32, ['business analyst','product specialist']),
+    (20, ['forward deployed']),
     (25, ['head of product','director of product','vp of product']),
 ]
 KW_BONUSES = [
@@ -130,7 +133,8 @@ VANSHIKA_PROFILE = """You are a rigorous recruiter-style evaluator. Score how we
 
 === WHAT FITS ===
 Best: Associate Product Manager, Product Manager (entry to mid level, roughly 0-3 years of PM experience asked), MBA or graduate product programmes, Technical PM roles that value analytical and domain depth over coding.
-Good: Product Owner, product operations, product strategy, growth product roles, and program manager roles inside product or engineering organisations, at a level open to a post-MBA hire.
+Good: Product Owner, Product Lead, AI Product Builder, product operations, product strategy/strategist, Product Analyst, growth and Go-to-Market (GTM) lead roles, and program manager roles inside product or engineering organisations, at a level open to a post-MBA hire.
+Possible: Business Analyst and Product Specialist roles when they sit close to product (score lower if they are pure banking/ERP BA or sales/support specialist roles). Forward Deployed Engineer only if it is non-coding and customer/solutions facing; if it requires writing production code, score 10-25.
 Domain edge: energy, energy-tech, industrial, mobility/maps and operations-heavy products, where ONGC and TomTom make her credible. Fintech and pure developer-tooling products are possible but she has no domain edge there.
 
 === SENIORITY IS THE MAIN FILTER ===
