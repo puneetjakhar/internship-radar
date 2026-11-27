@@ -216,18 +216,6 @@
     "notes": "Dept: Product. Via Greenhouse board."
   },
   {
-    "company": "Flow Traders B.V.",
-    "job_title": "Business Analyst",
-    "location": "Amsterdam, Netherlands",
-    "careers_url": "https://job-boards.greenhouse.io/flowtraders",
-    "job_url": "https://job-boards.greenhouse.io/flowtraders/jobs/8288652",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": "2026-10-29",
-    "description": "&nbsp; Flow Traders runs on data. Trading, research, finance, and operations all depend on reliable numbers and a clear understanding of what those numbers mean. Today, business teams bring questions and project ideas to our BI and FP&amp;A specialists, but there is a gap between business intent and the specific, measurable requirements needed to deliver effective solutions. This can result in projects starting without a clear definition of ROI and KPIs lacking clear business ownership. As a Senior Business Analyst, you will bridge this gap by translating business needs into actionable requirements, challenging business cases before they become projects, and establishing clear KPI definitions and ownership. You will work closely with business stakeholders, project management, BI, and FP&amp;A to ensure initiatives are properly defined, prioritized, and measured against their expected returns. This is an advisory role where you will act as an internal consultant, expected to form independent views, challenge weak reasoning, and drive decisions with senior stakeholders. Rather than building pipelines or dashboards yourself, you will focus on the frameworks, requirements, and processes that enable analytics and data engineers to deliver effective solutions. Your work will help establish accountability for business metrics, improve project prioritization, and ensure technical teams can focus on delivery rather than requirements discovery. What you will do Translate business intent into requirements. Work with business teams to understand the decisions behind their requests and translate ambiguous questions into clear, testable requirements that analytics and data engineers can build from independently. Prioritize business requests. Evaluate incoming requests based on their expected value and required effort, challenging or rejecting initiatives that lack sufficient justification. Define and track project ROI. Collaborate with project management to establish expected returns and measurement frameworks before projects begin. Challenge business cases with unclear, unattributable, or overlapping benefits and track realized versus projected outcomes after delivery. Establish KPI definitions and ownership. Facilitate discussions with business stakeholders to define metrics, their underlying data, and the decisions they support. Secure formal sign-off from named business owners and conduct recurring reviews to keep definitions relevant. Drive alignment across departments. Resolve conflicting metric definitions between business teams, establish consistency, and escalate disagreements where alignment cannot be reached. Bridge business, BI, and FP&amp;A. Act as the central point of translation between departmental business questions and reporting requirements, ensuring stakeholders understand the origins and meaning of their data. Improve reporting effectiveness. Identify and consolidate reporting that no longer supports business decisions, reducing unnecessar",
-    "notes": "Dept: Data. Via Greenhouse board."
-  },
-  {
     "company": "Mollie B.V.",
     "job_title": "Associate Partner Growth Manager - NL",
     "location": "Amsterdam",
@@ -250,6 +238,61 @@
     "date_posted": "2026-10-23",
     "description": "Senior Product Manager - Business Banking Build with us Businesses deserve better from finance. Less friction, more freedom. Since 2004, Mollie has been on a mission to make payments and money management effortless for every business in Europe. Today, more than 250,000 companies trust our all-in-one platform to get paid, manage money and grow on their terms. Simple, scalable and built with real businesses in mind. We\u2019re one of Europe\u2019s fastest-growing fintechs, with 900+ Mollies across 12+ locations. Our people make this growth possible. We move fast, build with purpose and care deeply about our customers. Whether you\u2019re solving problems, building market-leading products or exploring how AI can make work smarter, you\u2019ll have the freedom to create and the trust to deliver. If you\u2019re ready to grow, shape the future of fintech and join an ambitious, high-performing team, this is the place for you. Your impact As Senior Product Manager, you'll own a significant part of our Business Banking product, one of the newest and most ambitious areas we're building at Mollie. This is a build from scratch opportunity. Mollie's position here is rare: we're a payment service provider with a large, established customer base that is now building a full banking proposition on top of it. That means you get the ambition and pace of building something new, combined with the resources, customers, and best practices of a scaled business. You'll work alongside experienced, passionate product leaders who've done this before. You'll lead a cross-functional team across design, product, and data analytics. There are no direct reports in this role, but you'll own the team's day to day performance and make sure things ship on time. What you'll ship Net-new propositions, not incremental iteration. You're building experiences that don't exist yet. Customer-facing product and APIs across the Mollie app (web and native mobile) for business banking customers. A banking proposition layered on Mollie's existing payments infrastructure, reaching customers who are already active and engaged. What you'll bring Experience leading a cross-functional product team in an everyday, hands-on capacity Comfort with the full product lifecycle, including early-stage building and scaling Ability to operate in a high-ambition, high-resource environment alongside experienced and passionate product leaders from across the industry Grow your way At Mollie, growth is personal. We believe everyone should have the chance to develop their skills, explore new challenges and shape their career on their own terms. In this role, you\u2019ll have the unique opportunity to build a meaningful distribution channel from the ground up. As we expand across Europe, you will grow alongside the product area you own. You\u2019ll get regular feedback and performance reviews to support your development, with fair and transparent salary reviews along the way. Unlock your full potential and join us to eliminate financial bureaucracy If",
     "notes": "Via Ashby API."
+  },
+  {
+    "company": "Rabobank Nederland",
+    "job_title": "Product Manager Quality Engineering",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Owner-Secure-Software-Quality---Scanning_JR_00145682",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Rabobank Nederland",
+    "job_title": "Product Manager - Software Delivery Platform",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Manager---Software-Delivery-Platform_JR_00146722",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Rabobank Nederland",
+    "job_title": "Product Owner Tech4Ops",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Product-Owner-Tech4Ops_JR_00148366",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Rabobank Nederland",
+    "job_title": "Lead Business Analyst - Tech4Ops",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Lead-Business-Analyst---Tech4Ops_JR_00148319",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
+  },
+  {
+    "company": "Rabobank Nederland",
+    "job_title": "Junior Business Analyst IAM | Early Career Program IT | Utrecht",
+    "location": "Utrecht Croeselaan 18",
+    "careers_url": "https://rabobank.wd3.myworkdayjobs.com/jobs",
+    "job_url": "https://rabobank.wd3.myworkdayjobs.com/jobs/job/Utrecht-Croeselaan-18/Junior-Business-Analyst-IAM---Early-Career-Program-IT---Utrecht_JR_00148259",
+    "visa_support": null,
+    "relocation_support": null,
+    "date_posted": null,
+    "notes": "Via Workday API."
   },
   {
     "company": "BCG Amsterdam",
@@ -528,10 +571,10 @@
   },
   {
     "company": "Sigma Software Group",
-    "job_title": "PROXY PRODUCT OWNER (ADTECH PLATFORM)\nAlbania\nEurope\nPoland\nRomania\nUkraine\nManagement\nProduct Management\nAPPLY",
+    "job_title": "SENIOR PRODUCT MANAGER (INVESTMENT PLATFORMS)\nAlbania\nEurope\nPoland\nRomania\nManagement\nProduct Management\nAPPLY",
     "location": "Netherlands",
     "careers_url": "https://career.sigma.software/",
-    "job_url": "https://career.sigma.software/vacancy/proxy-product-owner/",
+    "job_url": "https://career.sigma.software/vacancy/senior-product-manager-12/",
     "visa_support": null,
     "relocation_support": null,
     "date_posted": null,
