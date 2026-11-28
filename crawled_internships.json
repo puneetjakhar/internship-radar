@@ -288,18 +288,6 @@
     "notes": "Via DOM link heuristic (Playwright)."
   },
   {
-    "company": "Oliver Wyman Amsterdam",
-    "job_title": "Oliver Wyman - Forward Deployed Engineer \u2014 Data & Analytics Job ID is R_366366",
-    "location": "Netherlands",
-    "careers_url": "https://careers.marsh.com/global/en/oliver-wyman-early-careers-search",
-    "job_url": "https://careers.marsh.com/global/en/job/R_366366/Oliver-Wyman-Forward-Deployed-Engineer-\u2014-Data-Analytics",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "description": "",
-    "notes": "Via DOM link heuristic (Playwright)."
-  },
-  {
     "company": "KPMG Netherlands",
     "job_title": "Product Owner / Manager Innovation Audit",
     "location": "Netherlands",
@@ -597,17 +585,6 @@
     "date_posted": "2026-11-12",
     "description": "GitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster. The same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values&nbsp;and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software. * Fortune 500\u00ae is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab. An overview of this role GitLab\u2019s Forward Deployed Engineering team is a field-situated product engineering function focused on strategic customer outcomes, artificial intelligence (AI) adoption, and direct contributions to GitLab\u2019s product. This isn't a traditional field engineering, solutions architecture, or professional services role. As a Staff Forward Deployed Engineer, you'll work closely with customers while maintaining the technical standards and contribution discipline of a Staff-level product engineer. You'll work where strategic customer urgency, complex technical ambiguity, and GitLab product execution intersect. You'll partner directly with strategic customers and teams across Product, Engineering, Support, Site Reliability Engineering (SRE), Solutions Architecture (SA), Customer Success Architecture (CSA), Customer Success Management (CSM), and Professional Services. You'll diagnose and resolve high-impact adoption blockers, contribute production-quality fixes and features, and turn what you learn into repeatable patterns for GitLab and its customers. Why this role exists Strategic customers sometimes encounter challenges that are too broad, deep, urgent, or cross-functional for any single team to own from start to finish. These challenges may involve product gaps, performance degradation, scale bottlenecks, AI governance, adoption blockers, architectural constraints, Git usage patterns, continuous integration and continuous delivery (CI/CD) complexity, application programming interface (API) automation, security requirements, or operational instability. Forward Deployed Engineering provides tec",
     "notes": "Dept: Customer Experience. Via Greenhouse board."
-  },
-  {
-    "company": "Rockwell Automation B.V.",
-    "job_title": "Business Operations Program Manager - IPP",
-    "location": "3 Locations",
-    "careers_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation",
-    "job_url": "https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Katowice-Poland/Business-Operations-Program-Manager---IPP_R26-8103",
-    "visa_support": null,
-    "relocation_support": null,
-    "date_posted": null,
-    "notes": "Via Workday API."
   },
   {
     "company": "HelloFresh Netherlands B.V.",
